@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: cf65f451-7f48-403f-9f3e-3d3ef550ba03
+      url: 'https://neelsmith.quarto.pub/digitalcomplutensian'

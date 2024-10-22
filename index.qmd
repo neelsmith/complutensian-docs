@@ -1,0 +1,24 @@
+---
+engine: julia
+---
+
+# A Digital Complutensian Bible
+
+
+
+::: {.callout-warning title="TBA"}
+
+- goals of the project
+- work to date
+:::
+
+
+## Presentations
+
+- Society of Biblical Literature (San Diego, November, 2024)
+- Society of Classical Studies (Philadelphia, January, 2025)
+
+## Resources
+
+- existing, freely licensed editions of the major texts included the Complutensian Bible (Hebrew Bible, Greek Septuagint, Latin Vulgate, Aramaic Targum Onkelos): [on github](https://github.com/neelsmith/compnov)
+- editions of contents specific to the Complutensian Bible (Latin glosses on Greek and Aramaic texts): [on github](https://github.com/neelsmith/complutensian-texts)
