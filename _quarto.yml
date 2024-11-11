@@ -17,7 +17,14 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      
+      - text: "Examples"
+        file: examples/index.qmd
+      - text: "Motivation"
+        file: motivation/index.qmd         
+      - text: "Status"
+        file: status/index.qmd
+
+
     right:   
       - icon: person-circle
         menu:

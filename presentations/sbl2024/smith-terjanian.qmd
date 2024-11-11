@@ -1,0 +1,18 @@
+---
+engine: julia
+title: Whatever our SBL submission said
+format: 
+    revealjs:
+        theme: [dark]
+        navigation-mode: vertical
+        footer: "Classics Department luncthime talk, April 5, 2024"
+---
+
+
+# Title slide maybe
+
+
+- who we are
+
+# Context
+

@@ -1,0 +1,6 @@
+---
+engine: julia
+title: Society of Biblical Literature, 2024
+---
+
+## In San Diego woohoo

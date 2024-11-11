@@ -15,7 +15,7 @@ engine: julia
 
 ## Presentations
 
-- Society of Biblical Literature (San Diego, November, 2024)
+- [Society of Biblical Literature](./presentations/sbl2024/) (San Diego, November, 2024)
 - Society of Classical Studies (Philadelphia, January, 2025)
 
 ## Resources
