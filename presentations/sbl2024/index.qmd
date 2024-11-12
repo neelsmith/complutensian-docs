@@ -3,4 +3,31 @@ engine: julia
 title: Society of Biblical Literature, 2024
 ---
 
-## In San Diego woohoo
+## SBL Digital Humanities in Biblical, Early Jewish, and Christian Studies Section
+
+
+Session S25-316:  November 25, 2024,  4:00-6:30 (Hilton Bayfront - Aqua 307)
+
+Presenters: Neel Smith, Asheley Terjanian
+
+Title: "A digital Complutensian polyglot Bible"
+
+:::{.callout-tip title="Slides: TBA"}
+A slide stack from our presentation will be added here during the convention.
+:::
+
+Abstract: 
+
+> We present work on a digital incunabulum: a multilingual Bible modelled on an innovative print incunabulum, the Complutensian polyglot of 1520. The Complutensian included numerous aids for "those who do not have a perfect command of (each) language" while pushing the limits of print technology to support novel kinds of scholarly research. Its six volumes supported:
+>
+> 1. comparative, multilingual reading of texts
+> 2. lemmatization coordinating texts and lexica
+> 3. morpho-syntactic alignment for cross-lingual analysis
+> 
+> Our digital edition builds on automated morphological parsing of canonically citable texts in Greek, Latin and Hebrew to realize similar goals. Like the Complutensian, our edition offers parallel texts of the Masoretic Hebrew Bible, the Latin Vulgate, the Greek Septuagint, and the Aramaic Targum Onkelos. Morphological parsing identifies lexemes with standard identifiers linking analyses to lexica, much as marginal notes for difficult Hebrew words in the Complutensian supply lemmata to a lexicon included in volume 6.
+>
+> The Complutensian draws on a long tradition of glossing commentaries, with interlinear Latin glosses on the text of the Septuagint, and an adjacent Latin gloss for the Targum Onkelos. It also introduces a unique system of symbols to cross reference the Vulgate and the Hebrew text. Anticipating the idea that well-structured digital texts can be reused for multiple purposes, this system makes it possible either to read the Vulgate as a continuous translation, or to use it as a glossing commentary on the Hebrew text. 
+>
+> We exploit the morphological richness of Hebrew, Greek, Latin to reach similar results. In each text, we isolate parallel functional units, such as verbal actions. This makes the continuous texts of the digital editions function as a kind of comparative database, similar to the manual indexing of the Complutensian. We can trace lexical parallels, for example. ἐποίησεν, *creauit* and בָּרָא are easily aligned in *Genesis* 1.1: how consistently are ποιέω, *creo* and בָּרָא aligned elsewhere? We can also compare parallel syntactic structures.  What does it mean when the Septuagint uses a subjunctive or optative mood to translate a Hebrew text that has no comparable structure? As the editors of the Complutensian explicitly intended, systematic algorithmic collection of these observations enables scholars with different backgrounds to study the multilingual corpus in new ways.
+>
+>We are indexing the contents of the Complutensian to high-resolution images of the copy in the National Library of Spain. Our presentation includes a variety of visualizations coordinating the regions of the image indexed to scholarly instruments on the printed page with digital texts and results of our computational analyses. We hope to stimulate discussion of how digital technologies can help us support work across traditional disciplinary boundaries among interested readers with different backgrounds.

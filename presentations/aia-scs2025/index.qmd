@@ -1,0 +1,27 @@
+---
+engine: julia
+title: "AIA/SCS 2025"
+---
+
+## Ancient MakerSpaces
+
+
+:::{.callout-tip title="Session: TBA"}
+Details of time and place TBA
+:::
+
+
+Presenters: Neel Smith, Ashley Terjanian
+
+Title: A digital Complutensian polyglot Bible
+
+
+:::{.callout-tip title="Slides: TBA"}
+A slide stack from our presentation will be added here during the convention.
+:::
+
+Abstract:
+
+> Our project is inspired by the first multilingual Bible, the six-volume Complutensian polyglot. Like the Complutensian, we include a Masoretic Hebrew Bible, a Latin Vulgate, a Greek Septuagint and the Aramaic Targum Onkelos. Like the Complutensian, we implement functionality to support readers who have not mastered the languages as well as for new forms of scholarly investigation based on cross-lingual alignment of similar functional features. We present new systems for morphological analysis of Latin, Greek and Hebrew, and show how they allow us to identify overlapping semantic spaces and syntactic structures in the different texts.
+
+Audience: Anyone interested in using digital methods to isolate features of Greek, Latin or Hebrew texts

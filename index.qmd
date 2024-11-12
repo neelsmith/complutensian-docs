@@ -5,20 +5,29 @@ engine: julia
 # A Digital Complutensian Bible
 
 
+This project explores a digital multilingual Bible modelled on the sixteenth-century Complutensian Polyglot. The Complutensian included numerous aids for "those who do not have a perfect command of (each) language"[^1] while pushing the limits of print technology to support novel kinds of scholarly research.[^2] Its six volumes supported:
 
-::: {.callout-warning title="TBA"}
 
-- goals of the project
-- work to date
-:::
+1. comparative, multilingual reading of texts
+2. lemmatization coordinating texts and lexica
+3. morpho-syntactic alignment for cross-lingual analysis
+
+
+
+By implementing the same functionality digitally, 
+...
+
+supports innovative cross-lingual **scholarship**:
+....
+
+[^1]: in the words of the editors' preface: *qui non integram linguae cognitionem adepti sunt*
+
+
+
+[^2]: again, the editors' explicit aim: *studiosis vtillisimum fore credimus*
 
 
 ## Presentations
 
 - [Society of Biblical Literature](./presentations/sbl2024/) (San Diego, November, 2024)
-- Society of Classical Studies (Philadelphia, January, 2025)
-
-## Resources
-
-- existing, freely licensed editions of the major texts included the Complutensian Bible (Hebrew Bible, Greek Septuagint, Latin Vulgate, Aramaic Targum Onkelos): [on github](https://github.com/neelsmith/compnov)
-- editions of contents specific to the Complutensian Bible (Latin glosses on Greek and Aramaic texts): [on github](https://github.com/neelsmith/complutensian-texts)
+- [AIA/SCS](./presentations/aia-scs2025/) (Philadelphia, January, 2025)

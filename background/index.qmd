@@ -1,6 +1,6 @@
 ---
 engine: julia
-title: Motivation and goals
+title: Background to the project
 ---
 
 ## Why?

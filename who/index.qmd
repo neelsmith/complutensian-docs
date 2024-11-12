@@ -1,0 +1,10 @@
+---
+engine: julia
+title: Who we are
+---
+
+
+- Neel Smith, Professor Emeritus, Department of Classics, College of the Holy Cross.
+    - [about me](https://neelsmith.quarto.pub)
+    - more of [my digital scholarship](href: https://neelsmith.quarto.pub/digschol/)
+- Ashley Terjanian, Holy Cross '26

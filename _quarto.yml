@@ -19,20 +19,18 @@ website:
         file: index.qmd
       - text: "Examples"
         file: examples/index.qmd
-      - text: "Motivation"
-        file: motivation/index.qmd         
-      - text: "Status"
+      - text: "Background"
+        file: background/index.qmd         
+      - text: "Resources"
         file: status/index.qmd
 
 
     right:   
       - icon: person-circle
         menu:
-          - text: "About me"
-            href: https://neelsmith.quarto.pub
-          - text: "More of my digital scholarship"
-            href: https://neelsmith.quarto.pub/digschol/
-        aria-label: "More of my work"  
+          - text: "Who we are"
+            href: https://neelsmith.quarto.pub/digitalcompletensian/who/
+        aria-label: "Who"  
 
   sidebar:
     - title: "Home"
