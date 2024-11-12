@@ -1,5 +1,12 @@
 ---
 engine: julia
-title: Tutorial examples
+title: Exploring the digital polyglot
 ---
 
+:::{.callout-warning title="TBA"}
+
+Content to be added here:
+
+- Background introduction to the "small-digital" concept
+- A selection of Pluto notebooks illustrating different forms of multilingual reading
+:::

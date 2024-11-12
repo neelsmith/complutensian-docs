@@ -22,7 +22,7 @@ website:
       - text: "Background"
         file: background/index.qmd         
       - text: "Resources"
-        file: status/index.qmd
+        file: resources/index.qmd
 
 
     right:   
