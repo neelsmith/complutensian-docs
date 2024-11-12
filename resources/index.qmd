@@ -9,7 +9,14 @@ title: Resources for a digital Complutensian
 
 - IIIF manifest
 
-### Status
+:::{.callout-note title="TBA"}
+Link to manifest and introductory discussion TBA
+:::
+
+**Status**: 
+
+- image service incomplete for last pages of *Deuteronomy*
+- image service does not set XCOR headings
 
 
 ## Texts
@@ -18,15 +25,31 @@ title: Resources for a digital Complutensian
 - editions of contents specific to the Complutensian Bible (Latin glosses on Greek and Aramaic texts): [on github](https://github.com/neelsmith/complutensian-texts)
 
 
+**Status**: 
+
+- XML editions of Latin glosses in draft form through *Genesis* chapter 40
+- Latin contents not fully machine validated
+
+
 ## Morphological data
 
 ### Hebrew
 
+- complete morphological annotations from Open Scriptures Hebrew Bible project
+
 
 ### Greek
 
+:::{.callout-note title="TBA"}
+Links and summary of status TBA
+:::
+
+
 ### Latin
 
+:::{.callout-note title="TBA"}
+Links and summary of status TBA
+:::
 
 
 

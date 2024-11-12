@@ -19,11 +19,10 @@ website:
         file: index.qmd
       - text: "Examples"
         file: examples/index.qmd
-      - text: "Background"
-        file: background/index.qmd         
       - text: "Resources"
         file: resources/index.qmd
-
+      - text: "Background"
+        file: background/index.qmd  
 
     right:   
       - icon: person-circle
