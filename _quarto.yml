@@ -29,7 +29,7 @@ website:
       - icon: person-circle
         menu:
           - text: "Who we are"
-            href: https://neelsmith.quarto.pub/digitalcompletensian/who/
+            href: https://neelsmith.quarto.pub/digitalcomplutensian/who/
         aria-label: "Who"  
 
   sidebar:
