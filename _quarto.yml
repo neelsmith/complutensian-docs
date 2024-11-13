@@ -17,7 +17,7 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      - text: "Examples"
+      - text: "Applications"
         file: examples/index.qmd
       - text: "Resources"
         file: resources/index.qmd

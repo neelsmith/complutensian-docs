@@ -3,10 +3,30 @@ engine: julia
 title: Exploring the digital polyglot
 ---
 
-:::{.callout-warning title="TBA"}
 
-Content to be added here:
+## A "small digital" approach
 
-- Background introduction to the "small-digital" concept
-- A selection of Pluto notebooks illustrating different forms of multilingual reading
+Our goal is to create  
+
+
+What I've elsewhere called ["small-digital" scholarship](https://neelsmith.quarto.pub/posts/2024-10-28-small-digital/index.html).
+
+- small team or individual
+- minimal tecnical preqequisites
+- easily shared and replicated
+
+
+## Pluto notebooks
+
+:::{.callout-warning title="Work in progress"}
+For each of the Pluto notebooks listed below, we are adding:
+
+- a brief introduction
+- a readable HTML version that you can download and run in Pluto
 :::
+
+
+- browse passages in multiple versions
+- explore the Greek Septuagint morphologically
+- compare verbal usage in Latin glosses compared to Vulgate
+- align verbal functions across Hebrew, Greek and Latin documents
