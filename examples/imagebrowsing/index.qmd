@@ -5,9 +5,14 @@ title: A note for browsing images of the Complutensian Bible
 
 ## Overview
 
+A simple Pluto notebook that lets you browse images of the copy of the Complutensian Bible in the National Library of Spain. Select a volume, scroll through thumbnail images, pan and zoom images.
 
 
-![Pluto notebook for browsing images](./image-browser.png)
+
+## Screen capture
+
+![Pluto notebook for browsing images](./image-browser.gif)
+
 
 
 ## The notebook
