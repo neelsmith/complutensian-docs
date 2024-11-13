@@ -8,9 +8,6 @@ title: Resources for a digital Complutensian
 
 
 
-::: {.callout-note title="More"}
-TBA: See this blog post
-:::
 
 
 IIIF manifests for the National Library of Spain's copy of the Complutensian Bible, by volume:
@@ -25,11 +22,14 @@ IIIF manifests for the National Library of Spain's copy of the Complutensian Bib
 - [volume 6](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v6-manifest.json)
 
 
+::: {.callout-note title="More information"}
+To learn more about the relation of these IIIF manifests to the digital photography hosted atr the National Library of Spain and at the Library of Congress, see [this blog post](https://neelsmith.quarto.pub/posts/2024-11-13-complutensian-iiif/index.html).
+:::
 
+:::{.callout-}
 
-::: {.callout-note title="Status"}
-- images on the cited server incomplete for last pages of *Deuteronomy*
-- image service does not set XCOR headings
+::: {.callout-caution title="Work in progress"}
+Some of the images cataloged in the IIIF manifest for last pages of *Deuteronomy* have not yet been loaded on to the cited IIIF server.
 :::
 
 
@@ -44,8 +44,8 @@ IIIF manifests for the National Library of Spain's copy of the Complutensian Bib
 
 **Status**: 
 
-- XML editions of Latin glosses in draft form through *Genesis* chapter 40
-- Latin contents not fully machine validated
+- draft XML editions of Latin glosses on the Septuagint and the Targum Onkelos are complete through *Genesis* chapter 40.
+- the contents of the Latin glosses have not yet been fully machine validated
 
 
 ## Morphological data

@@ -26,6 +26,7 @@ For each of the Pluto notebooks listed below, we are adding:
 :::
 
 
+- [browse images](./imagebrowsing/)
 - browse passages in multiple versions
 - explore the Greek Septuagint morphologically
 - compare verbal usage in Latin glosses compared to Vulgate

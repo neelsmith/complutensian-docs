@@ -1,0 +1,17 @@
+---
+engine: julia
+title: A note for browsing images of the Complutensian Bible
+---
+
+## Overview
+
+
+
+![Pluto notebook for browsing images](./image-browser.png)
+
+
+## The notebook
+
+- `complutensian-iiif.html`: [HTML version](./complutensian-iiif.html) (readable in a web browser)
+- `complutensian-iiif.jl`: [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/complutensian-iiif.jl) (download and open in Pluto)
+
