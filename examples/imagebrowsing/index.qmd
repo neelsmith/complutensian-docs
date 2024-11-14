@@ -11,7 +11,7 @@ A simple Pluto notebook that lets you browse images of the copy of the Compluten
 
 ## Screen capture
 
-![Pluto notebook for browsing images](./image-browser.gif)
+![Pluto notebook for browsing images](./image-browser.png)
 
 
 
