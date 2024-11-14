@@ -1,0 +1,14 @@
+---
+engine: julia
+title: Vulgate text with page image
+---
+
+
+## Overview
+
+## Notebook
+
+[HTML](./passage-plus-images.html)
+
+
+## Screen capture
