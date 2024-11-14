@@ -10,4 +10,6 @@ title: Morphology of Greek verbs
 
 [HTML](./findverbs.html)
 
+greekverbs.jl
+
 ## Screen capture
