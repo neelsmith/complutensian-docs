@@ -1,0 +1,14 @@
+---
+engine: julia
+title: A paired reader
+---
+
+
+## Overview
+
+## Notebook
+
+[HTML](./pairedreader.html)
+
+
+## Screen capture
