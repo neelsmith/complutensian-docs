@@ -32,7 +32,8 @@ Here's a little about [Pluto notebooks](./pluto/)
 Some notebooks:
 
 - [browse images](./imagebrowsing/)
-
+- browse [text passages in the four versions of the Complutensian Bible](./alignedpassages/)
+- explore the Greek Septuagint morphologically
 
 :::{.callout-warning title="Work in progress"}
 Will add introductory page for each of the following nbs
@@ -40,7 +41,7 @@ Will add introductory page for each of the following nbs
 
 Some other notebooks available on github:
 
-- browse passages in multiple versions
-- explore the Greek Septuagint morphologically
+
+
 - compare verbal usage in Latin glosses compared to Vulgate
 - align verbal functions across Hebrew, Greek and Latin documents
