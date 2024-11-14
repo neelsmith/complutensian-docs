@@ -1,0 +1,14 @@
+---
+engine: julia
+title: Aligning verbal vocabuary in Latin glosses and the Vulgate
+---
+
+
+## Overview
+
+## Notebook
+
+[HTML](./alignvis.html)
+
+
+## Screen capture
