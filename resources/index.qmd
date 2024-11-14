@@ -28,7 +28,7 @@ To learn more about the relation of these IIIF manifests to the digital photogra
 
 
 ::: {.callout-caution title="Work in progress"}
-Seven images of pages in volume 1 are not yet correctly loaded on the cited IIIF server and need to be replaced.  See [this issue on github](https://github.com/neelsmith/complutensian-texts/issues/17)
+Some images of pages in volume 1 are not yet correctly loaded on the cited IIIF server and need to be replaced.  See [this issue on github](https://github.com/neelsmith/complutensian-texts/issues/17)
 :::
 
 
