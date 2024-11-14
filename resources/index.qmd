@@ -14,22 +14,24 @@ IIIF manifests for the National Library of Spain's copy of the Complutensian Bib
 
 
 
-- [volume 1](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v1-manifest.json)
-- [volume 2](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v2-manifest.json)
-- [volume 3](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v3-manifest.json)
-- [volume 4](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v4-manifest.json)
-- [volume 5](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v5-manifest.json)
-- [volume 6](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v6-manifest.json)
+- volume 1: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v1-manifest.json`
+- volume 2: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v2-manifest.json`
+- volume 3: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v3-manifest.json`
+- volume 4: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v4-manifest.json`
+- volume 5: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v5-manifest.json`
+- volume 6: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v6-manifest.json`
+
+
 
 
 ::: {.callout-note title="More information"}
 To learn more about the relation of these IIIF manifests to the digital photography hosted atr the National Library of Spain and at the Library of Congress, see [this blog post](https://neelsmith.quarto.pub/posts/2024-11-13-complutensian-iiif/index.html).
 :::
 
-:::{.callout-}
+
 
 ::: {.callout-caution title="Work in progress"}
-Some of the images cataloged in the IIIF manifest for last pages of *Deuteronomy* have not yet been loaded on to the cited IIIF server.
+Seven images of pages in volume are not yet correctly loaded on the cited IIIF server and need to be replaced.  See [this issue on github](https://github.com/neelsmith/complutensian-texts/issues/17)
 :::
 
 
