@@ -3,6 +3,7 @@ engine: julia
 title: Exploring the digital polyglot
 ---
 
+Start from our goals
 
 ## A "small digital" approach
 
@@ -17,6 +18,8 @@ What I've elsewhere called ["small-digital" scholarship](https://neelsmith.quart
 
 
 ## Pluto notebooks
+
+About [Pluto notebooks](./pluto/)
 
 :::{.callout-warning title="Work in progress"}
 For each of the Pluto notebooks listed below, we are adding:

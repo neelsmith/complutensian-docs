@@ -8,15 +8,16 @@ title: A note for browsing images of the Complutensian Bible
 A simple Pluto notebook that lets you browse images of the copy of the Complutensian Bible in the National Library of Spain. Select a volume, scroll through thumbnail images, pan and zoom images.
 
 
+## The notebook
+
+- `complutensian-iiif.html`: [HTML version](./complutensian-iiif.html) (readable in a web browser)
+- `complutensian-iiif.jl`: [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/complutensian-iiif.jl) (download and open in Pluto)
+
+
 
 ## Screen capture
 
 ![Pluto notebook for browsing images](./image-browser.png)
 
 
-
-## The notebook
-
-- `complutensian-iiif.html`: [HTML version](./complutensian-iiif.html) (readable in a web browser)
-- `complutensian-iiif.jl`: [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/complutensian-iiif.jl) (download and open in Pluto)
 
