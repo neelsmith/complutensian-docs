@@ -3,15 +3,19 @@ engine: julia
 title: Exploring the digital polyglot
 ---
 
-Start from our goals
 
 ## A "small digital" approach
+
+
+
+Start from our goals
+
 
 *Not* a monolithic resources
 
 Our goal is to create  
 
-- resources
+- resources: from others; our own contributions
 - applications using those resources
    - documented, replicable
 
@@ -22,15 +26,6 @@ What I've elsewhere called ["small-digital" scholarship](https://neelsmith.quart
 - easily shared and replicated
 
 
-
-## Categories
-
-- physical organization of Complutensian
-- reading texts and glosses
-- morphology
-- comparing contents, including
-- feature alignment
-
 ## Pluto notebooks
 
 One technology for small-digital scholarship: Pluto.
@@ -38,9 +33,25 @@ One technology for small-digital scholarship: Pluto.
 Here's a little about [Pluto notebooks](./pluto/)
 
 
-Some notebooks:
+
+### The physical organization of Complutensian
 
 - [browse images](./imagebrowsing/)
+
+### Reading passages of texts and glosses
+
+### Morphological analysis
+
+
+### Comparing  textual contents
+
+### Aligning feature
+
+
+
+Some notebooks:
+
+
 - browse [text passages in the four versions of the Complutensian Bible](./alignedpassages/)
 - browse [text passages and associated Latin glosses](./aligned-with-glosses/)
 - validating editing: image and text views

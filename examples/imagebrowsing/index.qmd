@@ -11,7 +11,7 @@ A simple Pluto notebook that lets you browse images of the copy of the Compluten
 ## The notebook
 
 - `complutensian-iiif.html`: [HTML version](./complutensian-iiif.html) (readable in a web browser)
-- `complutensian-iiif.jl`: [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/complutensian-iiif.jl) (download and open in Pluto)
+- `complutensian-iiif.jl`: [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/artifact/complutensian-iiif.jl) (download and open in Pluto)
 
 
 
