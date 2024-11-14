@@ -45,3 +45,4 @@ Some other notebooks available on github:
 
 - compare verbal usage in Latin glosses compared to Vulgate
 - align verbal functions across Hebrew, Greek and Latin documents
+- orthographic practice: usage of [abbreviations in glosses](./abbreviations/)

@@ -1,0 +1,13 @@
+---
+engine: julia
+title: Usage of abbreviations in glossing
+---
+
+
+## Overview
+
+## Notebook
+
+[HTML](./abbrs.html)
+
+## Screen capture
