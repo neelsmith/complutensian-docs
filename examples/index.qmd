@@ -7,8 +7,13 @@ Start from our goals
 
 ## A "small digital" approach
 
+*Not* a monolithic resources
+
 Our goal is to create  
 
+- resources
+- applications using those resources
+   - documented, replicable
 
 What I've elsewhere called ["small-digital" scholarship](https://neelsmith.quarto.pub/posts/2024-10-28-small-digital/index.html).
 
@@ -19,17 +24,22 @@ What I've elsewhere called ["small-digital" scholarship](https://neelsmith.quart
 
 ## Pluto notebooks
 
-About [Pluto notebooks](./pluto/)
+One technology for small-digital scholarship: Pluto.
 
-:::{.callout-warning title="Work in progress"}
-For each of the Pluto notebooks listed below, we are adding:
+Here's a little about [Pluto notebooks](./pluto/)
 
-- a brief introduction
-- a readable HTML version that you can download and run in Pluto
-:::
 
+Some notebooks:
 
 - [browse images](./imagebrowsing/)
+
+
+:::{.callout-warning title="Work in progress"}
+Will add introductory page for each of the following nbs
+:::
+
+Some other notebooks available on github:
+
 - browse passages in multiple versions
 - explore the Greek Septuagint morphologically
 - compare verbal usage in Latin glosses compared to Vulgate
