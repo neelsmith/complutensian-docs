@@ -1,0 +1,14 @@
+---
+engine: julia
+title: Compare vocabuary in Latin glosses and the Vulgate
+---
+
+
+## Overview
+
+## Notebook
+
+[HTML](./glossing-vocabulary.html)
+
+
+## Screen capture
