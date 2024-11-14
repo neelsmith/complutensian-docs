@@ -33,8 +33,9 @@ Some notebooks:
 
 - [browse images](./imagebrowsing/)
 - browse [text passages in the four versions of the Complutensian Bible](./alignedpassages/)
+- browse [text passages and associated Latin glosses](./aligned-with-glosses/)
 - validating editing: image and text views
-- explore the Greek Septuagint morphologically
+- verb [morphology in the Greek Septuagint](./greek-verbs/)
 - aligning Latin verb functions to Septuagint
 
 :::{.callout-warning title="Work in progress"}
@@ -48,3 +49,7 @@ Some other notebooks available on github:
 - compare verbal usage in Latin glosses compared to Vulgate
 - align verbal functions across Hebrew, Greek and Latin documents
 - orthographic practice: usage of [abbreviations in glosses](./abbreviations/)
+
+Other:
+
+- [Latin spacing markers](./spacing-markers/)

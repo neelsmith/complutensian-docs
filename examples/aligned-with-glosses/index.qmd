@@ -1,0 +1,13 @@
+---
+engine: julia
+title: Texts and glosses aligned by passage
+---
+
+
+## Overview
+
+## Notebook
+
+[HTML](./aligned-with-glosses.html)
+
+## Screen capture

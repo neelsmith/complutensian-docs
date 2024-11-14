@@ -1,0 +1,13 @@
+---
+engine: julia
+title: Morphology of Greek verbs
+---
+
+
+## Overview
+
+## Notebook
+
+[HTML](./findverbs.html)
+
+## Screen capture
