@@ -3,7 +3,12 @@ engine: julia
 title: Background to the project
 ---
 
-## Why?
+## Motivation and goals
 
-## Goals
+
+The Classics Department at Holy Cross, where we work, has expanded its scope beyond the its traditional focus on the Greek and Roman world. Majors may now choose to work in any two of the languages offered in the department; in the fall of 2024, this includes Hebrew as well as Greek and Latin. This exciting development raises new questions for us. Since we can no longer assume that everyone is studying the same languages, can we build a welcoming scholarly community where that diversity of experience is an asset? 
+
+The editors of the Complutensian Bible were deeply committed to the idea of multilingual reading, for all audiences. To achieve this, they creatively incorporated traditional elements of manuscript design with innovative features only possible in print. They explicitly aimed at supporting multilingual reading both for newcomers to the language, and for scholars engaged in innovative cross-language research
+
+We share this goal. By studying the innovative design of the Complutensian Bible and digitally replicating its functionality, we are exploring how we can facilitate multilingual reading for all in a digital environment.
 
