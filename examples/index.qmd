@@ -22,6 +22,15 @@ What I've elsewhere called ["small-digital" scholarship](https://neelsmith.quart
 - easily shared and replicated
 
 
+
+## Categories
+
+- physical organization of Complutensian
+- reading texts and glosses
+- morphology
+- comparing contents, including
+- feature alignment
+
 ## Pluto notebooks
 
 One technology for small-digital scholarship: Pluto.
