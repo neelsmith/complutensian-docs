@@ -34,42 +34,40 @@ Here's a little about [Pluto notebooks](./pluto/)
 
 
 
-### The physical organization of Complutensian
+### The physical organization of Complutensian and orthographic practices
 
 - [browse images](./imagebrowsing/)
+- [Latin spacing markers](./spacing-markers/)
+- orthographic practice: usage of [abbreviations in glosses](./abbreviations/)
+
+
+### Editing and indexing
+
+- [validating editing](./validation/): image and text views
+
+
 
 ### Reading passages of texts and glosses
+
+- browse [text passages in the four versions of the Complutensian Bible](./alignedpassages/)
+- browse [text passages and associated Latin glosses](./aligned-with-glosses/)
+
 
 ### Morphological analysis
 
 
-### Comparing  textual contents
-
-### Aligning feature
-
-
-
-Some notebooks:
-
-
-- browse [text passages in the four versions of the Complutensian Bible](./alignedpassages/)
-- browse [text passages and associated Latin glosses](./aligned-with-glosses/)
-- validating editing: image and text views
 - verb [morphology in the Greek Septuagint](./greek-verbs/)
-- aligning Latin verb functions to Septuagint
 
-:::{.callout-warning title="Work in progress"}
-Will add introductory page for each of the following nbs
-:::
-
-Some other notebooks available on github:
+### Comparing  textual contents
 
 
 
 - compare verbal usage in Latin glosses compared to Vulgate
+
+
+### Aligning features
+
+- aligning Latin verb functions to Septuagint
 - align verbal functions across Hebrew, Greek and Latin documents
-- orthographic practice: usage of [abbreviations in glosses](./abbreviations/)
 
-Other:
 
-- [Latin spacing markers](./spacing-markers/)
