@@ -1,0 +1,14 @@
+---
+engine: julia
+title: Isolate verbs
+---
+
+
+## Overview
+
+## Notebook
+
+[HTML](./passageverbs.html)
+
+
+## Screen capture

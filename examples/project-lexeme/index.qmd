@@ -1,0 +1,14 @@
+---
+engine: julia
+title: Project lexeme across Latin documents
+---
+
+
+## Overview
+
+## Notebook
+
+[HTML](./projectlexeme.html)
+
+
+## Screen capture
