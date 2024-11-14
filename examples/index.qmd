@@ -33,7 +33,9 @@ Some notebooks:
 
 - [browse images](./imagebrowsing/)
 - browse [text passages in the four versions of the Complutensian Bible](./alignedpassages/)
+- validating editing: image and text views
 - explore the Greek Septuagint morphologically
+- aligning Latin verb functions to Septuagint
 
 :::{.callout-warning title="Work in progress"}
 Will add introductory page for each of the following nbs

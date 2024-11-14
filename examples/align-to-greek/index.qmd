@@ -1,0 +1,13 @@
+---
+engine: julia
+title: Aligning Latin vocabulary to Septuagint
+---
+
+
+## Overview
+
+## Notebook
+
+[HTML](./alignvis-greek.html)
+
+## Screen capture
