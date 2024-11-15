@@ -3,7 +3,21 @@ engine: julia
 title: Pluto notebooks
 ---
 
-- reactive
+:::{.callout-caution title="TBA"}
+Content TBA.
+
+Pluto notebooks are:
+
+- reactive. Change one cell and every dependent cell automatically updates.
+- written in Julia. Each cell is a Julia expression.
+- easily shared, resused
 
 
-## How to use
+Installing and using Pluto
+
+- most basic how to
+
+
+:::
+
+

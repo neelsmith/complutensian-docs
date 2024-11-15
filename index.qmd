@@ -4,6 +4,8 @@ engine: julia
 
 # A Digital Complutensian Bible
 
+> *Multilingual reading for all in a digital environment*.
+
 ## Overview
 
 This project is developing a digital multilingual Bible modelled on the sixteenth-century Complutensian Polyglot. The Complutensian included numerous aids for "those who do not have a perfect command of (each) language"[^1] while pushing the limits of print technology to support novel kinds of scholarly research.[^2] Its six volumes supported:
