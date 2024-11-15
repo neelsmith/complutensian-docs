@@ -15,7 +15,7 @@ This approach is an example of what I've elsewhere called ["small-digital" schol
 
 ## Pluto notebooks
 
-One technology that is a good match for exploratory small-digital scholarship is Pluto, a reactive notebook system that runs in a browser. On this 
+One technology that is a good match for exploratory small-digital scholarship is Pluto, a reactive notebook system that runs in a browser. On this page we're gathering examples of Pluto notebooks working with our datasets.
 
 :::{.callout-note title="Pluto"}
 Here's a little about [Pluto notebooks](./pluto/)
@@ -25,6 +25,7 @@ Here's a little about [Pluto notebooks](./pluto/)
 ### The physical organization of Complutensian and orthographic practices
 
 - [browse images](./imagebrowsing/)
+- table of contents: index of texts to images `toc`
 - [Latin spacing markers](./spacing-markers-latin/)
 - orthographic practice: usage of [abbreviations in glosses](./abbreviations/)
 
@@ -39,6 +40,8 @@ Here's a little about [Pluto notebooks](./pluto/)
 
 - browse [text passages in the four versions of the Complutensian Bible](./alignedpassages/)
 - browse [text passages and associated Latin glosses](./aligned-with-glosses/)
+- paired reader `pairedreader`
+- citable tokens `citabletokens`
 
 
 ### Morphological analysis
@@ -50,9 +53,9 @@ Here's a little about [Pluto notebooks](./pluto/)
 
 
 
-- compare verbal usage in Latin glosses and Vulgate
-- Zipf's law at token level
-- histograms of verbs
+- compare verbal usage in Latin glosses and Vulgate `glossingvocab`
+- Zipf's law at token level `zipf`
+- histograms of verbs `verbhisto`
 
 
 ### Aligning features
