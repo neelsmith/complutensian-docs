@@ -18,7 +18,7 @@ This approach is an example of what I've elsewhere called ["small-digital" schol
 One technology that is a good match for exploratory small-digital scholarship is Pluto, a reactive notebook system that runs in a browser. On this page we're gathering examples of Pluto notebooks working with our datasets.
 
 :::{.callout-note title="Pluto"}
-Here's a little about [Pluto notebooks](./pluto/)
+If you're not familiar with Pluto notebooks, here's a little  [more information](./pluto/) about them.
 :::
 
 
