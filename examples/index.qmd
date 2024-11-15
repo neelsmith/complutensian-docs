@@ -26,6 +26,7 @@ Here's a little about [Pluto notebooks](./pluto/)
 
 - [browse images](./imagebrowsing/)
 - table of contents: index of texts to images `toc`
+- passages of text indexed to browsable image `passage-plus-images`
 - [Latin spacing markers](./spacing-markers-latin/)
 - orthographic practice: usage of [abbreviations in glosses](./abbreviations/)
 
@@ -48,11 +49,15 @@ Here's a little about [Pluto notebooks](./pluto/)
 
 
 - verb [morphology in the Greek Septuagint](./greek-verbs/)
+- verb morphology for passages in Greek `greekparsing`
+- isolate verb lemmas in passages of Greek `isolatelemmsgreek`
+- isolate verbs in Latin `isolateverbs-latin`
+- Hebrew verbs `hebrewverbs`
 
 ### Comparing  textual contents
 
 
-
+- isolate verbs in Latin documents `isolateverbs`
 - compare verbal usage in Latin glosses and Vulgate `glossingvocab`
 - Zipf's law at token level `zipf`
 - histograms of verbs `verbhisto`
