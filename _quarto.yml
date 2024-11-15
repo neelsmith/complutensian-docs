@@ -1,6 +1,6 @@
 project:
   type: website
-theme: spacelab
+theme: pulse
 execute:
   freeze: auto
 date: last-modified  
