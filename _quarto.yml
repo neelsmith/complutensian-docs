@@ -23,13 +23,15 @@ website:
         file: resources/index.qmd
       - text: "Background"
         file: background/index.qmd  
+      - text: "Who"
+        file: who/index.qmd  
 
-    right:   
+    right:
       - icon: person-circle
         menu:
-          - text: "Who we are"
-            href: https://neelsmith.quarto.pub/digitalcomplutensian/who/
-        aria-label: "Who"  
+          - text: "Neel Smith: home page"
+            href: https://neelsmith.quarto.pub
+        aria-label: Home  
 
   sidebar:
     - title: "Home"
