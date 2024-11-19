@@ -5,9 +5,7 @@ title: A notebook for browsing images of the Complutensian Bible
 
 ## Overview
 
-
-:::{.callout-warning title="TBA"}
-:::
+Select a book/passage reference, and read parallel passages from the four texts of the Complutensian Bible (Hebrew Bible, Latin Vulgate, Greek Septuagint, Aramaic Targum Onkelos).
 
 ## The notebook
 

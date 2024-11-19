@@ -3,12 +3,21 @@ engine: julia
 title: Greek morphology
 ---
 
+:::{.callout-caution title="Content TBA"}
+:::
 
 ## Overview
 
+Select a passage of the Septuagint; choose words in the passage to analyze morphologically, highlighting analyzed tokens.
+
+
+
 ## Notebook
 
-[HTML](./parseverse.html)
 
+- [HTML version](./parseverse.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/morphology/greekparsing.jl) (download and open in Pluto)
 
 ## Screen capture
+
+![](./parsepassage-greek.png)
