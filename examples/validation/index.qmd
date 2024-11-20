@@ -4,12 +4,24 @@ title: Validating editing of glosses
 ---
 
 
-:::{.callout-caution title="Content TBA"}
-:::
-
-
 ## Overview
+
+Validate editorial work by physical page. Select a page, and visually review:
+
+1. coverage of editing (visually survey page image ith all indexed regions highlighted)
+2. accuracy of editing and indexing (compare juxtaposed diplomatic text with indexed region of source image)
+
+::: {.callout-note title="Requirements"}
+This notebook expects to be run from a clone of the github repository, and assumes it can read source files in the local file system. This is so that editorial work can be reviewed before it is committed to github.
+:::
 
 ## Notebook
 
+- [HTML version](./validator.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/editing/validator.jl) (download and open in Pluto)
+
 ## Screen capture
+
+Portion of notebook illustrating verification of accuracy of editing and indexing: juxtapose diplomatic text with indexed region of source image.
+
+![Visual comparison of edition and indexed image](./nb-validate-targum.png)
