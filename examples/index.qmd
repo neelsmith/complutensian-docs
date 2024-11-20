@@ -48,8 +48,8 @@ If you're not familiar with Pluto notebooks, here's a little  [more information]
 ### Morphological analysis
 
 
-- verb [morphology in the Greek Septuagint](./greek-verbs/)
-- verb morphology for passages in Greek `greekparsing`
+- [morphology of the Greek Septuagint](./greek-morphology/)
+- [find and identify verb forms](./greek-verbs/) for passages in Greek 
 - isolate verb lemmas in passages of Greek `isolatelemmsgreek`
 - isolate verbs in Latin `isolateverbs-latin`
 - Hebrew verbs `hebrewverbs`

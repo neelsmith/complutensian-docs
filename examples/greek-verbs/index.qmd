@@ -3,16 +3,20 @@ engine: julia
 title: Morphology of Greek verbs
 ---
 
-:::{.callout-caution title="Content TBA"}
-:::
+
 
 
 ## Overview
 
+Find possible verb forms in a passage of Greek; highlight the tokens in context and list full identification. 
+
 ## Notebook
 
-[HTML](./findverbs.html)
+- [HTML version](./greekverbs.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/morphology/greekverbs.jl) (download and open in Pluto)
 
-greekverbs.jl
+
 
 ## Screen capture
+
+![](nb-find-greek-verbs.png)

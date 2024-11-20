@@ -3,9 +3,6 @@ engine: julia
 title: Greek morphology
 ---
 
-:::{.callout-caution title="Content TBA"}
-:::
-
 ## Overview
 
 Select a passage of the Septuagint; choose words in the passage to analyze morphologically, highlighting analyzed tokens.
