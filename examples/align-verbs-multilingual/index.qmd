@@ -1,0 +1,18 @@
+---
+engine: julia
+title: Aligning verb functions across languages
+---
+
+
+## Overview
+
+Choose a language, then choose from a list of most frequent verbs in that language; for each passage where a verb of the verb occurs, suggest the most likely corresponding verb in the other documents of the Complutensian.
+
+## Notebook
+
+- [HTML version](./alignvis-greek.html)  (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/alignments/alignvis-multilingual.jl) (download and open in Pluto)
+
+## Screen capture
+
+![](./nb-align-verbs.png)
