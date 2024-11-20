@@ -23,7 +23,7 @@ website:
         file: resources/index.qmd
       - text: "Background"
         file: background/index.qmd  
-      - text: "Who"
+      - text: "Who we are"
         file: who/index.qmd  
 
     right:

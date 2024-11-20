@@ -3,12 +3,63 @@ engine: julia
 title: Canonically citable texts
 ---
 
-- existing, freely licensed editions of the major texts included the Complutensian Bible (Hebrew Bible, Greek Septuagint, Latin Vulgate, Aramaic Targum Onkelos): [on github](https://github.com/neelsmith/compnov)
-- editions of contents specific to the Complutensian Bible (Latin glosses on Greek and Aramaic texts): [on github](https://github.com/neelsmith/complutensian-texts)
+## The four main texts
+
+::: {.callout-note appearance="minimal" title="<i class=\"bi bi-github\"></i> [Github repository for texts](https://github.com/neelsmith/compnov)"}
+:::
 
 
-**Status**: 
+We have drawn on existing openly licensed versions of the Hebrew Bible, the Latin Vulgate, the Greek Septuagint and the Aramic Targum Onkelos to create a single delimited-text file (CEX format) containing all four texts with passages identified by CTS URN. The source files and resulting composite are available from [this github repository](https://github.com/neelsmith/compnov).  You can directly download the file with the complete set of citable texts from `https://github.com/neelsmith/compnov/raw/refs/heads/main/corpus/compnov.cex`
 
-- draft XML editions of Latin glosses on the Septuagint and the Targum Onkelos are complete through *Genesis* chapter 40.
+### Example usage
+
+In Julia, you can use the `CitableCorpus` package to load a corpus from a CEX file like this:
+
+```{julia}
+using CitableBase, CitableCorpus
+corpusurl = "https://github.com/neelsmith/compnov/raw/refs/heads/main/corpus/compnov.cex"
+corpus = fromcex(corpusurl, CitableTextCorpus, UrlReader)
+```
+
+## Sources for the texts
+
+### Tanach, Vulgate, Septuagint
+
+The texts of the Hebrew Bible, the Latin translation of Jerome and the Greek translation of the Septuagint are taken from [https://ebible.org](https://ebible.org):
+
+
+- כתבי הקודש: the Hebrew Masoretic text (public domain)
+- The Clementine Vulgate of 1598 (public domain)
+- *The Greek Septuagint with Apocrypha*, compiled by Sir Lancelot C. L. Brenton (public domain)
+
+
+Plain-text versions of the ebibles.org files are replicated in the `src` directory of the github repository ([here](https://github.com/neelsmith/compnov/tree/main/src)).  The file `scripts/citify.jl` is a Julia script for converting the ebibles source texts (in the `src` directory) to a single citable corpus.
+
+
+### The Targum Onkelos
+
+The digital text of the Targum Onkelos is taken from the "merged" texts in this directory of the Sefaria project's data: 
+https://github.com/Sefaria/Sefaria-Export/tree/master/txt/Tanakh/Targum/Onkelos/Torah
+
+The github repository's [`src/onkelos`](https://github.com/neelsmith/compnov/tree/main/src/onkelos) directory has one "merged" file for each both of the Torah. The file [`src/onkelos/source-credits.txt`](https://github.com/neelsmith/compnov/blob/main/src/onkelos/source-credits.txt) has the Sefaria project's detailed metadata about each file.
+
+The script `src/onkelos/parse-onkelos.jl` is a Julia script that creates a single file in CEX format from the five source files.
+
+
+
+
+## Latin glosses on the Greek and Aramaic translations
+
+::: {.callout-note appearance="minimal" title="<i class=\"bi bi-github\"></i> [Repository for glosses](https://github.com/neelsmith/complutensian-texts)"}
+:::
+
+We are working on digital encoding of textual and non-textual content of the Complutensian Bible in [this github repository](https://github.com/neelsmith/complutensian-texts). This repository includes editions of the Latin glosses on the Septuagint and on the Targum Onkelos in TEI-conformant XML.
+
+
+::: {.callout-note title="Status"}
+- initial draft XML editions of the Latin glosses on the Septuagint and the Targum Onkelos are complete through *Genesis* chapter 40.
 - the contents of the Latin glosses have not yet been fully machine validated
+:::
+
+
 
