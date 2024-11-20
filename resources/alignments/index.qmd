@@ -3,3 +3,6 @@ engine: julia
 title: Alignments
 ---
 
+::: {.callout-warning title="TBA"}
+We're publishing delimited-text files compiling co-occurrences of verb forms across Hebrew, Greek and Latin texts of the Complutensian.  We'll document those files here.
+:::

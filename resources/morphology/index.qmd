@@ -24,13 +24,14 @@ We are working with two existing sets of data with morphological annotations on 
 
 ### Open Scriptures Hebrew Bible
 
-The [Open Scriptures Hebrew Bible](https://hb.openscriptures.org) project (OSHB) includes manual annotations on everyword of the Hebrew, including a detailed morphological analysis. Lexemes are identified with Strong numbers. RThe OSHB data set is available on [github here](https://github.com/openscriptures/morphhb).
+The [Open Scriptures Hebrew Bible](https://hb.openscriptures.org) project (OSHB) includes manual annotations on everyword of the Hebrew Bible, including a detailed morphological analysis. Lexemes are identified with Strong numbers. The OSHB data set is available on [github here](https://github.com/openscriptures/morphhb).
 
 
 
 
 #### Julia package
-Neel Smith has published `OpenScripturesHebrew.jl`, a Julia package for working with this data set. (See the [documentation](https://neelsmith.quarto.pub/openscriptureshebrew/).)
+
+Neel Smith has published `OpenScripturesHebrew.jl`, a Julia package for working with the OSHB data set. (See the [package documentation](https://neelsmith.quarto.pub/openscriptureshebrew/).)
 
 #### Example of usage
 
@@ -50,17 +51,17 @@ allwords[3]
 allwords[3].mtoken
 ```
 ```{julia}
-parseword(allwords[3] )
+parseword(allwords[3])
 ```
 
 
 ### Sefaria
 
-The [Sefaria project](https://www.sefaria.org/texts) makes its data available through an API [documented here](https://developers.sefaria.org/reference/getting-started-with-your-api). The API includes an option to [search Sefaria's online lexica](https://developers.sefaria.org/reference/get_api-words-word) for articles based on any form of a Hebrew word. Sefaria's search results include identifiers for Brown-Driver-Briggs (among others), which for our morphological anlayses are often more helpful than the Strong identifiers used by OSHB. While the Sefaria queries do not include detailed morphological analysis, it is possible to find part of speech codes in the related data, taken from Strong.
+The [Sefaria project](https://www.sefaria.org/texts) makes its data available through an API [documented here](https://developers.sefaria.org/reference/getting-started-with-your-api). The API includes an option to [search Sefaria's online lexica](https://developers.sefaria.org/reference/get_api-words-word) for articles based on any form of a Hebrew word. Sefaria's search results include identifiers for the Brown-Driver-Briggs lexicon (among others), which for our morphological anlayses are often more helpful than the Strong identifiers used by OSHB. While the Sefaria queries do not include detailed morphological analysis, it is possible to find part of speech codes in the related data, taken from Strong.
 
 #### Precompiled data sets
 
-The response time to a query using Sefaria's API is typically in tenths of a second. While this is perfectly adequate for interactive usage, it is impractical for application to a corpus with more than 400,000 words. At that speed, a single pass over the Hebrew Bible would require more than 11 hours (400,000 queries × 0.1 second = 40,000 seconds), and in practice automated runs of queries often time result in time out errors after only a few hundred queries.  For our morphological analysis, we have therefore compiled a set of static files with Sefaria's resolution
+The response time to a query using Sefaria's API is typically in tenths of a second. While this is perfectly adequate for interactive usage, it is impractical for application to a corpus with more than 400,000 words. (A single pass over the Hebrew Bible would require more than 11 hours to process 400,000 queries × 0.1 second = 40,000 seconds). In practice, automated runs of queries often result in time-out errors after only a few hundred queries.  For our morphological analysis therefore, we have compiled a set of static files with Sefaria's resolution of every verb form to a lemma (dictionary form) and an idenfier in Brown-Driver-Briggs. The files (one for each book of the Hebrew Bible) are in delimited text format following this example:
 
 ```
 urn|form|lemma|bdbid
@@ -69,7 +70,7 @@ urn:cts:compnov:bible.genesis.masoretic_tokens:1.1.2|בָּרָ֣א|בָּרָא
 
 ####  Interactive use
 
-Neel Smith has published `BrownDriverBriggs.jl`, a Julia package for working with this data set. (See the [documentation](https://neelsmith.quarto.pub/browndriverbriggs/).)
+Neel Smith has published `BrownDriverBriggs.jl`, a Julia package for working with the Sefaria API's dynamically. (See the [documentation](https://neelsmith.quarto.pub/browndriverbriggs/).)
 
 #### Example of usage
 
@@ -82,28 +83,31 @@ articles = bdb("בָּרָ֣א")
 
 ## Greek
 
-http://shot.holycross.edu/morphology/complutensian-current.cex
+We’re using the [Kanones system](https://neelsmith.quarto.pub/kanones) to build Greek parsers tailored to the corpora of the Complutensian’s Greek documents.
+
+The current version of the Greek parser for the Septuagint is available at `http://shot.holycross.edu/morphology/complutensian-current.cex`.
 
 
-:::{.callout-note title="TBA"}
-Links and summary of status TBA
-:::
+### Example of usage
 
-
+```{julia}
+using Kanones, CitableBase
+greekurl = "http://shot.holycross.edu/morphology/complutensian-current.cex"
+greekparser = kParser(greekurl, UrlReader)
+```
+```{julia}
+goodparses = parsetoken("ἀγαθός", greekparser)
+```
 ## Latin
 
 
-:::{.callout-note title="TBA"}
-Links and summary of status TBA
-:::
 
+We're using the [Tabulae system](https://neelsmith.quarto.pub/tabulae/) to build Latin parsers tailored to the corpora of the Complutensian's Latin documents.
 
-- Using [Tabulae system](https://neelsmith.quarto.pub/tabulae/)
+The current versions of our parsers for Latin documents are available here:
 
-Prebuilt parsers:
-
-- orthography of Vulgate: http://shot.holycross.edu/tabulae/complut-lat25-current.cex
-- orthography of glosses: http://shot.holycross.edu/tabulae/complut-lat23-current.cex
+- for the 25-letter orthography of the Vulgate: `http://shot.holycross.edu/tabulae/complut-lat25-current.cex`
+- for the 23-letter orthography of the Latin glosses: `http://shot.holycross.edu/tabulae/complut-lat23-current.cex`
 
 
 
@@ -111,8 +115,14 @@ Prebuilt parsers:
 ### Example of usage
 
 ```{julia}
-using Tabulae, CitableBase
-url = "http://shot.holycross.edu/tabulae/core-lat25-current.cex"
-parser = tabulaeStringParser(url, UrlReader)
-parsetoken("creavit", parser)
+using Tabulae
+url = "http://shot.holycross.edu/tabulae/complut-lat25-current.cex"
+latinparser = tabulaeStringParser(url, UrlReader)
+```
+
+
+
+
+```{julia}
+latinparses = parsetoken("creavit", latinparser)
 ```
