@@ -1,0 +1,14 @@
+---
+engine: julia
+title: Canonically citable texts
+---
+
+- existing, freely licensed editions of the major texts included the Complutensian Bible (Hebrew Bible, Greek Septuagint, Latin Vulgate, Aramaic Targum Onkelos): [on github](https://github.com/neelsmith/compnov)
+- editions of contents specific to the Complutensian Bible (Latin glosses on Greek and Aramaic texts): [on github](https://github.com/neelsmith/complutensian-texts)
+
+
+**Status**: 
+
+- draft XML editions of Latin glosses on the Septuagint and the Targum Onkelos are complete through *Genesis* chapter 40.
+- the contents of the Latin glosses have not yet been fully machine validated
+

@@ -4,68 +4,11 @@ title: Resources for a digital Complutensian
 ---
 
 
-## Images
+- [images](./images/)
+- canonically citable [texts](./texts/)
+- [morphological data](./morphology/)
+- [alignments](./alignments/)
 
-
-IIIF manifests for the National Library of Spain's copy of the Complutensian Bible, by volume:
-
-
-
-- volume 1: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v1-manifest.json`
-- volume 2: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v2-manifest.json`
-- volume 3: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v3-manifest.json`
-- volume 4: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v4-manifest.json`
-- volume 5: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v5-manifest.json`
-- volume 6: `https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/iiif/complutensian-bne-v6-manifest.json`
-
-
-
-
-::: {.callout-note title="More information"}
-To learn more about the relation of these IIIF manifests to the digital photography hosted atr the National Library of Spain and at the Library of Congress, see [this blog post](https://neelsmith.quarto.pub/posts/2024-11-13-complutensian-iiif/index.html).
-:::
-
-
-
-::: {.callout-caution title="Work in progress"}
-Some images of pages in volume 1 are not yet correctly loaded on the cited IIIF server and need to be replaced.  See [this issue on github](https://github.com/neelsmith/complutensian-texts/issues/17)
-:::
-
-
-
-
-
-## Canonically citable texts
-
-- existing, freely licensed editions of the major texts included the Complutensian Bible (Hebrew Bible, Greek Septuagint, Latin Vulgate, Aramaic Targum Onkelos): [on github](https://github.com/neelsmith/compnov)
-- editions of contents specific to the Complutensian Bible (Latin glosses on Greek and Aramaic texts): [on github](https://github.com/neelsmith/complutensian-texts)
-
-
-**Status**: 
-
-- draft XML editions of Latin glosses on the Septuagint and the Targum Onkelos are complete through *Genesis* chapter 40.
-- the contents of the Latin glosses have not yet been fully machine validated
-
-
-## Morphological data
-
-### Hebrew
-
-- complete morphological annotations from Open Scriptures Hebrew Bible project
-
-
-### Greek
-
-:::{.callout-note title="TBA"}
-Links and summary of status TBA
-:::
-
-
-### Latin
-
-:::{.callout-note title="TBA"}
-Links and summary of status TBA
-:::
 
 
 

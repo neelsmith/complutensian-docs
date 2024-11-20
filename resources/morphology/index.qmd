@@ -1,0 +1,26 @@
+---
+engine: julia
+title: Morphological data
+---
+
+
+
+### Hebrew
+
+- complete morphological annotations from Open Scriptures Hebrew Bible project
+
+
+### Greek
+
+:::{.callout-note title="TBA"}
+Links and summary of status TBA
+:::
+
+
+### Latin
+
+:::{.callout-note title="TBA"}
+Links and summary of status TBA
+:::
+
+
