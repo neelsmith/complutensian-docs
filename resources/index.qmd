@@ -7,7 +7,7 @@ title: Resources for a digital Complutensian
 - [images](./images/)
 - canonically citable [texts](./texts/)
 - [morphological data](./morphology/)
-- [alignments](./alignments/)
+- precomputed data sets for [aligning verb forms](./alignments/)
 
 
 

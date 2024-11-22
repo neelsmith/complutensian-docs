@@ -1,8 +1,35 @@
 ---
 engine: julia
-title: Alignments
+title: "Verb alignments: precomputed data sets"
 ---
 
-::: {.callout-warning title="TBA"}
-We're publishing delimited-text files compiling co-occurrences of verb forms across Hebrew, Greek and Latin texts of the Complutensian.  We'll document those files here.
-:::
+To simplify exploring relations among the different documents of the Complutensian Bible, we're precomputing the following data sets and making them available from our github repository.
+
+
+## Occurrences of verbal forms, by lemma
+
+Delimited-text files recording a passage reference, a lexeme identifier and a label:
+
+- [Greek verbs](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/data/greek/greekverbs.cex)
+- [Latin verbs](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/data/latin/latinverbs.cex)
+- [Hebrew verbs](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/data/hebrew/sefariaverbs.cex) (from Sefaria)
+
+
+## Counts of co-occurrences of verbs
+
+Delimited-text files recording a lemma in the reference text, a lemma in the co-occurring text, and a count.
+
+### Hebrew Bible 
+
+- [co-occurrences with Vulgate](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/data/cooccurrences/hebrew_vulgate.cex)
+- [co-occurrences with Septuagint](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/data/cooccurrences/hebrew_septuagint.cex)
+
+### Septuagint 
+
+- [co-occurrences with Vulgate](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/data/cooccurrences/septuagint_vulgate.cex) 
+- [co-occurrences with Hebrew Bible](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/data/cooccurrences/septuagint_hebrew.cex)
+
+### Vulgate
+
+- [co-occurrences with Septuagint](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/data/cooccurrences/vulgate_septuagint.cex)
+- co-occurrences with Hebrew Bible
