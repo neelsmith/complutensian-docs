@@ -3,3 +3,15 @@ engine: julia
 title: Quarto
 ---
 
+[Quarto](https://quarto.org) is a publication system that lets you combine prose in Markdown's plain-text format with executable code. Quarto can generate output in many formats (web pages, camera-ready PDFs, slide stacks...), and embeds the output of code blocks in the published format. 
+
+We can reuse exactly the same code we experiment with in [Pluto notebooks](../pluto/) in Quarto documents.
+
+Examples of Quarto documents we're developing:
+
+- slides used at the 2024 Society of Biblical Literature meeting (*link coming soon*)
+    - source code for the interactive presentation using RevealJS
+    - PDF export of the RevealJS presentation
+- the project web site:
+    - source code on [github](https://github.com/neelsmith/complutensian-docs)
+    - published as a [web site](https://neelsmith.quarto.pub/digitalcomplutensian/)

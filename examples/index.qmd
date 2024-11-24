@@ -15,5 +15,5 @@ This approach is an example of what I've elsewhere called ["small-digital" schol
 ## Platforms for sharing replicable work
 
 - [Pluto notebooks](./pluto/)
-- Quarto
+- [Quarto](./quarto/)
 

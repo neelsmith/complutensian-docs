@@ -11,8 +11,6 @@ If you're not familiar with Pluto notebooks, here's a little  [more information]
 One technology that is a good match for exploratory small-digital scholarship is Pluto, a reactive notebook system that runs in a browser. On this page we're gathering examples of Pluto notebooks working with our datasets.
 
 
-
-
 ### The physical organization of Complutensian and orthographic practices
 
 - [browse images](./imagebrowsing/)
