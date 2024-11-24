@@ -1,0 +1,30 @@
+---
+engine: julia
+title: Pluto notebooks
+---
+
+You'll find plenty of sources to learn about Pluto notebooks online: [plutojl.org](https://plutojl.org) has lots of material to get you started.
+
+A few key points to highlight:
+
+- You work with Pluto notebooks in a web browser.
+- Pluto notebooks are organized in cells.
+- Pluto notebooks are written in Julia. Each cell is a Julia expression.
+- Pluto notebooks are *reactive*. When you change any cell, all cells that depend on it automatically update.
+
+This design makes Pluto a good fit for exploratory scholarship. The notebooks are valid Julia scripts in plain-text format, so they're easy to manage with a version control system like git, and easy to share. Pluto notebooks have no technical prerequisites beyond the Julia language and the `Pluto` package, so it's easy to run them and reproduce their functionality. The `PlutoUI` package gives you a selection of widgets for user interaction with a notebook, so it's easy to invite experimenting with different parameters, and immediately seeing the result of any changes you make.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

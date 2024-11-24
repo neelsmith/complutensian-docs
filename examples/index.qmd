@@ -12,64 +12,8 @@ We want to faciliate multilingual reading for all, whether beginners or experts 
 This approach is an example of what I've elsewhere called ["small-digital" scholarship](https://neelsmith.quarto.pub/posts/2024-10-28-small-digital/index.html). We want to encourage exploratory scholarly work with minimal technical prerequisites that can be carried out by a small team or individual, is well documented and can be easily replicated.
 
 
+## Platforms for sharing replicable work
 
-## Pluto notebooks
-
-One technology that is a good match for exploratory small-digital scholarship is Pluto, a reactive notebook system that runs in a browser. On this page we're gathering examples of Pluto notebooks working with our datasets.
-
-:::{.callout-note title="Pluto"}
-If you're not familiar with Pluto notebooks, here's a little  [more information](./pluto/) about them.
-:::
-
-
-### The physical organization of Complutensian and orthographic practices
-
-- [browse images](./imagebrowsing/)
-- table of contents: index of texts to images `toc`
-- passages of text indexed to browsable image `passage-plus-images`
-- [Latin spacing markers](./spacing-markers-latin/) (*documentation TBA*)
-- orthographic practice: usage of [abbreviations in glosses](./abbreviations/) (*documentation TBA*)
-
-
-### Editing and indexing
-
-- [validating editing](./validation/): image and text views
-
-
-
-### Reading passages of texts and glosses
-
-- browse [text passages in the four versions of the Complutensian Bible](./alignedpassages/)
-- browse [text passages and associated Latin glosses](./aligned-with-glosses/)
-- paired reader `pairedreader`
-- citable tokens `citabletokens`
-
-
-### Morphological analysis
-
-
-- [morphology of the Greek Septuagint](./greek-morphology/)
-- [find and identify verb forms](./greek-verbs/) for passages in Greek  (*documentation TBA*)
-- isolate verb lemmas in passages of Greek `isolatelemmsgreek`
-- isolate verbs in Latin `isolateverbs-latin`
-- Hebrew verbs `hebrewverbs`
-
-### Comparing  textual contents
-
-
-- isolate verbs in Latin documents `isolateverbs`
-- compare verbal usage in Latin glosses and Vulgate `glossingvocab`
-- Zipf's law at token level `zipf`
-- histograms of verbs `verbhisto`
-
-
-### Aligning features
-
-- [aligning verb functions](./align-verbs-multilingual/) across languages
-- align verb functions across documents `alignvis-latin-to-latin`
-
-:::{.callout-important title="TBA"}
-- align verbal functions across Hebrew, Greek and Latin documents TBA
-:::
-
+- [Pluto notebooks](./pluto/)
+- Quarto
 
