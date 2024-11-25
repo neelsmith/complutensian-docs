@@ -12,6 +12,10 @@ title: Read passage of text with image from BNE copy
 
 ## Notebook
 
+:::{.callout-warning title="Uses local resources"}
+This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
+:::
+
 ## Screen capture
 
 ![](./passage-plus-image.png)

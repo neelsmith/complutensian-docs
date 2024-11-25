@@ -11,6 +11,10 @@ Select a passage of the Septuagint; choose words in the passage to analyze morph
 
 ## Notebook
 
+:::{.callout-warning title="Uses local resources"}
+This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
+:::
+
 
 - [HTML version](./parseverse.html) (readable in a web browser)
 - [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/morphology/greekparsing.jl) (download and open in Pluto)

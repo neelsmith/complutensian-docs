@@ -12,6 +12,10 @@ Find possible verb forms in a passage of Greek; highlight the tokens in context 
 
 ## Notebook
 
+:::{.callout-warning title="Uses local resources"}
+This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
+:::
+
 - [HTML version](./greekverbs.html) (readable in a web browser)
 - [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/morphology/greekverbs.jl) (download and open in Pluto)
 

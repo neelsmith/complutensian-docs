@@ -11,6 +11,10 @@ title: Spacing markers in Latin text
 
 ## Notebook
 
+:::{.callout-warning title="Uses local resources"}
+This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
+:::
+
 [HTML](./complutensian-spacing-markers.html)
 physical - latin-spacing-markers.jl
 

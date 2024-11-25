@@ -17,6 +17,10 @@ This notebook expects to be run from a clone of the github repository, and assum
 
 ## Notebook
 
+:::{.callout-warning title="Uses local resources"}
+This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
+:::
+
 - [HTML version](./validator.html) (readable in a web browser)
 - [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/editing/validator.jl) (download and open in Pluto)
 
