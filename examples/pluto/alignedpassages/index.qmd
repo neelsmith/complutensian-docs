@@ -9,8 +9,8 @@ Select a book/passage reference, and read parallel passages from the four texts 
 
 ## The notebook
 
-- `aligned-texts.html`: [HTML version](./aligned-texts.html) (readable in a web browser)
-- `aligned-texts.jl`: [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/aligned-texts.jl) (download and open in Pluto)
+- [HTML version](./aligned-texts.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/aligned-texts.jl) (download and open in Pluto)
 
 
 
