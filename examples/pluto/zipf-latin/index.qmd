@@ -1,7 +1,8 @@
 ---
 engine: julia
-title: Isolate verbs
+title: Token frequencies in Latin texts
 ---
+
 
 :::{.callout-caution title="Content TBA"}
 :::
@@ -11,7 +12,6 @@ title: Isolate verbs
 
 ## Notebook
 
-[HTML](./passageverbs.html)
-
-
 ## Screen capture
+
+![](./zipf.png)

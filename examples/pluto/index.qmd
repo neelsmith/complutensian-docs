@@ -38,17 +38,15 @@ One technology that is a good match for exploratory small-digital scholarship is
 
 
 - [morphology of the Greek Septuagint](./greek-morphology/)
-- [find and identify verb forms](./greek-verbs/) for passages in Greek  (*documentation TBA*)
+- [find and identify verb forms](./greek-verbs/) for passages in Greek
 - isolate verb lemmas in passages of Greek `isolatelemmsgreek`
-- isolate verbs in Latin `isolateverbs-latin`
+- [isolate verbs in Latin documents](./isolateverbs/) (*Documentation incomplete*)
 - Hebrew verbs `hebrewverbs`
 
 ### Comparing  textual contents
 
-
-- isolate verbs in Latin documents `isolateverbs`
 - compare verbal usage in Latin glosses and Vulgate `glossingvocab`
-- Zipf's law at token level `zipf`
+- [Zipf's law in Latin texts](./zipf-latin/): token frequencies (*Documentation incomplete*)
 - histograms of verbs `verbhisto`
 
 
