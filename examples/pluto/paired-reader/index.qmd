@@ -12,3 +12,5 @@ title: A paired reader
 
 
 ## Screen capture
+
+[](./paired-reader.png)

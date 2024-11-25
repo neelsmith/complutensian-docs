@@ -30,8 +30,8 @@ One technology that is a good match for exploratory small-digital scholarship is
 
 - browse [text passages in the four versions of the Complutensian Bible](./alignedpassages/)
 - browse [text passages and associated Latin glosses](./aligned-with-glosses/)
-- paired reader `pairedreader`
-- citable tokens `citabletokens`
+- [paired reader](./paired-reader/) (*Documentation incomplete*)
+- [citable tokens](./citable-tokens/) (*Documentation incomplete*)
 
 
 ### Morphological analysis
