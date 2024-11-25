@@ -41,11 +41,11 @@ One technology that is a good match for exploratory small-digital scholarship is
 - [find and identify verb forms](./greek-verbs/) for passages in Greek
 - isolate verb lemmas in passages of Greek `isolatelemmsgreek`
 - [isolate verbs in Latin documents](./isolateverbs/) (*Documentation incomplete*)
-- Hebrew verbs `hebrewverbs`
+- [Hebrew verbs](./hebrew-verbs/) (*Documentation incomplete*)
 
 ### Comparing  textual contents
 
-- compare verbal usage in Latin glosses and Vulgate `glossingvocab`
+- [compare verbal usage in Latin glosses and Vulgate](./glossing-vocab/)  (*Documentation incomplete*)
 - [Zipf's law in Latin texts](./zipf-latin/): token frequencies (*Documentation incomplete*)
 - [histograms of verbs](./verbhisto/) (*Documentation incomplete*)
 
@@ -54,9 +54,4 @@ One technology that is a good match for exploratory small-digital scholarship is
 
 - [aligning verb functions](./align-verbs-multilingual/) across languages
 - [align texts to a Latin verb](./align-verbs-to-latin/) (*Documentation incomplete*)
-
-:::{.callout-important title="TBA"}
-- align verbal functions across Hebrew, Greek and Latin documents TBA
-:::
-
 
