@@ -15,4 +15,4 @@ title: Comparing vocabulary of Latin glosses
 
 ## Screen capture
 
-[](./glossing-vocab.png)
+![](./glossing-vocab.png)

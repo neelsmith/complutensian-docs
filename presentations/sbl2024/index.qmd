@@ -12,9 +12,7 @@ Presenters: Neel Smith, Asheley Terjanian
 
 Title: "A digital Complutensian polyglot Bible"
 
-:::{.callout-tip title="Slides: TBA"}
-A slide stack from our presentation will be added here during the convention.
-:::
+[Slides](http://shot.holycross.edu/sbl/smith-terjanian.pdf) (pdf)
 
 Abstract: 
 
