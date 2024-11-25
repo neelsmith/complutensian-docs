@@ -14,10 +14,10 @@ One technology that is a good match for exploratory small-digital scholarship is
 ### The physical organization of Complutensian and orthographic practices
 
 - [browse images](./imagebrowsing/)
-- table of contents: index of texts to images `toc`
-- passages of text indexed to browsable image `passage-plus-images`
-- [Latin spacing markers](./spacing-markers-latin/) (*documentation TBA*)
-- orthographic practice: usage of [abbreviations in glosses](./abbreviations/) (*documentation TBA*)
+- [table of contents](./toc/): index of texts to images (*Documentation incomplete*) 
+- [passages of text indexed to browsable image](./passage-plus-image/)  (*Documentation incomplete*)
+- [Latin spacing markers](./spacing-markers-latin/) (*Documentation incomplete*)
+- orthographic practice: usage of [abbreviations in glosses](./abbreviations/) (*Documentation incomplete*)
 
 
 ### Editing and indexing
@@ -47,13 +47,13 @@ One technology that is a good match for exploratory small-digital scholarship is
 
 - compare verbal usage in Latin glosses and Vulgate `glossingvocab`
 - [Zipf's law in Latin texts](./zipf-latin/): token frequencies (*Documentation incomplete*)
-- histograms of verbs `verbhisto`
+- [histograms of verbs](./verbhisto/) (*Documentation incomplete*)
 
 
 ### Aligning features
 
 - [aligning verb functions](./align-verbs-multilingual/) across languages
-- align verb functions across documents `alignvis-latin-to-latin`
+- [align texts to a Latin verb](./align-verbs-to-latin/) (*Documentation incomplete*)
 
 :::{.callout-important title="TBA"}
 - align verbal functions across Hebrew, Greek and Latin documents TBA
