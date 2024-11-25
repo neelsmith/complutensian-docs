@@ -39,7 +39,7 @@ One technology that is a good match for exploratory small-digital scholarship is
 
 - [morphology of the Greek Septuagint](./greek-morphology/)
 - [find and identify verb forms](./greek-verbs/) for passages in Greek
-- isolate verb lemmas in passages of Greek `isolatelemmsgreek`
+- [isolate verb forms in passages of Greek](./isolate-verbs-greek/) (*Documentation incomplete*)
 - [isolate verbs in Latin documents](./isolateverbs/) (*Documentation incomplete*)
 - [Hebrew verbs](./hebrew-verbs/) (*Documentation incomplete*)
 
