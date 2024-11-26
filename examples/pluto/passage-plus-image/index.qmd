@@ -10,11 +10,16 @@ title: Read passage of text with image from BNE copy
 
 ## Overview
 
+Select a passage, read the Vulgate text of passage along with zoomable/pannable image of the page where that passage occurs.
+
 ## Notebook
 
 :::{.callout-warning title="Uses local resources"}
 This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
 :::
+
+- [HTML version]() (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/physical-artifact/passage-plus-images.jl) (download and run in Pluto)
 
 ## Screen capture
 

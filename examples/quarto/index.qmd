@@ -9,7 +9,7 @@ We can reuse exactly the same code we experiment with in [Pluto notebooks](../pl
 
 Examples of Quarto documents we're developing:
 
-- slides used at the 2024 Society of Biblical Literature meeting (*link coming soon*)
+- slides used at the 2024 Society of Biblical Literature meeting:
     - [source code](https://github.com/neelsmith/sbl2024) for the interactive presentation using RevealJS
     - [PDF export](http://shot.holycross.edu/sbl/smith-terjanian.pdf) of the RevealJS presentation
 - the project web site:
