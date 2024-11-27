@@ -6,13 +6,16 @@ title: A paired reader
 
 ## Overview
 
+Select a Biblical passage and pair any two of the four versions in the Complutensian to read the two versions juxtaposed to each other.
+
 ## Notebook
 
 :::{.callout-warning title="Uses local resources"}
 This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
 :::
 
-[HTML](./pairedreader.html)
+- [HTML version](./pairedreader.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/reading/pairedreader.jl) (download and open in Pluto)
 
 
 ## Screen capture

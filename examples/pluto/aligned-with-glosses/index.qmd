@@ -7,6 +7,8 @@ title: Texts and glosses aligned by passage
 
 ## Overview
 
+Select a passage of text and read all four texts of the Complutensian along with the Latin glosses for the Septuagint and the Targum Onkelos.
+
 ## Notebook
 
 :::{.callout-warning title="Uses local resources"}
@@ -15,7 +17,7 @@ This notebook uses data in local files, and expects to be run files from a copy 
 
 
 - [HTML version](./aligned-with-glosses.html) (readable in a web browser)
-- Pluto notebook (download and run in Pluto)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/reading/aligned-with-glosses.jl) (download and run in Pluto)
 
 ## Screen capture
 

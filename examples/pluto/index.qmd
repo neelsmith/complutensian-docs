@@ -28,8 +28,8 @@ One technology that is a good match for exploratory small-digital scholarship is
 ### Reading passages of texts and glosses
 
 - browse [text passages in the four versions of the Complutensian Bible](./alignedpassages/)
-- browse [text passages and associated Latin glosses](./aligned-with-glosses/) (*Documentation incomplete*)
-- [paired reader](./paired-reader/) (*Documentation incomplete*)
+- browse [text passages and associated Latin glosses](./aligned-with-glosses/)
+- [paired reader](./paired-reader/)
 - [citable tokens](./citable-tokens/) (*Documentation incomplete*)
 
 
