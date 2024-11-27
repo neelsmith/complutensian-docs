@@ -3,8 +3,7 @@ engine: julia
 title: Texts and glosses aligned by passage
 ---
 
-:::{.callout-caution title="Content TBA"}
-:::
+
 
 ## Overview
 
@@ -15,6 +14,9 @@ This notebook uses data in local files, and expects to be run files from a copy 
 :::
 
 
-[HTML](./aligned-with-glosses.html)
+- [HTML version](./aligned-with-glosses.html) (readable in a web browser)
+- Pluto notebook (download and run in Pluto)
 
 ## Screen capture
+
+![](./texts-plus-glosses.png)

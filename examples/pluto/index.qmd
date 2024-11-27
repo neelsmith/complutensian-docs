@@ -17,8 +17,7 @@ One technology that is a good match for exploratory small-digital scholarship is
 - [table of contents](./toc/): index of texts to images
 - [passages of text indexed to browsable image](./passage-plus-image/) 
 - [Latin spacing markers](./spacing-markers-latin/)
-- orthographic practice: usage of [abbreviations in glosses](./abbreviations/) (*Documentation incomplete*)
-
+- orthographic practice: usage of [abbreviations in glosses](./abbreviations/) 
 
 ### Editing and indexing
 
@@ -41,7 +40,7 @@ One technology that is a good match for exploratory small-digital scholarship is
 - [find and identify verb forms](./greek-verbs/) for passages in Greek
 - [isolate verb forms in passages of Greek](./isolate-verbs-greek/) (*Documentation incomplete*)
 - [isolate verbs in Latin documents](./isolateverbs/) (*Documentation incomplete*)
-- [Hebrew verbs](./hebrew-verbs/) (*Documentation incomplete*)
+- [Hebrew verbs](./hebrew-verbs/) 
 
 ### Comparing  textual contents
 

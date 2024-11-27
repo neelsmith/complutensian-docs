@@ -3,17 +3,20 @@ engine: julia
 title: Hebrew verbs
 ---
 
-:::{.callout-caution title="Content TBA"}
-:::
-
 
 ## Overview
+
+Summarize verb usage per book of the Hebrew Bible. Choose an individual verb to see entry in Brown-Driver-Briggs lexicon, and passages where any form of the verb occurs, with the selected verb highlighted.
 
 ## Notebook
 
 :::{.callout-warning title="Uses local resources"}
 This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
 :::
+
+
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/morphology/hebrew-verbs.jl) (download and run in Pluto)
+- [HTML version]() (readable in a web browser)
 
 ## Screen capture
 
