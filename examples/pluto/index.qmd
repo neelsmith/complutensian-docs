@@ -45,7 +45,7 @@ One technology that is a good match for exploratory small-digital scholarship is
 ### Comparing  textual contents
 
 - [compare verbal usage in Latin glosses and Vulgate](./glossing-vocab/)  (*Documentation incomplete*)
-- [Zipf's law in Latin texts](./zipf-latin/): token frequencies (*Documentation incomplete*)
+- [Zipf's law in Latin texts](./zipf-latin/): token frequencies 
 - [histograms of verbs](./verbhisto/) (*Documentation incomplete*)
 
 
