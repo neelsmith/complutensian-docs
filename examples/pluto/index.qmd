@@ -3,12 +3,14 @@ title: Pluto notebooks
 engine: julia
 ---
 
+
+
+One technology that is a good match for exploratory small-digital scholarship is Pluto, a reactive notebook system that runs in a browser. On this page we're gathering examples of Pluto notebooks working with our datasets.
+
 :::{.callout-note title="Pluto"}
 If you're not familiar with Pluto notebooks, here's a little  [more information](./pluto-about/) about them.
 :::
 
-
-One technology that is a good match for exploratory small-digital scholarship is Pluto, a reactive notebook system that runs in a browser. On this page we're gathering examples of Pluto notebooks working with our datasets.
 
 
 ### The physical organization of Complutensian and orthographic practices
@@ -38,8 +40,8 @@ One technology that is a good match for exploratory small-digital scholarship is
 
 - [morphology of the Greek Septuagint](./greek-morphology/)
 - [find and identify verb forms](./greek-verbs/) for passages in Greek
-- [isolate verb forms in passages of Greek](./isolate-verbs-greek/) (*Documentation incomplete*)
-- [isolate verbs in Latin documents](./isolateverbs/) (*Documentation incomplete*)
+- [isolate verb forms in passages of Greek](./isolate-verbs-greek/)
+- [isolate verbs in Latin documents](./isolateverbs/)
 - [Hebrew verbs](./hebrew-verbs/) 
 
 ### Comparing  textual contents

@@ -3,16 +3,18 @@ engine: julia
 title: Isolate Greek verbs
 ---
 
-:::{.callout-caution title="Content TBA"}
-:::
 
 
 ## Overview
 
+Select a passage, and display text of the Septuagint with all verb forms highlighted.
+
 ## Notebook
 
 
+- [HTML version](./isolate-verblemms-greek.html)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/morphology/isolate-verblemms-greek.jl) (download and open in Pluto)
 
 ## Screen capture
 
-[](./isolate-verbs-greek.png)
+![](./isolate-verbs-greek.png)

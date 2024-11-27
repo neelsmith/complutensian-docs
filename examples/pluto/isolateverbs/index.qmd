@@ -3,11 +3,12 @@ engine: julia
 title: Isolate verbs
 ---
 
-:::{.callout-caution title="Content TBA"}
-:::
 
 
 ## Overview
+
+Find all verb verbs in the Vulgate and the Latin glosses to the Targum Onkelos and the Septuagint. Choose to view only passages with the same number of verbs or a different number of verbs, or all passages; then list, in parallel columns, the verb forms showing up in each verse.
+
 
 ## Notebook
 
@@ -15,7 +16,12 @@ title: Isolate verbs
 This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
 :::
 
-[HTML](./passageverbs.html)
+- [HTML](./passageverbs.html)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/morphology/isolateverbs-latin.jl) (download and open in Pluto)
+
 
 
 ## Screen capture
+
+
+![](./parallel-verbs.png)
