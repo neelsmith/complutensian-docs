@@ -3,11 +3,12 @@ engine: julia
 title: Spacing markers in Latin text
 ---
 
-:::{.callout-caution title="Content TBA"}
-:::
+
 
 
 ## Overview
+
+Select a passage of text. Hebrew and Vulgate versions are displayed alinged and separated visually by a Latin spacing marker. Optionally, see a visual display of the given page highlighting all Latin spacing markers
 
 ## Notebook
 
@@ -15,7 +16,10 @@ title: Spacing markers in Latin text
 This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
 :::
 
-[HTML](./complutensian-spacing-markers.html)
-physical - latin-spacing-markers.jl
+- [HTML version](./complutensian-spacing-markers.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/physical-artifact/latin-spacing-markers.jl) (download and open in Pluto)
+
 
 ## Screen capture
+
+![](./latin-spacing-markers.png)

@@ -9,9 +9,12 @@ title: Comparing vocabulary of Latin glosses
 
 ## Overview
 
+Select a passage of text. Tokens differing across the Latin documents are highlighted; the corresponding passages of the Targum Onkelos and the Septuagint are included for comparison with the glosses.
+
 ## Notebook
 
-
+- [HTML version](./glossing-vocabulary.html) (readable in a web browser)
+- Pluto notebook (download and open in Pluto)
 
 ## Screen capture
 

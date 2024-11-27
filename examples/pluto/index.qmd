@@ -16,7 +16,7 @@ One technology that is a good match for exploratory small-digital scholarship is
 - [browse images](./imagebrowsing/)
 - [table of contents](./toc/): index of texts to images
 - [passages of text indexed to browsable image](./passage-plus-image/) 
-- [Latin spacing markers](./spacing-markers-latin/) (*Documentation incomplete*)
+- [Latin spacing markers](./spacing-markers-latin/)
 - orthographic practice: usage of [abbreviations in glosses](./abbreviations/) (*Documentation incomplete*)
 
 

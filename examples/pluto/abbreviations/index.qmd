@@ -3,11 +3,11 @@ engine: julia
 title: Usage of abbreviations in glossing
 ---
 
-:::{.callout-caution title="Content TBA"}
-:::
 
 
 ## Overview
+
+Plots frequencies of abbreviations and expansion in the editions of the Latin glosses to the Targum Onkelos and to the Septuagint.
 
 ## Notebook
 
@@ -15,6 +15,9 @@ title: Usage of abbreviations in glossing
 This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
 :::
 
-[HTML](./abbrs.html)
+- [HTML version](./abbrs.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/physical-artifact/abbrs.jl) (download and open in Pluto)
 
 ## Screen capture
+
+![](./abbrs.png)

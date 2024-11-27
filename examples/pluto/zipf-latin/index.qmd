@@ -10,11 +10,16 @@ title: Token frequencies in Latin texts
 
 ## Overview
 
+Choose a minimum number of occurrences to consider, and graph frequencies of tokens for each of the texts in the Complutensian Bible.
+
 ## Notebook
 
 :::{.callout-warning title="Uses local resources"}
 This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
 :::
+
+- [HTML version](./zipf.html) (readable in a web browser)
+- Pluto notebook (download and run in Pluto)
 
 ## Screen capture
 

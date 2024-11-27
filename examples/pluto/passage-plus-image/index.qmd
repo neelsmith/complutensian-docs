@@ -4,8 +4,6 @@ title: Read passage of text with image from BNE copy
 ---
 
 
-:::{.callout-caution title="Content TBA"}
-:::
 
 
 ## Overview
