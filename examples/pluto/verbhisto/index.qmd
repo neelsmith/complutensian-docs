@@ -4,10 +4,6 @@ title: Lexeme frequencies for verbs in Latin texts
 ---
 
 
-:::{.callout-caution title="Content TBA"}
-:::
-
-
 ## Overview
 
 ## Notebook
@@ -16,6 +12,9 @@ title: Lexeme frequencies for verbs in Latin texts
 This notebook uses data in local files, and expects to be run files from a copy of [this github repository](https://github.com/neelsmith/complutensian-texts).
 :::
 
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/compare-texts/verbhisto.jl) (download and open in Pluto)
+- [HTML version](./verbhisto.html)
+
 ## Screen capture
 
-[](./verbhisto.png)
+![](./verbhisto.png)

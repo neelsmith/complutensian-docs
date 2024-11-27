@@ -3,16 +3,17 @@ engine: julia
 title: Align texts to a Latin verb
 ---
 
-:::{.callout-caution title="Content TBA"}
-:::
-
 
 ## Overview
 
+Select a Latin lexeme; summarize alignments in other Latin documents, highlighting matches.
+
+
 ## Notebook
 
-
+- [HTML version](./alignvis-latin-to-latin.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/alignments/alignvis-latin-to-latin.jl) (download and open in Pluto)
 
 ## Screen capture
 
-[](./align-to-latin.png)
+![](./align-to-latin.png)

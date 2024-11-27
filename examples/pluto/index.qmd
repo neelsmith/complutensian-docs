@@ -30,7 +30,7 @@ One technology that is a good match for exploratory small-digital scholarship is
 - browse [text passages in the four versions of the Complutensian Bible](./alignedpassages/)
 - browse [text passages and associated Latin glosses](./aligned-with-glosses/)
 - [paired reader](./paired-reader/)
-- [citable tokens](./citable-tokens/) (*Documentation incomplete*)
+- [citable tokens](./citable-tokens/) 
 
 
 ### Morphological analysis
@@ -44,13 +44,13 @@ One technology that is a good match for exploratory small-digital scholarship is
 
 ### Comparing  textual contents
 
-- [compare verbal usage in Latin glosses and Vulgate](./glossing-vocab/)  (*Documentation incomplete*)
+- [compare verbal usage in Latin glosses and Vulgate](./glossing-vocab/)
 - [Zipf's law in Latin texts](./zipf-latin/): token frequencies 
-- [histograms of verbs](./verbhisto/) (*Documentation incomplete*)
+- [histograms of verbs](./verbhisto/)
 
 
 ### Aligning features
 
-- [aligning verb functions](./align-verbs-multilingual/) across languages
-- [align texts to a Latin verb](./align-verbs-to-latin/) (*Documentation incomplete*)
+- [align verb functions](./align-verbs-multilingual/) across languages
+- [align verb usage in Latin text and glosses](./align-verbs-to-latin/)
 

@@ -3,9 +3,6 @@ engine: julia
 title: Comparing vocabulary of Latin glosses
 ---
 
-:::{.callout-caution title="Content TBA"}
-:::
-
 
 ## Overview
 
@@ -14,7 +11,7 @@ Select a passage of text. Tokens differing across the Latin documents are highli
 ## Notebook
 
 - [HTML version](./glossing-vocabulary.html) (readable in a web browser)
-- Pluto notebook (download and open in Pluto)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/compare-texts/glossing-vocabulary.jl) (download and open in Pluto)
 
 ## Screen capture
 

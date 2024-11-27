@@ -6,9 +6,18 @@ title: Citable tokens
 
 ## Overview
 
+Choose a passage and list orthographic tokens of the Hebrew Bible and Vulgate texts in adjacent columns, with identifying passage element from the token's URN.
+
+
+:::{.callout-tip}
+This notebook is especially handy for editing the correspondences of the Complutensian's glossing indexing connecting the Vulgate and the Hebrew Bible.
+:::
+
 ## Notebook
 
+- [HTML version](./citabletokens.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/reading/citabletokens.jl) (download and open in Pluto)
 
 ## Screen capture
 
-[](./citable-tokens.png)
+![](./citabletokens.png)
