@@ -3,4 +3,108 @@ title: The printed Complutensian Bible
 engine: julia
 ---
 
+
+
+
+
 chronology
+
+
+Editors' goals:
+
+- accessible
+- useful for innovative research
+
+
+
+
+
+## Indexing and lemmatization
+
+
+[Glossing by indexing Vulgate to Hebrew, plus link to lemma](./imgs/index-latin-hebrew.png)
+
+
+## Lexicon
+
+[Article keyed by lemma](./imgs/caput1-hilited.jpeg)
+
+[Concordance by senses](./imgs/initium.jpg)
+
+## Keeping text aligned
+
+[Spacing markers in Hebrew text](./imgs/Hebrew-whitespace.png)
+
+
+
+
+
+## 
+[Spacing markers in Latin text](./imgs/Latin-whitespace.png)
+
+## Volumes 1-4
+
+
+- Volume 1: Torah (including Targum Onkelos)
+- Volumes 2-4: remainder of Hebrew Bible (following order of books in Vulgate)
+
+
+## Volume 5: contents
+
+
+- Text of New Testament (with Pauline prefaces)
+- Greek grammar
+- Greek vocabulary
+- etymologies of proper names
+- journeys of Paul
+
+## Volume 6: contents
+
+- Hebrew lexicon
+- Hebrew grammar
+- Reverse index of Latin words to the Hebrew lexicon
+- Alternate forms of names
+- Etymologies of names
+
+## Etymology of names
+
+[Alphabetized by Latin form](./imgs/name-index.png)
+
+
+## Lexicon
+
+
+[Beginning of entry](./imgs/lexicon-entry.png)
+
+[Folios identified by number](./imgs/lexicon-folio-num.png)
+
+
+
+
+## Latin index to lexicon
+
+[Latin words indexed to folio reference in lexicon](./imgs/latin-index-hilited.jpeg)
+
+## 
+
+
+[**Bellum** on folio 83](./imgs/find-bellum-on-f83.jpeg)
+
+##
+
+
+
+[Volume 6: quire analysis](./imgs/quire-analysis.png)
+
+
+## Respect for Greek and Hebrew texts
+
+[Note that **Third Maccabees** is not in the Vulgate](./imgs/maccabees3.jpg)
+
+## Goals
+
+
+1. A library insisting on necessity of multilingual reading
+2. numerous aids for beginners
+3. sophisticated indexing for scholars
+
