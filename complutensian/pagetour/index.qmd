@@ -22,6 +22,19 @@ ict = "http://www.homermultitext.org/ict2/?"
 ```
 
 
+## An example page
+
+Volume 1, page `a` 1 recto
+
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+v1a1r = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19")
+pagelinked = linkedMarkdownImage(ict, v1a1r, service; w = 150, caption = "Septuagint")  |> Markdown.parse
+```
+
 
 ## Four texts
 
@@ -60,6 +73,19 @@ Markdown.parse(tbl)
 ```
 
 
+
+## Keeping text aligned
+
+Maybe see Pluto nbs + Ashley's graphics
+
+
+[Spacing markers in Hebrew text](./imgs/Hebrew-whitespace.png)
+
+
+
+
+
+[Spacing markers in Latin text](./imgs/Latin-whitespace.png)
 
 
 
@@ -127,10 +153,7 @@ join(lines,"\n") |> Markdown.parse
 
 
 
-
-## Lexicon
-
-Article keyed by lemma
+The headword is the key to articles in the Hebrew lexicon in volume 6.
 
 ```{julia}
 #| echo: false
@@ -155,19 +178,6 @@ initium = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6c_p96@0.1271,0.2043,0.4
 initiumlink = linkedMarkdownImage(ict, initium, service; w = 500, caption = "Concordance by sense: initium") |> Markdown.parse
 ```
 
-by sense: v6c_p96@0.1271,0.2043,0.4218,0.03804
 
+See more info on [contents and organization of volume 6](../organization/), and [example of navigation](../navigation/) using the Biblical texts of volumes 1-4 with the reference material of volume 6.
 
-
-
-
-## Keeping text aligned
-
-[Spacing markers in Hebrew text](./imgs/Hebrew-whitespace.png)
-
-
-
-
-
-## 
-[Spacing markers in Latin text](./imgs/Latin-whitespace.png)

@@ -6,8 +6,9 @@ title: Editorial goals
 
 ## Explicit statement
 
-- accessible
-- useful for innovative research
+- accessible to those *qui non integram linguae cognitionem adepti sunt*
+- useful for innovative research: *studiosis vtillisimum fore credimus*
+
 
 ## Implications of design
 
