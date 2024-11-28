@@ -92,6 +92,73 @@ Adjacent glosses (Targum Onkelos)
 #| output: asis
 #| warning: false
 adjacent = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19@0.2760,0.7085,0.4778,0.01828")
-linkedMarkdownImage(ict, adjacent, service; w = 500, caption = "Glossing Targum Onkelos") |> Markdown.parse
+linkedMarkdownImage(ict, adjacent, service; w = 800, caption = "Glossing Targum Onkelos") |> Markdown.parse
 ```
+
+
+
+
+## Glossing via indexing, with lemmatization
+
+
+Glossing by indexing Vulgate to Hebrew, plus link to lemma
+
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+
+latin = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19@0.3511,0.06784,0.09422,0.02014")
+latinlink =
+linkedMarkdownImage(ict, latin, service; w = 150, caption = "principio")
+
+hebrew = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19@0.6867,0.07063,0.1049,0.02107")
+hebrewlink = linkedMarkdownImage(ict, hebrew, service; w = 120, caption = "bereishith")
+
+lemma = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19@0.8467,0.08302,0.04089,0.01890")
+lemmalink = linkedMarkdownImage(ict, lemma, service; w = 70, caption = "bara")
+
+lines = [
+    "| Latin word | Hebrew word | lemma |",
+    "| --- | --- | --- |",
+    "| $(latinlink)| $(hebrewlink) | $(lemmalink) |"
+]
+
+join(lines,"\n") |> Markdown.parse
+
+```
+
+
+
+
+
+## Lexicon
+
+Article keyed by lemma
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+
+rosh = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6c_p95@0.4609,0.4772,0.4342,0.05313")
+roshlink = linkedMarkdownImage(ict, rosh, service; w = 500, caption = "Dictionary headword") |> Markdown.parse
+```
+
+
+Concordance by sense:
+
+
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+
+initium = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6c_p96@0.1271,0.2043,0.4218,0.03804")
+initiumlink = linkedMarkdownImage(ict, initium, service; w = 500, caption = "Concordance by sense: initium") |> Markdown.parse
+```
+
+by sense: v6c_p96@0.1271,0.2043,0.4218,0.03804
 
