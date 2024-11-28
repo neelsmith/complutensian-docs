@@ -17,7 +17,17 @@ This project is developing a digital multilingual Bible modelled on the sixteent
 
 
 
-We are implementing the same functionality digitally, to explore ways we can support the Complutensian's goals of aiding those without extensive background in the Biblical languages,  and facilitating innovative cross-lingual scholarship.
+We are implementing the same kinds of functionality digitally, to explore ways we can support the Complutensian's goals of aiding those without extensive background in the Biblical languages,  and facilitating innovative cross-lingual scholarship.
+
+
+
+
+## See more about...
+
+- the [original Complutensian Bible](./complutensian/)
+- the [digital resources we're creating](./resources/)
+- things we're doing with [our digital polyglot](./examples/)
+
 
 
 
