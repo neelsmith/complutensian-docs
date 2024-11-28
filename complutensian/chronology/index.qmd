@@ -1,0 +1,28 @@
+---
+title: Chronology
+engine: julia
+---
+
+
+
+
+Printing Timeline:
+- ??? Does Lyell say that the printing began in 1502 in honor of the future Emperor Charles V ???
+
+It was printed in Alcalá (Complutum) and completed between 1514 and 1517.
+
+ Details of the Volumes:
+
+- New Testament: The colophon (final page) is dated 10th January 1514 , making this the first volume completed.
+- Hebrew and Chaldaic Vocabulary: (Part of the Old Testament supplementary materials) The Hebrew portion is dated 17th March 1514 and the Chaldean portion 31st May 1514.
+- Four Volumes of the Old Testament: These followed, with the colophon of the last Old Testament volume dated 10th July 1517.
+
+
+
+Publication Timeline:
+Despite completion in 1517, the official Papal sanction needed for circulation was only granted on 22nd March 1520.
+
+The Complutensian Polyglot was not published or distributed until 1522.
+
+This delay in publication may have been due to doubts by the Church authorities about the dissemination of a new Bible translation, as well as competition with Erasmus's New Testament, which was published earlier, in 1516.
+

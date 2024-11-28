@@ -1,0 +1,48 @@
+---
+engine: julia
+title: Contents and organization
+---
+
+
+
+
+
+## Volumes 1-4
+
+
+- Volume 1: Torah (including Targum Onkelos)
+- Volumes 2-4: remainder of Hebrew Bible (following order of books in Vulgate)
+
+
+## Volume 5: contents
+
+
+- Text of New Testament (with Pauline prefaces)
+- Greek grammar
+- Greek vocabulary
+- etymologies of proper names
+- journeys of Paul
+
+## Volume 6: contents
+
+- Hebrew lexicon
+- Hebrew grammar
+- Reverse index of Latin words to the Hebrew lexicon
+- Alternate forms of names
+- Etymologies of names
+
+
+[Volume 6: quire analysis](./imgs/quire-analysis.png)
+
+
+
+
+
+
+## Respect for Greek and Hebrew texts
+
+[Note that **Third Maccabees** is not in the Vulgate](./imgs/maccabees3.jpg)
+
+
+
+

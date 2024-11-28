@@ -1,0 +1,16 @@
+---
+engine: julia
+title: Editorial goals
+---
+
+
+## Explicit statement
+
+- accessible
+- useful for innovative research
+
+## Implications of design
+
+1. A library insisting on necessity of multilingual reading
+2. numerous aids for beginners
+3. sophisticated indexing for scholars

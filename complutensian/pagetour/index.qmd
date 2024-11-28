@@ -162,3 +162,17 @@ initiumlink = linkedMarkdownImage(ict, initium, service; w = 500, caption = "Con
 
 by sense: v6c_p96@0.1271,0.2043,0.4218,0.03804
 
+
+
+
+
+## Keeping text aligned
+
+[Spacing markers in Hebrew text](./imgs/Hebrew-whitespace.png)
+
+
+
+
+
+## 
+[Spacing markers in Latin text](./imgs/Latin-whitespace.png)

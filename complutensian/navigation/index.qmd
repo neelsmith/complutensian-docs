@@ -1,0 +1,36 @@
+---
+engine: julia
+title: Example of navigation
+---
+
+
+
+
+## Etymology of names
+
+[Alphabetized by Latin form](./imgs/name-index.png)
+
+
+## Lexicon
+
+
+[Beginning of entry](./imgs/lexicon-entry.png)
+
+[Folios identified by number](./imgs/lexicon-folio-num.png)
+
+
+
+
+## Latin index to lexicon
+
+[Latin words indexed to folio reference in lexicon](./imgs/latin-index-hilited.jpeg)
+
+## 
+
+
+[**Bellum** on folio 83](./imgs/find-bellum-on-f83.jpeg)
+
+##
+
+
+
