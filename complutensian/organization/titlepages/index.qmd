@@ -1,0 +1,35 @@
+---
+engine: julia
+title: Title pages
+---
+
+Vol 1:
+
+urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
+
+Vol 2:
+
+urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
+
+
+Vol 3:
+
+urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
+
+
+Vol 4: 
+
+urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
+
+
+
+Vol 5:
+
+urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
+
+
+
+Vol 6:
+
+
+urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
