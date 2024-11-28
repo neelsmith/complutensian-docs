@@ -14,6 +14,14 @@ We have drawn on existing openly licensed versions of the Hebrew Bible, the Lati
 ### Example usage
 
 In Julia, you can use the `CitableCorpus` package to load a corpus from a CEX file like this:
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+using Pkg
+Pkg.add("CitableBase")
+Pkg.add("CitableCorpus")
+```
 
 ```{julia}
 using CitableBase, CitableCorpus
