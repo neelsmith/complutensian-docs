@@ -4,13 +4,32 @@ engine: julia
 ---
 
 
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+using Pkg
+Pkg.add("CitableImage")
+using CitableImage
+Pkg.add("CitableObject")
+using CitableObject
+using Markdown
+
+baseurl = "http://www.homermultitext.org/iipsrv"
+root = "/project/homer/pyramidal/deepzoom"
+service = IIIFservice(baseurl, root)
+ict = "http://www.homermultitext.org/ict2/?"
+```
+
+
 
 Mix of MS conventions with highly innovative exploration of potential of print
 
-- Editors' goals
-- Contents and organization
-- Chronology
-- Example of navigation
+- The [editors' goals](./goals/)
+- [Tour of a page](./pagetour/)
+- [Contents and organization](./organization/)
+- [Chronology](./chronology/)
+- Example of [navigation](./navigation/)
 
 
 
@@ -18,3 +37,27 @@ Mix of MS conventions with highly innovative exploration of potential of print
 
 
 
+
+
+:::{.callout-tip title="Tip: see images in context"}
+The images included on the linked pages are not screen shots: they are canonical citations that are resolved and embedded in the page when this web site is generated.  All images are linked to views where you can see a detail in the context of a full page.
+
+
+
+
+
+For example, we could use this URN to cite a region of an image illustrating the label for Chapter 1 of *Genesis* with the text *Ca.i.*:  `urn:cite2:citebne:complutensian.v1:v1p19@0.7920,0.07001,0.03956,0.01611`
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+
+
+msg = "Here's the result of resolving the citation: "
+cap1 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19@0.7920,0.07001,0.03956,0.01611")
+msg * linkedMarkdownImage(ict, cap1, service; w = 80, caption = "Chapter 1 label")  |>  Markdown.parse
+```
+
+The image is linked to a pannable/zoomable view, with the detail of the label *Ca.i.* highlighted.  Try it!
+:::

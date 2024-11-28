@@ -14,12 +14,7 @@ using CitableImage
 Pkg.add("CitableObject")
 using CitableObject
 using Markdown
-```
 
-```{julia}
-#| echo: false
-#| output: false
-#| warning: false
 baseurl = "http://www.homermultitext.org/iipsrv"
 root = "/project/homer/pyramidal/deepzoom"
 service = IIIFservice(baseurl, root)
