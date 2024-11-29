@@ -25,15 +25,14 @@ ict = "http://www.homermultitext.org/ict2/?"
 #| echo: false
 #| warning: false
 #| output: asis
-v4 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933")
-v4linked = linkedMarkdownImage(ict, v4, service; w = 600, caption = "Septuagint")  |> Markdown.parse
+
 ```
 
 Vol 4:
 
 
 
-with gruesome image urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
+with gruesome image 
 
 10 July 1517.
 
@@ -42,12 +41,18 @@ Vol 5:
 page MM 7 verso : Jan. 10, 1514
 
 
-urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
 
 
 Vol 6:
 
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+
+v6 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6d_p49@0.1253,0.3908,0.6702,0.4665")
+v6linked = linkedMarkdownImage(ict, v6, service; w = 800, caption = "Chapter 1 label")  |>  Markdown.parse
+```
 17 March, 1515
 
 
-urn:cite2:citebne:complutensian.v1:v6d_p49@0.1253,0.3908,0.6702,0.4665
