@@ -3,33 +3,53 @@ engine: julia
 title: Title pages
 ---
 
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+using Pkg
+Pkg.add("CitableImage")
+using CitableImage
+Pkg.add("CitableObject")
+using CitableObject
+using Markdown
+
+baseurl = "http://www.homermultitext.org/iipsrv"
+root = "/project/homer/pyramidal/deepzoom"
+service = IIIFservice(baseurl, root)
+ict = "http://www.homermultitext.org/ict2/?"
+```
+
+
 Vol 1:
 
-urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
-
-Vol 2:
-
-urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
-
-
-Vol 3:
-
-urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+v1text = "Vetus testamentum multiplici lingua nunc primo impressum. Et imprimis Pentateuchus Hebraico Greco atque Chaldaico idiomate. Adiuncta unicuique sua latina interpretatione."
+v1 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933")
+v1linked = linkedMarkdownImage(ict, v1, service; w = 800, caption = "Volume 1 title page")
 
 
-Vol 4: 
+v2 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v2a_p3@0.2071,0.5704,0.5053,0.1638")
+v2linked = linkedMarkdownImage(ict, v2, service; w = 800, caption = "Volume 2 title page")
+v2text = "Secunda pars Veteris testamenti Hebraico Grecoque idiomate nunc primum impressa: adiuncta utrique sua latina interpretatione"
 
-urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
+v3 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v3a_p21@0.2333,0.5710,0.4724,0.1604")
+v3linked = linkedMarkdownImage(ict, v3, service; w = 800, caption = "Volume 3 title page")
+v3text = "Tertia pars Veteris testamenti Hebraico Grecoque idiomate nunc primum impressa:adiuncta utrique sua latina interpretatione"
 
+tbl = """| Title page | text |
+| --- | --- |
+| $(v1linked) | $(v1text) |
+| $(v2linked) | $(v2text) |
+| $(v3linked) | $(v3text)|
+| v4 | v4 t|
+| v5 | v5 t| 
+| v6 | v6 t|
+"""
 
+Markdown.parse(tbl)
 
-Vol 5:
-
-urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
-
-
-
-Vol 6:
-
-
-urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
+```

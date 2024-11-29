@@ -4,10 +4,34 @@ title: Colophons
 ---
 
 
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+using Pkg
+Pkg.add("CitableImage")
+using CitableImage
+Pkg.add("CitableObject")
+using CitableObject
+using Markdown
+
+baseurl = "http://www.homermultitext.org/iipsrv"
+root = "/project/homer/pyramidal/deepzoom"
+service = IIIFservice(baseurl, root)
+ict = "http://www.homermultitext.org/ict2/?"
+```
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+v4 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933")
+v4linked = linkedMarkdownImage(ict, v4, service; w = 600, caption = "Septuagint")  |> Markdown.parse
+```
 
 Vol 4:
 
-urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
+
 
 with gruesome image urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
 
