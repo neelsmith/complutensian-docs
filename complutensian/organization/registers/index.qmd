@@ -3,17 +3,68 @@ title: Quire registers
 engine: julia
 ---
 
-vol 1
 
-urn:cite2:citebne:complutensian.v1:v1e_p95@0.1124,0.6375,0.6173,0.07373
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+using Pkg
+Pkg.add("CitableImage")
+using CitableImage
+Pkg.add("CitableObject")
+using CitableObject
+using Markdown
+
+baseurl = "http://www.homermultitext.org/iipsrv"
+root = "/project/homer/pyramidal/deepzoom"
+service = IIIFservice(baseurl, root)
+ict = "http://www.homermultitext.org/ict2/?"
+```
 
 
-vol 2
-
-urn:cite2:citebne:complutensian.v1:v3a_p20@0.1409,0.8491,0.7889,0.03864
+## Volume 1
 
 
-vol 3
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+
+v1 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1e_p95@0.1124,0.6375,0.6173,0.07373")
+v1linked = linkedMarkdownImage(ict, v1, service; w = 800, caption = "Volume 1 register of quires")  |>  Markdown.parse
+```
 
 
-urn:cite2:citebne:complutensian.v1:v3e_p23@0.1071,0.5023,0.7360,0.07820
+
+## Volume 2
+
+
+
+
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+
+v2 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v3a_p20@0.1409,0.8491,0.7889,0.03864")
+v2linked = linkedMarkdownImage(ict, v2, service; w = 800, caption = "Volume 2 register of quires")  |>  Markdown.parse
+```
+
+## Volume 3
+
+
+
+
+
+
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+
+v3 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v3e_p23@0.1071,0.5023,0.7360,0.07820")
+v3linked = linkedMarkdownImage(ict, v3, service; w = 800, caption = "Volume 3 register of quires")  |>  Markdown.parse
+```
