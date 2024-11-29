@@ -21,12 +21,6 @@ service = IIIFservice(baseurl, root)
 ict = "http://www.homermultitext.org/ict2/?"
 ```
 
-```{julia}
-#| echo: false
-#| warning: false
-#| output: asis
-
-```
 
 Vol 4:
 

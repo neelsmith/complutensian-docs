@@ -4,7 +4,36 @@ title: Contents and organization
 ---
 
 
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+using Pkg
+Pkg.add("CitableImage")
+using CitableImage
+Pkg.add("CitableObject")
+using CitableObject
+using Markdown
 
+baseurl = "http://www.homermultitext.org/iipsrv"
+root = "/project/homer/pyramidal/deepzoom"
+service = IIIFservice(baseurl, root)
+ict = "http://www.homermultitext.org/ict2/?"
+```
+
+
+
+Although the Complutensian Bible was organized in six volumes, it is clear from [the colophons](./colophons/) recording the completion of each major section, as well as from the language of [each volume's title page](./titlepages/) that Cisneros conceived of the project in three sections: 
+
+1. the multilingual Old Testament[^1]
+2. the multilingual New Testament[^2]
+3. reference works, especially the Hebrew lexicon[^3]
+
+[^1]: Part 1!
+
+[^2]: NT
+
+[^3]: yes, it's really the lexicon
 
 
 ## Volumes 1-4
@@ -45,14 +74,22 @@ title: Contents and organization
     - vol 5: `MM` 7 verso
     - vol 6
 
-The title pages:
-1 urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933
-
 
 ## Respect for Greek and Hebrew texts
 
-[Note that **Third Maccabees** is not in the Vulgate](./imgs/maccabees3.jpg)
+Note that **Third Maccabees** is not in the Vulgate
+
+```{julia}
+
+macc3 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4f_p27@0.1187,0.05708,0.3182,0.06020")
+macc3linked = linkedMarkdownImage(ict, macc3, service; w = 800, caption = "Volume 1 title page") |> Markdown.parse
+```
 
 
+## Collation
 
 
+The [registers](./registers/)
+
+
+[See it](./collation/)
