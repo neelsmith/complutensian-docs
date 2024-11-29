@@ -40,14 +40,28 @@ v3 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v3a_p21@0.2333,0.5710,0.4724,0
 v3linked = linkedMarkdownImage(ict, v3, service; w = 800, caption = "Volume 3 title page")
 v3text = "Tertia pars Veteris testamenti Hebraico Grecoque idiomate nunc primum impressa:adiuncta utrique sua latina interpretatione"
 
+v4 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4a_p1@0.2182,0.5555,0.4716,0.1606")
+v4linked = linkedMarkdownImage(ict, v4, service; w = 800, caption = "Volume 4 title page")
+v4text = "Quarta pars Veteris testamenti Hebraico Grecoque idiomate nunc primum impressa:adiuncta utrique sua latina interpretatione"
+
+v5 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5a_p1@0.2809,0.6264,0.2964,0.08087")
+v5linked = linkedMarkdownImage(ict, v5, service; w = 800, caption = "Volume 5 title page")
+v5text = "Nouum testamentum grece et latine in academia complutensi nouiter impressum."
+
+
+v6 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6p1@0.1933,0.5898,0.5231,0.1575")
+v6linked = linkedMarkdownImage(ict, v6, service; w = 800, caption = "Volume 6 title page")
+
+v6text = "Vocabularium hebraicum atque chaldaicum totius veteris testamenti cum aliis tractatibus prout infra in prefatione continetur in academia complutensi nouiter impressum."
+
 tbl = """| Title page | text |
 | --- | --- |
 | $(v1linked) | $(v1text) |
 | $(v2linked) | $(v2text) |
 | $(v3linked) | $(v3text)|
-| v4 | v4 t|
-| v5 | v5 t| 
-| v6 | v6 t|
+| $(v4linked) | $(v4text)|
+| $(v5linked) | $(v5text)|
+| $(v6linked) | $(v6text)|
 """
 
 Markdown.parse(tbl)
