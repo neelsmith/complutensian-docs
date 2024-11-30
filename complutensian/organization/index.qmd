@@ -80,9 +80,11 @@ Although the Complutensian Bible was organized in six volumes, it is clear from 
 Note that **Third Maccabees** is not in the Vulgate
 
 ```{julia}
-
+#| echo: false
+#| output: asis
+#| warning: false
 macc3 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4f_p27@0.1187,0.05708,0.3182,0.06020")
-macc3linked = linkedMarkdownImage(ict, macc3, service; w = 800, caption = "Volume 1 title page") |> Markdown.parse
+macc3linked = linkedMarkdownImage(ict, macc3, service; w = 600, caption = "Volume 1 title page") |> Markdown.parse
 ```
 
 

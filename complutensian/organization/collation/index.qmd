@@ -63,6 +63,14 @@ Notes: spaces for elaborated caps saved and have regular lc version of letter pr
 Question: can we hypothesize that ternion `P` was planned for "journeys of Paul" but that it didn't happen and was later (or earlier???) done as a separate ternion `α` (lc alpha) ?
 
 
+Vol 1
+
+
+- Genesis
+- Exodus
+- Leviticus
+- Numbers
+- Deuteronomy
 
 Vol 2
 
@@ -71,11 +79,11 @@ Yikes BNE digital copy has prolog stuff between Joshua 6 and Joshua 7
 - Joshua `a` (1) recto
 - Judges `e ii` recto
 - Ruth `i iiii` recto
-- 1 Kings `k ii` verso
+- 1 Kings `k ii` verso.  Note titles: urn:cite2:citebne:complutensian.v1:v2b_p20@0.4649,0.07268,0.4622,0.03005
 - 2 Kings `q ii` verso
-- 3 Kings `x iii` recto
+- 3 Kings `x iii` recto Note titles: urn:cite2:citebne:complutensian.v1:v2c_p53@0.1729,0.3490,0.3849,0.02852
 - 4 Kings `dd iii` recto
-- 1 Paralipomenon `ii` (6) recto
+- 1 Paralipomenon `ii` (6) recto Note title: urn:cite2:citebne:complutensian.v1:v2d_p91@0.1302,0.08218,0.4458,0.03895
 - 2 Paralipomenon `oo` (5) recto
 
 Register for volume: `vv` (4) verso
@@ -83,7 +91,7 @@ Register for volume: `vv` (4) verso
 
 Vol 3
 
-- 1 Esdra `aaa iii` recto
+- 1 Ezra `aaa iii` recto
 - Nehemiah `ccc` (1) recto
 - Tobias `AAA` (1) recto
 - Judith `BBB` (1) recto
@@ -94,16 +102,34 @@ Vol 3
 - Ecclesiastes `o iii` verso
 - Songs `p v` recto
 - Wisdom `A` (1) recto
-- Ecclesiasticus `B iii` verso
-
+- Ecclesiasticus `B iii` verso Note title urn:cite2:citebne:complutensian.v1:v3d_p74@0.2093,0.06930,0.4680,0.02545
 Register for volume: `F iiii` recto
 
 Vol 4
 
+:::{.callout-warning title="FILL THIS OUT"}
+:::
+
 - Isaiah `a iii` recto
-- Jeremiah
-
-
+- Jeremiah `i` (1) veso
 - Lamentations `f` (5) recto
+- Baruch `t iii` verso
+- Ezekiel `v ii`  recto
+- Daniel `ee iiii` recto
+- Hosea `hh` (5) verso
+- Joel `ii` (6) recto
+- Amos `kk iii` recto
+- Obadiah  `ll ii` verso
+- Jonah `ll iii` verso
+- Micah `ll` (5) verso
+- Nahum `mm iii` verso
+- Habakkuk `mm` (5) verso
+- Zephaniah `nn` (1) verso
+- Haggai `nn iii` verso
+- Zechariah `nn` (5) verso
+- Malachi `pp ii` recto
 
+- 1 Maccabees `A` (1) recto
+- 2 Maccabees `D iii` verso
+- 3 Maccabees `F` (6) recto
 
