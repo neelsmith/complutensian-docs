@@ -38,6 +38,25 @@ website:
   sidebar:
     - title: "Home"
       contents:
-        - index.qmd               
+        - index.qmd  
+    - title: "The Complutensian"
+      contents:
+        - complutensian/index.qmd
+        - complutensian/images/index.qmd              
+        - text: "---"        
+        - complutensian/organization/index.qmd     
+
+        - text: "---"   
+        - complutensian/organization/titlepages/index.qmd
+        - complutensian/organization/colophons/index.qmd
+        - complutensian/organization/registers/index.qmd  
+        - complutensian/organization/collation/index.qmd     
+        - text: "---"                  
+        - complutensian/pagetour/index.qmd
+        - complutensian/navigation/index.qmd        
+        - text: "---"           
+        - complutensian/chronology/index.qmd
+
+
  
 

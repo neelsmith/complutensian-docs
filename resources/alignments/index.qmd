@@ -32,4 +32,4 @@ Delimited-text files recording a lemma in the reference text, a lemma in the co-
 ### Vulgate
 
 - [co-occurrences with Septuagint](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/data/cooccurrences/vulgate_septuagint.cex)
-- co-occurrences with Hebrew Bible
+- [co-occurrences with Hebrew Bible](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/data/cooccurrences/vulgate_hebrew.cex)
