@@ -24,7 +24,7 @@ ict = "http://www.homermultitext.org/ict2/?"
 
 ## An example page
 
-Volume 1, page `a` 1 recto
+Volume 1, page `a` 1 recto.
 
 
 ```{julia}
