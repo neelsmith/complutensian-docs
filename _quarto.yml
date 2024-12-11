@@ -7,6 +7,7 @@ date: last-modified
 format:
   html: 
     toc: true
+    css: tweaks.css
 
 
 website:
