@@ -17,7 +17,7 @@ Prolog to pope addresses reason and design!
 - `vol1_+_3r` : De Arte inueniendi radicem siue primitiuum cuiuisque dictionis Hebraicae
 - `vol1_+_4r` : Prologus in Nouum testamentum: et de causis quare in eo apices graeci sunt praemissi. Ad lectorem.
 - `vol1_+_4r` : Prologus in Hebraicum Chaldaicumque dictionarium atque Grammaticam Hebraeam cum interpretationibus propriorum nominum. Ad lectorem.
-    - `vol1_+_4v` : Notandum.
+- `vol1_+_4v` : Notandum.
 - `vol1_+_5r` : Modi intelligendi sacram scripturam.
 - `vol1_+_5r-vol1_+_6v` : epistola beati Hieronymi ad Paulinum. *Note: chapters of this are explicitly labelled*
     - `vol1_+_6r` : Hec a me perstricta sunt breuiter. Neque enim epistolaris angustia euagari longius patiebatur
