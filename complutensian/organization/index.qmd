@@ -22,6 +22,8 @@ ict = "http://www.homermultitext.org/ict2/?"
 ```
 
 
+The Complutensian Bible is an extraordinarily creative design, mixing many conventions family from manuscript copying with highly innovative experiments exploiting the potential of the still new technology of printing.
+
 
 Although the Complutensian Bible was organized in six volumes, it is clear from [the colophons](./colophons/) recording the completion of each major section, as well as from the language of [each volume's title page](./titlepages/) that Cisneros conceived of the project in three sections: 
 

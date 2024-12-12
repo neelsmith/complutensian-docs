@@ -20,8 +20,7 @@ service = IIIFservice(baseurl, root)
 ict = "http://www.homermultitext.org/ict2/?"
 ```
 
-
-Vol 1:
+## Titling text of each volume
 
 ```{julia}
 #| echo: false
@@ -54,14 +53,14 @@ v6linked = linkedMarkdownImage(ict, v6, service; w = 800, caption = "Volume 6 ti
 
 v6text = "Vocabularium hebraicum atque chaldaicum totius veteris testamenti cum aliis tractatibus prout infra in prefatione continetur in academia complutensi nouiter impressum."
 
-tbl = """| Title page | text |
-| --- | --- |
-| $(v1linked) | $(v1text) |
-| $(v2linked) | $(v2text) |
-| $(v3linked) | $(v3text)|
-| $(v4linked) | $(v4text)|
-| $(v5linked) | $(v5text)|
-| $(v6linked) | $(v6text)|
+tbl = """| Volume | Title page | text |
+| --- | --- | --- |
+| 1 | $(v1linked) | $(v1text) |
+| 2 | $(v2linked) | $(v2text) |
+| 3 | $(v3linked) | $(v3text)|
+| 4 | $(v4linked) | $(v4text)|
+| 5 | $(v5linked) | $(v5text)|
+| 6 | $(v6linked) | $(v6text)|
 """
 
 Markdown.parse(tbl)

@@ -3,22 +3,42 @@ title: The printed Complutensian Bible
 engine: julia
 ---
 
-The Complutensian Bible is an extraordinarily creative design, mixing many conventions family from manuscript copying with highly innovative experiments exploiting the potential of the still new technology of printing.
-
-- The [editors' goals](./goals/)
-- [Tour of a page](./pagetour/)
-- [Contents and organization](./organization/)
-- [Chronology](./chronology/)
-- Example of [navigation](./navigation/)
-
-
-
-
-
-
-
-
 
 :::{.callout-tip title="Tip: see images in context"}
 Learn more about [how images are displayed](./images/) in this guide to the Complutensian Bible.
 :::
+
+
+## What was the purpose of the Complutensian polyglot Bible?
+
+- The [editors' goals](./goals/)
+
+## How are the six volumes organized?
+
+- [Contents and organization](./organization/)
+- References:
+    - [title pages](./organization/titlepages/)
+    - [prologs](./organization/titlepages/)
+    - [colophons](./organization/colophons/)
+    - [quire registers](./organization/registers/)
+    - [collation](./organization/collation/)
+
+
+
+## How does a reader use it?
+
+- [Tour of a page](./pagetour/)
+- [Combining indexes and texts for philological research](./navigation/)
+
+## When was it created?
+
+- [Dating the individual parts of the Complutensian](./chronology/)
+
+
+
+
+
+
+
+
+
