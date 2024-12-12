@@ -19,57 +19,44 @@ baseurl = "http://www.homermultitext.org/iipsrv"
 root = "/project/homer/pyramidal/deepzoom"
 service = IIIFservice(baseurl, root)
 ict = "http://www.homermultitext.org/ict2/?"
-```
 
-
-Vol 4:
-
-
-
-with gruesome image 
-
-10 July 1517.
-
-
-
-```{julia}
-#| echo: false
-#| warning: false
-#| output: asis
+imgwidth = 400
 
 v4 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4f_p35@0.1036,0.07985,0.6440,0.1712")
-v4linked = linkedMarkdownImage(ict, v4, service; w = 800, caption = "New Testament colophon")  |>  Markdown.parse
-```
-
-
-
-# Volume 5
-
-page MM 7 verso : Jan. 10, 1514
-
-
-
-
-```{julia}
-#| echo: false
-#| warning: false
-#| output: asis
+v4linked = linkedMarkdownImage(ict, v4, service; w = imgwidth)
 
 v5 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5e_p46@0.2738,0.3004,0.5920,0.5381")
-v5linked = linkedMarkdownImage(ict, v5, service; w = 800, caption = "New Testament colophon")  |>  Markdown.parse
+v5linked = linkedMarkdownImage(ict, v5, service; w = imgwidth)
+
+v6 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6d_p49@0.1253,0.3908,0.6702,0.4665")
+v6linked = linkedMarkdownImage(ict, v6, service; w = imgwidth)
 ```
 
-## Volume 6
+
+
+## The colophons in the Madrid copy
+
 
 ```{julia}
 #| echo: false
 #| warning: false
-#| output: asis
 
-v6 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6d_p49@0.1253,0.3908,0.6702,0.4665")
-v6linked = linkedMarkdownImage(ict, v6, service; w = 800, caption = "Reference works, colophon")  |>  Markdown.parse
+v4text = "Excplicit quarta et vltima pars totius veteris testamenti hebraico grecoque et latino idiomate nunc primum impressa in hac preclarissima Complutensi vuniuersitate. De mandato ac summptibus Reuernendissimi in christo patris et domini: domini. F. F. Francisci Ximenez de Cisneros tituli Sancte Balbine sacrosancte Romane ecclesie presbyteri Cardinalis Hispanie Archiepiscopi Toletani et hispariarum primatis : ac regnorum castelle Archicancelarii. Industria et solertia honorabilis vivi Arnaldi Guillelmi de Brocario artis impressorie Magistri. Anno Domni Millessimo quingentesimo decimo septimo. mensis Iulii die decimo."
+
+
+v5text = "Ad perpetuam laudem et gloriam dei et domini nostri iesu christi hoc sacrosanctum opus noui testamenti et libri vite grecis latinisque characteribus nouiter impressum atque studiosissime emdatum: felici fine absolutum est in hac preclarissima Complutensi vniuersitate: de mandato et sumptibus Reuerendissimi in christo patris et illustrissimi domini domini fratris Francisci Ximenez de Cisneros tituli sancte Balbine sancte Romane eccl.e presbyteri Cardinalis hispanie Archiepi. toletani et Hispaniarum primatis ac regnorum castelle archiecancellarii: industria et solertia honorabilis viri Arnaldi guilelmi de Brocario artis impressorie magistri. Anno domini Millesimo quingentesimo decimo quarto. Mensis ianuarii die decimo."
+
+v6text = "Explicit vocabularium hebraicum totius veteris testamenti cum omnibus dictionibus chaldaicis in eodem veteri testamento contentis: nouiter impressi in hac preclarissima Complutensi vniuersitate. De mandato ac sumptibus Reuerendissimi in christo patris et domini: domini F. Francisci Ximenes de Cisneros tituli Sancte Balbine sacro sancte Romane eccelsie presbyteri Cardinalis Hispanie Archiepiscopi Toletani et hispaniarum primatis: ac regnorum castelle Archicancellarii. Industria et solertia honorabilis vivi Arnaldi Guilielmi de Brocario artis impressorie Magistri. Anno Domini Millesimo quingentesimo decmo quinto. mensis Marcii die decima septima."
+
+
+tbl = """| Volume | Page | Colophon | Text | Date |
+| --- | --- | --- | --- | --- |
+| 4: conclusion of Old Testament | quire `G`, page 4 recto | $(v4linked) | $(v4text)|  July 10, 1517|
+| 5: New Testament | quire `MM`, page 7 verso | $(v5linked) | $(v5text)| January 10, 1514 |
+| 6: reference works | quire `FF`, page 4 recto | $(v6linked) | $(v6text)|  March 17, 1515 |
+"""
+
+Markdown.parse(tbl)
 ```
-
-17 March, 1515
 
 
