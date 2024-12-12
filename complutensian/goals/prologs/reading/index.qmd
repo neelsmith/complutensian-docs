@@ -1,0 +1,15 @@
+---
+engine: julia
+---
+
+# Reading the prologs
+
+
+## Intro to Greek NT
+
+- addressed to studiosi / σπουδαῖοι
+- keep to original language of text. Originally written with no breathing or accent, so we want to keep the original form
+- You can do it even if you haven't gotten *too* far!
+- Still, we'll give some help: accent like MG tonos 
+- NB:  this is different from our txt of LXX!
+- also note: we x-index with tiny letters (indexed glossing just like Vulgate to Hebrew of OT)

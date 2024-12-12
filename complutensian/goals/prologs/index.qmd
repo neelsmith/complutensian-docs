@@ -51,12 +51,12 @@ Prolog to pope addresses reason and design!
 
 **Title page and 6 pages of prefatory material**
 
-- `vol5_a_2r` : Greek text of why no accents or breathing in Greek!  Reader is addressed ὦ σπουδαῖε φιλόλογε 
-- `vol5_a_2v` : Latin version of same, repeating note from volume 1 on form of Greek in NT
-- `vol5_a_3r` : The letter of Eusebius to Carpianus, explaining the Canones!  Explicit link to history of editing scholarly works.
-- `vol5_a_3v` : Jerome to Pope Damasus
-- `vol5_a_4r` : alius prologus
-- `vol5_a_4v` : argumentum
+- `vol5_a-preface_2r` : Greek text of why no accents or breathing in Greek!  Reader is addressed ὦ σπουδαῖε φιλόλογε 
+- `vol5_a-preface_2v` : Latin version of same, repeating note from volume 1 on form of Greek in NT
+- `vol5_a-preface_3r` : The letter of Eusebius to Carpianus, explaining the Canones!  Explicit link to history of editing scholarly works.
+- `vol5_a-preface_3v` : Jerome to Pope Damasus
+- `vol5_a-preface_4r` : alius prologus
+- `vol5_a-preface_4v` : argumentum
 
 ## Volume 6
 
