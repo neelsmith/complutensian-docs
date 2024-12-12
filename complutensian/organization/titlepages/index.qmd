@@ -66,3 +66,8 @@ tbl = """| Volume | Title page | text |
 Markdown.parse(tbl)
 
 ```
+
+
+:::{.callout-tip title="Tip: see images in context"}
+Images are linked to full-page views.
+:::

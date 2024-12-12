@@ -1,6 +1,6 @@
 ---
 engine: julia
-title: Example of navigation
+title: Combining indexes and texts for philological research
 ---
 
 The cross-referenced reference materials in the Complutensian Bible enable readers to follow sophisticated philological inquiries.  We'll illustrate how to use the reference material in volume 6 to follow a concept expressed in Latin through passages in the Hebrew text of volumes 1-4.

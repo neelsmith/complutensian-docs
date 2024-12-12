@@ -7,6 +7,13 @@ engine: julia
 :::{.callout-tip title="Tip: see images in context"}
 Learn more about [how images are displayed](./images/) in this guide to the Complutensian Bible.
 :::
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+
+#=
+Fill these out:
 
 
 ## What was the purpose of the Complutensian polyglot Bible?
@@ -33,6 +40,38 @@ Learn more about [how images are displayed](./images/) in this guide to the Comp
 ## When was it created?
 
 - [Dating the individual parts of the Complutensian](./chronology/)
+
+
+
+
+
+=#
+```
+
+## What was the purpose of the Complutensian polyglot Bible?
+
+- The editors' goals
+
+## How are the six volumes organized?
+
+- Contents and organization
+- References:
+    - [title pages](./organization/titlepages/)
+    - prologs
+    - [colophons](./organization/colophons/)
+    - quire registers
+    - collation
+
+
+
+## How does a reader use it?
+
+- Tour of a page
+- [Combining indexes and texts for philological research](./navigation/)
+
+## When was it created?
+
+- Dating the individual parts of the Complutensian
 
 
 
