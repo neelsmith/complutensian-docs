@@ -3,12 +3,15 @@ engine: julia
 title: Editorial goals
 ---
 
-
-## Explicit statement
+The editors 
 
 - accessible to those *qui non integram linguae cognitionem adepti sunt*
 - useful for innovative research: *studiosis vtillisimum fore credimus*
 
+
+:::{.callout-note title="In progress"}
+Coming soon: an overview of all the prefatory material with explicit editorial statements in each of the six volumes.
+:::
 
 ## Implications of design
 

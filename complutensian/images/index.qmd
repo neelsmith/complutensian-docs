@@ -22,13 +22,13 @@ ict = "http://www.homermultitext.org/ict2/?"
 ```
 
 
-The images included on the linked pages are not screen shots: they are canonical citations that are resolved and embedded in the page when this web site is generated.  All images are linked to views where you can see a detail in the context of a full page.
+The images included on the linked pages are not screen shots: they are canonical citations that are resolved and embedded in the page when this web site is generated.  All images are linked to views where you can see the selected detail highlighted in the context of a full page.
 
 
 
 ## Example
 
-We could use this URN to cite a region of an image illustrating the label for Chapter 1 of *Genesis* with the text *Ca.i.*:  `urn:cite2:citebne:complutensian.v1:v1p19@0.7920,0.07001,0.03956,0.01611`
+This URN identifies a region of an image illustrating the label for Chapter 1 of *Genesis* (the text *Ca.i.*):  `urn:cite2:citebne:complutensian.v1:v1p19@0.7920,0.07001,0.03956,0.01611`
 
 ```{julia}
 #| echo: false
@@ -36,9 +36,9 @@ We could use this URN to cite a region of an image illustrating the label for Ch
 #| output: asis
 
 
-msg = "Here's the result of resolving the citation: "
+msg = "When that refernence is resolved and embedded in the page, this is the result: "
 cap1 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19@0.7920,0.07001,0.03956,0.01611")
 msg * linkedMarkdownImage(ict, cap1, service; w = 80, caption = "Chapter 1 label")  |>  Markdown.parse
 ```
 
-The embedded image is linked to a pannable/zoomable view, with the detail of the label *Ca.i.* highlighted.  Try it!
+The embedded image is linked to a pannable/zoomable view of the full page, with the detail of the label *Ca.i.* highlighted.  Try it!

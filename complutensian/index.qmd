@@ -3,8 +3,7 @@ title: The printed Complutensian Bible
 engine: julia
 ---
 
-
-Mix of MS conventions with highly innovative exploration of potential of print
+The Complutensian Bible is an extraordinarily creative design, mixing many conventions family from manuscript copying with highly innovative experiments exploiting the potential of the still new technology of printing.
 
 - The [editors' goals](./goals/)
 - [Tour of a page](./pagetour/)
