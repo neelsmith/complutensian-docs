@@ -3,6 +3,13 @@ title: Quire registers
 engine: julia
 ---
 
+:::{.callout-note title="In progress"}
+A link will be added here to a complete collation of the Complutensian Bible when that page is complete.
+:::
+
+
+
+
 
 ```{julia}
 #| echo: false
@@ -21,16 +28,9 @@ service = IIIFservice(baseurl, root)
 ict = "http://www.homermultitext.org/ict2/?"
 ```
 
+In the four volumes covering the Christian Old Testament, the first three include a register of all the quires in the volume.  The third volume lists all the books of the Old Testament it contains along with the register of quires; the fourth volume lists only the the books it includes.
 
-
-Significant that nothing like this in voll 5-6. In vol. 5, three sequences begin with quire `a`!
-Vol. 6 has three sequences beginning with `A` (upper case)
-
-The various segments have no order! In fact have examined 6 copies and none have the same sequence of segments for volume 6!
-
-:::{.callout-note title="In progress"}
-A link will be added here to a complete collation of the Complutensian Bible when that page is complete.
-:::
+It is significant that we find nothing comparable in volumes 5 and 6. In addition to the text of the New Testament, Volume 5 has reference materials including a Greek grammar and vocabulary. Volume 6 is entirely comprised of reference materials, including a Hebrew ditionary and introductory grammar. There is no necessary sequence to these reference works (*tractactus*), so there is no single sequence of quires for all of volume 5 or 6. Instead, we find three different sequences beginning with `a` in volume 5 and three sequences beginning with `A`  (upper case) in volume 6.
 
 
 
@@ -97,20 +97,24 @@ v3linked = linkedMarkdownImage(ict, v3, service; w = 800, caption = "Volume 3 re
 
 ## Volume 4
 
-
-Volume 4:
-
-a-z, aa-pp
-corrigenda in some copies!
-A-G Maccabbees
-
-Final pp and final G are both binions
-
-Explicit Malachi:
-urn:cite2:citebne:complutensian.v1:v4e_p56@0.4742,0.8284,0.1231,0.02620
+Volume 4 has two sequences of quire identifiers. The first runs from `a` - `z` and `aa` - `pp`. All these quires are ternions except for the final `pp` which is a binion. There would have been no confusion about the length of quire `pp`: it shows the regular system of numbering as applied to a binion,[^numbering] and ends at a major content break, namely at the completion of Malachi, the last of the twelve minor prophets, signalled with an *explicit* statement.
 
 
-G ends with colophon and register of books on recto, blank page on verso: no mistaking end of quire!
+[^numbering]: The system of numbering gathers is explained in a forthcoming page with the full collation of the Complutensian Bible.
+
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+
+malachi = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4e_p56@0.4742,0.8284,0.1231,0.02620")
+malachilinked = linkedMarkdownImage(ict, malachi, service; w = 400, caption = "Explicit")  |>  Markdown.parse
+```
+
+
+
+Then there is a sequence from `A` - `G`, again all ternions except for a binion in the final `G`. It is clear that `G` is the final quire of the entire volume, since its last folio has the [colophon for volumes 1-4](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v4f_p35@0.1036,0.07985,0.6440,0.1712) on the same page as a list of books included in the volume.
 
 
 
@@ -122,3 +126,14 @@ G ends with colophon and register of books on recto, blank page on verso: no mis
 v4 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4f_p35@0.09289,0.2633,0.6649,0.05178")
 v4linked = linkedMarkdownImage(ict, v4, service; w = 800, caption = "Volume 4 register of Biblical books")  |>  Markdown.parse
 ```
+
+
+Quires `A` - `G` have the three books *Maccabees*. The separate quire organization suggests that this section of volume 4 in some sense had a different status from the contents of `a` - `pp`, comparable to the separate sections of volumes 5 and 6.
+
+
+
+
+
+
+
+

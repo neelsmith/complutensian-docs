@@ -3,7 +3,7 @@ engine: julia
 title: Colophons
 ---
 
-Dated colophons mark the ends of the three major sections of the work. In volume 4, 
+Dated colophons mark the ends of the three major sections of the work: the end of the multilingual Old Testament in volume 4, the New Testament in volume 5, and the Hebrew dictionary in volume 6.
 
 ```{julia}
 #| echo: false

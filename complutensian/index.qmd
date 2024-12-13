@@ -60,13 +60,13 @@ Fill these out:
     - prologs
     - [colophons](./organization/colophons/)
     - [quire registers](./organization/registers/)
-    - collation
+    - complete collation
 
 
 
 ## How does a reader use it?
 
-- [Tour of a page](./pagetour/)
+- [Tour of a page](./pagetour/) (*in progress*)
 - [Combining indexes and texts for philological research](./navigation/)
 
 ## When was it created?
