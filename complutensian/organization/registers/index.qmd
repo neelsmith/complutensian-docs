@@ -22,9 +22,22 @@ ict = "http://www.homermultitext.org/ict2/?"
 ```
 
 
+
+Significant that nothing like this in voll 5-6. In vol. 5, three sequences begin with quire `a`!
+Vol. 6 has three sequences beginning with `A` (upper case)
+
+The various segments have no order! In fact have examined 6 copies and none have the same sequence of segments for volume 6!
+
+:::{.callout-note title="In progress"}
+A link will be added here to a complete collation of the Complutensian Bible when that page is complete.
+:::
+
+
+
+
 ## Volume 1
 
-
+Volume 1 contains the Pentateuch (or Torah). Its single sequence of 48 quires are identified by letters running through the alphabet twice (`a` - `z`, then `aa` - `zz`), followed by two further quires identified by typographical symbols used for ligatures in the main text.
 
 ```{julia}
 #| echo: false
@@ -39,9 +52,21 @@ v1linked = linkedMarkdownImage(ict, v1, service; w = 800, caption = "Volume 1 re
 
 ## Volume 2
 
+Volume 2 contains single sequence of 43 quires identified by letters running through the alphabet from `a` - `z`, then `aa` - `vv`. It contains ten books from *Joshua* to *2 Paralipomenon* (*2 Chronicles*) and the *Prayer of Manasseh*.[^book2]
 
 
+[^book2]: The complete sequence of books in volume 2 is:
 
+    - *Joshua*
+    - *Judges*
+    - *Ruth*
+    - *1 Samuel*
+    - *2 Samuel*
+    - *1 Kings*
+    - *2 Kings*
+    - *1 Chronicles (1 Paralipomenon)*
+    - *2 Chronicles (2 Paralipomenon)*
+    - *Prayer of Manasseh*
 
 ```{julia}
 #| echo: false
@@ -67,4 +92,33 @@ v2linked = linkedMarkdownImage(ict, v2, service; w = 800, caption = "Volume 2 re
 
 v3 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v3e_p23@0.1071,0.5023,0.7360,0.07820")
 v3linked = linkedMarkdownImage(ict, v3, service; w = 800, caption = "Volume 3 register of quires")  |>  Markdown.parse
+```
+
+
+## Volume 4
+
+
+Volume 4:
+
+a-z, aa-pp
+corrigenda in some copies!
+A-G Maccabbees
+
+Final pp and final G are both binions
+
+Explicit Malachi:
+urn:cite2:citebne:complutensian.v1:v4e_p56@0.4742,0.8284,0.1231,0.02620
+
+
+G ends with colophon and register of books on recto, blank page on verso: no mistaking end of quire!
+
+
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+
+v4 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4f_p35@0.09289,0.2633,0.6649,0.05178")
+v4linked = linkedMarkdownImage(ict, v4, service; w = 800, caption = "Volume 4 register of Biblical books")  |>  Markdown.parse
 ```

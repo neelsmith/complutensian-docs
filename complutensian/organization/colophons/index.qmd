@@ -3,6 +3,7 @@ engine: julia
 title: Colophons
 ---
 
+Dated colophons mark the ends of the three major sections of the work. In volume 4, 
 
 ```{julia}
 #| echo: false
@@ -41,12 +42,12 @@ v6linked = linkedMarkdownImage(ict, v6, service; w = imgwidth)
 #| echo: false
 #| warning: false
 
-v4text = "Excplicit quarta et vltima pars totius veteris testamenti hebraico grecoque et latino idiomate nunc primum impressa in hac preclarissima Complutensi vuniuersitate. De mandato ac summptibus Reuernendissimi in christo patris et domini: domini. F. F. Francisci Ximenez de Cisneros tituli Sancte Balbine sacrosancte Romane ecclesie presbyteri Cardinalis Hispanie Archiepiscopi Toletani et hispariarum primatis : ac regnorum castelle Archicancelarii. Industria et solertia honorabilis vivi Arnaldi Guillelmi de Brocario artis impressorie Magistri. Anno Domni Millessimo quingentesimo decimo septimo. mensis Iulii die decimo."
+v4text = "Explicit quarta et vltima pars totius veteris testamenti hebraico grecoque et latino idiomate nunc primum impressa in hac preclarissima Complutensi vniuersitate. De mandato ac sumptibus Reuernendissimi in christo patris et domini: domini. F. Francisci Ximenez de Cisneros tituli Sancte Balbine sacro sancte Romane ecclesie presbyteri Cardinalis Hispanie Archiepiscopi Toletani et hispaniarum primatis : ac regnorum castelle Archicancellarii. Industria et solertia honorabilis vivi Arnaldi Guillelmi de Brocario artis impressorie Magistri. Anno Domni Millessimo quingentesimo decimo septimo. mensis Iulii die decimo."
 
 
-v5text = "Ad perpetuam laudem et gloriam dei et domini nostri iesu christi hoc sacrosanctum opus noui testamenti et libri vite grecis latinisque characteribus nouiter impressum atque studiosissime emdatum: felici fine absolutum est in hac preclarissima Complutensi vniuersitate: de mandato et sumptibus Reuerendissimi in christo patris et illustrissimi domini domini fratris Francisci Ximenez de Cisneros tituli sancte Balbine sancte Romane eccl.e presbyteri Cardinalis hispanie Archiepi. toletani et Hispaniarum primatis ac regnorum castelle archiecancellarii: industria et solertia honorabilis viri Arnaldi guilelmi de Brocario artis impressorie magistri. Anno domini Millesimo quingentesimo decimo quarto. Mensis ianuarii die decimo."
+v5text = "Ad perpetuam laudem et gloriam dei et domini nostri iesu christi hoc sacro sanctum opus noui testamenti et libri vite grecis latinisque characteribus nouiter impressum atque studiosissime emendatum: felici fine absolutum est in hac preclarissima Complutensi vniuersitate: de mandato et sumptibus Reuerendissimi in christo patris et illustrissimi domini domini fratris Francisci Ximenez de Cisneros tituli sancte Balbine sancte Romane eccl'ie presbyteri Cardinalis hispanie Archiepi. toletani et Hispaniarum primatis ac regnorum castelle archiecancellarii: industria et solertia honorabilis viri Arnaldi guilielmi de Brocario artis impressorie magistri. Anno domini Millesimo quingentesimo decimo quarto. Mensis ianuarii die decimo."
 
-v6text = "Explicit vocabularium hebraicum totius veteris testamenti cum omnibus dictionibus chaldaicis in eodem veteri testamento contentis: nouiter impressi in hac preclarissima Complutensi vniuersitate. De mandato ac sumptibus Reuerendissimi in christo patris et domini: domini F. Francisci Ximenes de Cisneros tituli Sancte Balbine sacro sancte Romane eccelsie presbyteri Cardinalis Hispanie Archiepiscopi Toletani et hispaniarum primatis: ac regnorum castelle Archicancellarii. Industria et solertia honorabilis vivi Arnaldi Guilielmi de Brocario artis impressorie Magistri. Anno Domini Millesimo quingentesimo decmo quinto. mensis Marcii die decima septima."
+v6text = "Explicit vocabularium hebraicum totius veteris testamenti cum omnibus dictionibus chaldaicis in eodem veteri testamento contentis: nouiter impressum in hac preclarissima Complutensi vniuersitate. De mandato ac sumptibus Reuerendissimi in christo patris et domini: domini F. Francisci Ximenes de Cisneros tituli Sancte Balbine sacro sancte Romane ecclesie presbyteri Cardinalis Hispanie Archiepiscopi Toletani et hispaniarum primatis: ac regnorum castelle Archicancellarii. Industria et solertia honorabilis vivi Arnaldi Guilielmi de Brocario artis impressorie Magistri. Anno Domini Millesimo quingentesimo decmo quinto. mensis Marcii die decima septima."
 
 
 tbl = """| Volume | Page | Colophon | Text | Date |

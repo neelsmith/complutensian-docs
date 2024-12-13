@@ -45,18 +45,18 @@ website:
         - complutensian/index.qmd
         - complutensian/images/index.qmd              
         - text: "---"        
-        - complutensian/organization/index.qmd     
+        - text: "Organization"     
 
         - text: "---"   
         - complutensian/organization/titlepages/index.qmd
         - complutensian/organization/colophons/index.qmd
         - complutensian/organization/registers/index.qmd  
-        - complutensian/organization/collation/index.qmd     
+        - text: "Collation"    
         - text: "---"                  
         - complutensian/pagetour/index.qmd
         - complutensian/navigation/index.qmd        
         - text: "---"           
-        - complutensian/chronology/index.qmd
+        - text: "Chronology"
 
 
  
