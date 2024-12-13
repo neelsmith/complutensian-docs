@@ -2,13 +2,27 @@
 engine: julia
 ---
 
+# Prefatory material
+
+```{julia}
+#| echo: false
+# ADD THIS WHEN PAGE IS IN PLALCE
+#=
+See [discussion](../../goals/prologs/)
+=#
+```
 
 
-# The prologs
+:::{.callout-note}
+The contents of this prefatory material are discussed on a forthcoming page of this web site.
+:::
+
 
 Links are to illustrations in the Madrid copy of the Complutensian Bible.
 
 
+
+## The five editorial prefaces
 
 1. *Dedication to Pope Leo X*
     - volume 1: quire `+` (initialquire), [page 2 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p7)
@@ -22,23 +36,21 @@ Links are to illustrations in the Madrid copy of the Complutensian Bible.
     - volume 4: quire `a` (initial quire), [page 2 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v4a_p3)
 3. *Finding roots of Hebrew words*.
     - volume 1:  quire `+` (initialquire), [page 3 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p9)
-4.  Prolog to Greek NT.
-    - volume 1: vol1_+_4r
-    - volume 5 vol5_a-preface_2r. Greek
-    - volume 5 vol5_a-preface_2v. Latin. Incipit *Ne mireris aut vitio vertas o studiose lector*
+4.  *Prolog to the Greek New Testament*.
+    - volume 1:  quire `+` (initialquire), [page 4 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p11)
+    - volume 5: quire 'a-preface' (initial quire), [page 2 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v5a_p3) (Greek)
+    - volume 5: quire 'a-preface' (initial quire), [page 2 verso](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v5a_p6) (Latin)
 5. Prolog to Hebrew and Aramaic dictionary.
-    - volume 1 vol1_+_4r-vol1_+_4v
+    - volume 1 quire `+` (initialquire), pages [4 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p11)-[4 verso](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p12)
 
 [^placement]: In volume 2, the title page and the prolog to the reader are each single sheets that have been tipped in. In the Madrid copy, the address to the reader is mistakenly placed between the first and second quires of the book of *Joshua* (quires `a` and `b`).
 
 ## Papal authorization
 
-1. Papal authorization (only handwritten version in BNE text!)
-    - volume 1 vol1_+_7v. In Huntington copy, see image [urn:cite2:citehunt:complutensian.v1:v1_plus_7v](https://www.homermultitext.org/ict2/?urn=urn:cite2:citehunt:complutensian.v1:v1_plus_7v)
-
-
-
-## Historical context reproduced from other incunabula
+1. Papal authorization
+    - volume 1, page 7 verso of the initial folio. In [the Madrid copy](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p18), this page was initially blank; the first statement of authorization hass been added by hand. A later printing seen in [the Huntington Library copy](https://www.homermultitext.org/ict2/?urn=urn:cite2:citehunt:complutensian.v1:v1_plus_7v) includes both the original statement of authorization and a second statement following Cisneros' death.
+    
+## Prefatory material reproduced from other *incunabula*
 
 1. Note on translations. Inicipit *Notandum: quod translatores et interpretes bibliae multi fuerunt*
     - volume 1 vol1_+_4v-vol1_+_5r
@@ -47,9 +59,7 @@ Links are to illustrations in the Madrid copy of the Complutensian Bible.
 
 ## Historical documents
 
-(not including Jerome's prefaces to individual pieces of the Bible)
-
-1. Letter of Jerome to Paulinus (letter 53). Chapter numbers given at end of each block   
+1. Letter of Jerome to Paulinus (letter 53)
     - volume 1 vol1_+_5r-vol1_+_6v
 2. Letter of Eusebius to Carpianus
     - volume 5  vol5_a-preface_3r 

@@ -51,7 +51,8 @@ website:
         - complutensian/organization/titlepages/index.qmd
         - complutensian/organization/colophons/index.qmd
         - complutensian/organization/registers/index.qmd  
-        - text: "Collation"    
+        - text: "Collation" 
+        - complutensian/organization/prologs/index.qmd   
         - text: "---"                  
         - complutensian/pagetour/index.qmd
         - complutensian/navigation/index.qmd        
