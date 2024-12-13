@@ -21,10 +21,13 @@ service = IIIFservice(baseurl, root)
 ict = "http://www.homermultitext.org/ict2/?"
 ```
 
+:::{.callout-note}
+Images are linked to pannable/zoomable views.
+:::
 
 ## An example page
 
-Volume 1, quire `a`, page 1 *recto*.
+To illustrate how the Complutensian Bible supports multilingual reading, we can consider the opening of *Genesis* 1. In Volume 1, that is page 1 *recto* of quire `a`.
 
 
 ```{julia}
@@ -37,6 +40,9 @@ pagelinked = linkedMarkdownImage(ict, v1a1r, service; w = 150, caption = "Septua
 
 
 ## Four texts
+
+
+The Torah (published in volume 1) ilustrates 
 
 Texts in four languages.
 
