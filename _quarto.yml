@@ -18,7 +18,7 @@ website:
     left:
       - text: "Home"
         file: index.qmd
-      - text: "The Complutensian"
+      - text: "The Original"
         file: complutensian/index.qmd        
       - text: "Applications"
         file: examples/index.qmd
