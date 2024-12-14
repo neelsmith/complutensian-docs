@@ -1,0 +1,23 @@
+---
+engine: julia
+---
+
+
+# Validate normalized text by parsing it morphologically
+
+
+
+## Overview
+
+Select a page, a set of glosses, and a passage on that page. Text contents are parsed, and the passage display with unanalyzed forms highlighted.
+
+
+## Notebook
+
+- [HTML version](./glosses-morphology.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/morphology/glosses-morphology.jl) (download and open in Pluto)
+
+
+## Screen capture
+
+![Screen capture](./passage-morphology.png)

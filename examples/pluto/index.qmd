@@ -11,21 +11,30 @@ One technology that is a good match for exploratory small-digital scholarship is
 If you're not familiar with Pluto notebooks, here's a little  [more information](./pluto-about/) about them.
 :::
 
+### Browsing source material
 
+- a IIIF viewer to [browse images](./imagebrowsing/)
 
-### The physical organization of Complutensian and orthographic practices
+###  Navigating the Madrid copy of the Complutensian
 
-- [browse images](./imagebrowsing/)
+- [navigate by quire and page](./browse-codex/) to explore  the physical organization of each volume
+- [navigate by *incipit/explicit* of Biblical books](./incipit/)
+
+### The physical organization of the Complutensian 
+
 - [table of contents](./toc/): index of texts to images
 - [passages of text indexed to browsable image](./passage-plus-image/) 
+
+
+## The Complutensian's editorial practices: alignment and orthography
+
 - [Latin spacing markers](./spacing-markers-latin/)
-- orthographic practice: usage of [abbreviations in glosses](./abbreviations/) 
+- usage of [abbreviations in glosses](./abbreviations/) 
 
-### Editing and indexing
+### Digital editing and indexing
 
-- [validating editing](./validation/): image and text views
-
-
+- validating editing: [diplomatic text and indexing to source image](./validation/index.qmd)
+- validating editing: [morphological validation of normalized text](./morphology-glosses/index.qmd)
 
 ### Reading passages of texts and glosses
 

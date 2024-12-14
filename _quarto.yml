@@ -41,6 +41,11 @@ website:
       contents:
         - index.qmd  
     - title: "The Complutensian"
+      contents:        
+        - examples/index.qmd
+        - examples/pluto/index.qmd
+        - examples/quarto/index.qmd
+    - title: "The Complutensian"
       contents:
         - complutensian/index.qmd
         - complutensian/images/index.qmd              
