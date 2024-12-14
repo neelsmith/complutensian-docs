@@ -66,7 +66,12 @@ Fill these out:
 
 ## How does a reader use it?
 
+Multilingual reading regardless of experience with the languages:
+
 - [Tour of a page](./pagetour/) (*in progress*)
+
+Reference materials for cutting-edge cross-lingual philology:
+
 - [Combining indexes and texts for philological research](./navigation/)
 
 ## When was it created?

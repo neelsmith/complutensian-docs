@@ -38,6 +38,11 @@ v1a1r = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19")
 pagelinked = linkedMarkdownImage(ict, v1a1r, service; w = 150, caption = "Septuagint")  |> Markdown.parse
 ```
 
+:::{.callout-caution title="TBA"}
+- ADD note on no Targum after Torah
+- Greek NT: no Hebrew or Aramaic
+- Monolingual: samples like Maccabees,  Prayer of Manasseh and 
+:::
 
 ## Four texts
 
@@ -85,13 +90,15 @@ Markdown.parse(tbl)
 Maybe see Pluto nbs + Ashley's graphics
 
 
-[Spacing markers in Hebrew text](./imgs/Hebrew-whitespace.png)
+| Latin text | Hebrew text |
+| --- | --- |
+| [![Spacing markers in Latin text](./imgs/Latin-whitespace.png)](./imgs/Latin-whitespace.png) | [![Spacing markers in Hebrew text](./imgs/Hebrew-whitespace.png)](./imgs/Hebrew-whitespace.png) |
 
 
 
 
 
-[Spacing markers in Latin text](./imgs/Latin-whitespace.png)
+
 
 
 
@@ -183,6 +190,7 @@ Concordance by sense:
 initium = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6c_p96@0.1271,0.2043,0.4218,0.03804")
 initiumlink = linkedMarkdownImage(ict, initium, service; w = 500, caption = "Concordance by sense: initium") |> Markdown.parse
 ```
+
 
 
 See more info on [contents and organization of volume 6](../organization/), and [example of navigation](../navigation/) using the Biblical texts of volumes 1-4 with the reference material of volume 6.
