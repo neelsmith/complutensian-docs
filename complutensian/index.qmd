@@ -52,6 +52,10 @@ Fill these out:
 
 - The editors' goals
 
+## What texts are included?
+
+- The textual canon
+
 ## How are the six volumes organized?
 
 - Contents and organization

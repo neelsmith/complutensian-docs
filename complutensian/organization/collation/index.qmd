@@ -3,7 +3,20 @@ title: Collation
 engine: julia
 ---
 
-## Identify the collation from photography
+
+## Quire organization of the Complutensian Bible
+
+The standard quire of the Complutensian Bible was a ternion, or gather of three bifolios.  A series of quires is identified by sequential letters on the first folio of each quire.[^seq]
+
+The first recto of each quire 
+
+
+[^seq]: Sequences can be runs of lower case letters, upper case letters, doubled letters and even tripled letters.
+
+## Collation of the Madrid copy of the Complutensian
+
+
+from photography
 
 - normally ternions
 - note practice in sequencing quires: rectos of 1:length/2 + 1 are identified
@@ -20,6 +33,9 @@ Note relation of this page to script in repo generating model and link to delimi
 ## Volume 1
 
 
+1. initial quaternion. Title page followed by prologue with folios numbered from `+iii` through `+iiii`. Apparently a quaternion with a guard sheet before the title page included in numbering? But folios 7 - 8 are flipped from order in Madrid (and others)? These would be bifolios with a guard sheet and title page.  **Different content in Madrid**: verso to Prolog of Jerome has handwritten text in BNE copy!  Huntington has printed text. (This is folio 7 verso in the Huntington copy, 8 verson in BNE copy)
+2. binion: 2 bifolios of corrigenda identified as `a` and `a ii`. These cover the entire Torah.
+3. the entire Torah in sequential quires running from `a` - `z`, (no `j`, `u`), `aa` - `zz` and two final quires with special marks. The register on the final recto notes that `Omnes sunt terni excepto ultimo qui est quaternus`. Final verso is blank but has same red frame for planned spaces as pages with content.
 
 
 ```{julia}
@@ -42,7 +58,7 @@ end
 v1table = [
     "| Quires | Contents | Notes |", 
     "|:--- |:--- |:--- |",
-    "| `+` | Prologs | irregular gather of 7 pages (presumably a ternion with one tipped in single page) |",
+    "| `+` | Title page and prologs | irregular gather of 7 pages (presumably a ternion with one tipped in single page) |",
     """| $(join(v1quireids, ", ")) | Pentateuch (Torah) | (See errata) |"""
 ]
 
@@ -57,31 +73,18 @@ v1errata = """
 join(v1table,"\n") *  "\n" * v1errata |> Markdown.parse
 ```
 
-
-::: {.callout-note title="Note these!"}
-
-
-- Document analogous error in vol 4 FF with two quire 3s.
-- Same kind of error in vol 2, rr.folio 2 repeated on first and second folios.
-- Vol 2 prolog out of place!
-:::
-
-
-
-
-## Volume 1
-
-1. initial quaternion. Title page followed by prologue with folios numbered from `+iii` through `+iiii`. Apparently a quaternion with a guard sheet before the title page included in numbering? But folios 7 - 8 are flipped from order in Madrid (and others)? These would be bifolios with a guard sheet and title page.  **Different content in Madrid**: verso to Prolog of Jerome has handwritten text in BNE copy!  Huntington has printed text. (This is folio 7 verso in the Huntington copy, 8 verson in BNE copy)
-2. binion: 2 bifolios of corrigenda identified as `a` and `a ii`. These cover the entire Torah.
-3. the entire Torah in sequential quires running from `a` - `z`, (no `j`, `u`), `aa` - `zz` and two final quires with special marks. The register on the final recto notes that `Omnes sunt terni excepto ultimo qui est quaternus`. Final verso is blank but has same red frame for planned spaces as pages with content.
-
 ## Volume 2
+
+Yikes BNE digital copy has prolog stuff between Joshua 6 and Joshua 7
+
+
 
 1. title page followed by 3 pages of prefatory material (binion?)
 2. text of Joshua begins with `a` - `vv` (end of *Paralipomenon*) with the final quire `vv` having only 4 pages (a binion) with the first three numbered.
 3. corrigenda in four pages, the first recto labelled `a`
 
 Notes: The colophon to vol 2 lists all the quires of the text, but not the corrigenda, which postdate the printing of the text including colophon!
+
 
 ## Volume 3
 
@@ -93,6 +96,8 @@ Notes: The colophon to vol 2 lists all the quires of the text, but not the corri
 - corrigenda. 2 pages followed by a printed blank with red frames (so a binion) with intial recto identified as `a`.
 
 
+
+
 ## Volume 4
 
 - title page has initial prolog on verso; recto `a ii` has more prefatory material; `a iii` then begins Isaiah. Continuation of the Latin OT in quires `a` - `z` and `aa` - `pp` with the final `pp` having only 4 pages (a binion), the first three identified. 
@@ -101,7 +106,6 @@ Notes: The colophon to vol 2 lists all the quires of the text, but not the corri
 
 
 
-Notes: in vol. 4, same spacing markers used in Greek that are used in Latin in vol. 1.
 
 
 ## Volume 5
@@ -122,73 +126,19 @@ Notes: spaces for elaborated caps saved and have regular lc version of letter pr
 Question: can we hypothesize that ternion `P` was planned for "journeys of Paul" but that it didn't happen and was later (or earlier???) done as a separate ternion `α` (lc alpha) ?
 
 
-Vol 1
 
 
-- Genesis
-- Exodus
-- Leviticus
-- Numbers
-- Deuteronomy
 
-Vol 2
+## Volume 6
 
-Yikes BNE digital copy has prolog stuff between Joshua 6 and Joshua 7
-
-- Joshua `a` (1) recto
-- Judges `e ii` recto
-- Ruth `i iiii` recto
-- 1 Kings `k ii` verso.  Note titles: urn:cite2:citebne:complutensian.v1:v2b_p20@0.4649,0.07268,0.4622,0.03005
-- 2 Kings `q ii` verso
-- 3 Kings `x iii` recto Note titles: urn:cite2:citebne:complutensian.v1:v2c_p53@0.1729,0.3490,0.3849,0.02852
-- 4 Kings `dd iii` recto
-- 1 Paralipomenon `ii` (6) recto Note title: urn:cite2:citebne:complutensian.v1:v2d_p91@0.1302,0.08218,0.4458,0.03895
-- 2 Paralipomenon `oo` (5) recto
-
-Register for volume: `vv` (4) verso
+::: {.callout-note title="Note these!"}
 
 
-Vol 3
-
-- 1 Ezra `aaa iii` recto
-- Nehemiah `ccc` (1) recto
-- Tobias `AAA` (1) recto
-- Judith `BBB` (1) recto
-- Esther `DDD` (1) recto
-- Job `EEE` (6) recto
-- Psalms `a` (1) recto
-- Proverbs `l` (1) verso
-- Ecclesiastes `o iii` verso
-- Songs `p v` recto
-- Wisdom `A` (1) recto
-- Ecclesiasticus `B iii` verso Note title urn:cite2:citebne:complutensian.v1:v3d_p74@0.2093,0.06930,0.4680,0.02545
-Register for volume: `F iiii` recto
-
-Vol 4
-
-:::{.callout-warning title="FILL THIS OUT"}
+- Document analogous error in vol 4 FF with two quire 3s.
+- Same kind of error in vol 2, rr.folio 2 repeated on first and second folios.
+- Vol 2 prolog out of place!
 :::
 
-- Isaiah `a iii` recto
-- Jeremiah `i` (1) veso
-- Lamentations `f` (5) recto
-- Baruch `t iii` verso
-- Ezekiel `v ii`  recto
-- Daniel `ee iiii` recto
-- Hosea `hh` (5) verso
-- Joel `ii` (6) recto
-- Amos `kk iii` recto
-- Obadiah  `ll ii` verso
-- Jonah `ll iii` verso
-- Micah `ll` (5) verso
-- Nahum `mm iii` verso
-- Habakkuk `mm` (5) verso
-- Zephaniah `nn` (1) verso
-- Haggai `nn iii` verso
-- Zechariah `nn` (5) verso
-- Malachi `pp ii` recto
 
-- 1 Maccabees `A` (1) recto
-- 2 Maccabees `D iii` verso
-- 3 Maccabees `F` (6) recto
+
 
