@@ -13,11 +13,9 @@ Start from [the registers](../registers/)
 
 Order may vary among specific versions.
 
-
-
-
 See volume 6 discussion!
 
+Note relation of this page to script in repo generating model and link to delimited-text data aset.
 
 ## Volume 1
 
