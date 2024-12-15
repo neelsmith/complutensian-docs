@@ -5,6 +5,22 @@ engine: julia
 # Reading the prologs
 
 
+
+## Intro to Pope
+
+- studiosus again in prolog to pope
+- did Greek NT first and at same time lexicon!
+- then the Hebrew dictionary *before* doing OT
+Note form of dictionary. *multiplex significatio* and the index of passags for scholars!
+- also need the proper names thing! (Cf text with vol 5 - identical?) Ordered alphabetically (so in Latin transcription whatever the language)
+Kind of subtle idea here: proper names don't have the denotative ambiguity of common nouns so can be expressed equivalently in different scripts
+- "Added to/joined to" dictionary - literally in same quire??
+- Hebrew alphabet and grammar. Grammar based on Hebrew work, only the best sources.
+- Best sources for texts in all 3 langg.
+
+
+
+
 ## Intro to Greek NT
 
 - addressed to studiosi / σπουδαῖοι
@@ -13,3 +29,4 @@ engine: julia
 - Still, we'll give some help: accent like MG tonos 
 - NB:  this is different from our txt of LXX!
 - also note: we x-index with tiny letters (indexed glossing just like Vulgate to Hebrew of OT)
+
