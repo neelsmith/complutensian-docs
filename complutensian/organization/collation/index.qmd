@@ -3,24 +3,71 @@ title: Collation
 engine: julia
 ---
 
+## Identify the collation from photography
+
 - normally ternions
 - note practice in sequencing quires: rectos of 1:length/2 + 1 are identified
 
-
-::: {.callout-note title="Note these!"}
-
-- Mistaken quire numbering in vol 1, ee. Ternion with folios 1,3,4,6,7
-- Mistaken quire number in vol 1, x. folio 2 repeated on first and second folios.
-- Document analogous error in vol 4 FF with two quire 3s.
-- Same kind of error in vol 2, rr.folio 2 repeated on first and second folios.
-- Vol 2 prolog out of place!
-:::
 
 Start from [the registers](../registers/)
 
 Order may vary among specific versions.
 
 See volume 6 discussion!
+
+Note relation of this page to script in repo generating model and link to delimited-text data aset.
+
+## Volume 1
+
+
+
+
+```{julia}
+#| echo: false
+#| output: asis
+using Markdown
+v1singlealphaquires = filter(map(c -> string(c), collect('a':'z'))) do ch
+    ch != "i" && ch != "u" && ch != "w"
+end
+v1doublealphaquires = filter(map(c -> repeat(c, 2), collect('a':'z'))) do s
+	s != "ii" && s != "uu" && s != "ww"
+end
+nonalpha = ["et", "con"]
+
+v1quireids = map(vcat(["+"], v1singlealphaquires, v1doublealphaquires, nonalpha)) do s
+    "`$(s)`"
+end
+
+
+v1table = [
+    "| Quires | Contents | Notes |", 
+    "|:--- |:--- |:--- |",
+    "| `+` | Prologs | irregular gather of 7 pages (presumably a ternion with one tipped in single page) |",
+    """| $(join(v1quireids, ", ")) | Pentateuch (Torah) | (See errata) |"""
+]
+
+v1errata = """
+
+**Errata**
+
+- Mistaken quire numbering in quire `ee`. Ternion with folios 1,3,4,6,7
+- Mistaken quire number in quire `x`: folio 2 repeated on first and second folios; identified in our data set as quire `x`, page `2` and quire `x`, page `2 bis`.
+
+"""
+join(v1table,"\n") *  "\n" * v1errata |> Markdown.parse
+```
+
+
+::: {.callout-note title="Note these!"}
+
+
+- Document analogous error in vol 4 FF with two quire 3s.
+- Same kind of error in vol 2, rr.folio 2 repeated on first and second folios.
+- Vol 2 prolog out of place!
+:::
+
+
+
 
 ## Volume 1
 

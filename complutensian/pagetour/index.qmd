@@ -3,6 +3,8 @@ engine: julia
 title: "Multilingual reading: tour of a page"
 ---
 
+:::{.callout-caution title="Page in progress"}
+:::
 
 ```{julia}
 #| echo: false
@@ -35,13 +37,12 @@ Images are linked to pannable/zoomable views.
 
 
 
-To illustrate how the Complutensian Bible supports multilingual reading, we can consider the opening of *Genesis* 1. In Volume 1, that is page 1 *recto* of quire `a`.
 
 
 ```{julia}
 #| echo: false
 #| warning: false
-#| output: asis
+#| output: false
 v1a1r = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19")
 fourlangs = linkedMarkdownImage(ict, v1a1r, service; w = 150)  
 
@@ -67,7 +68,6 @@ tbllines = [
 ]
 
 
-Markdown.parse(tlblines)
 ```
 
 
@@ -75,27 +75,57 @@ Markdown.parse(tlblines)
 #| echo: false
 #| warning: false
 #| output: asis
-v2vv4r = Cite2Urn("urn:cite2:citebne:complutensian.v1:v2f_p20@0.1865,0.7045,0.6835,0.1373")
-oneunglossed = linkedMarkdownImage(ict, vol4F6r, service; w = 150)  
 
-manasseh = linkedMarkdownImage(ict, vol4F6r, service; w = 400) 
+fourlanghtml = linkedHtmlImage(ict, v1a1r, service; w = 150)  
+fourlanglabel = "<br/>Vol. 1, quire <code>a</code>, 1 recto"
+fourlangcell = "$(fourlanghtml)$(fourlanglabel)"
+
+
+threelanghtml = linkedHtmlImage(ict, v2a1r, service; w = 150)  
+threelanglabel = "<br/>Vol. 2, quire <code>a</code>, 1 recto"
+threelangcell = "$(threelanghtml)$(threelanglabel)"
+
+twolanghtml = linkedHtmlImage(ict, v5A1r, service; w = 150)  
+twolanglabel = "<br/>Vol. 5, quire <code>A</code>, 1 recto"
+twolangcell = "$(twolanghtml)$(twolanglabel)"
+
+
+onelanghtml = linkedHtmlImage(ict, vol4F6r, service; w = 150)  
+onelanglabel = "<br/>Vol. 4, quire <code>F</code>, 6 recto"
+onelangcell = "$(onelanghtml)$(onelanglabel)"
+
+tblrows = [
+    "<table>",
+    "<tr><th>Four languages</th><th>Three languages</th><th>Two languages</th><th>One language (glossed)</th></tr>",
+    
+
+    "<tr class=\"centerimg\"><td>$(fourlangcell)</td><td>$(threelangcell)</td><td>$(twolangcell)</td><td>$(onelangcell)</td></tr>",
+    "</table>",
+]
+
+join(tblrows) |> HTML
+
+```
+
+In addition, one language, no glosses:
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+v2vv4r = Cite2Urn("urn:cite2:citebne:complutensian.v1:v2f_p20@0.1865,0.7045,0.6835,0.1373")
+manasseh = linkedMarkdownImage(ict, v2vv4r, service; w = 400) 
 
 manasseh |> Markdown.parse
 ``` 
 
 
-:::{.callout-caution title="TBA"}
-- ADD note on no Targum after Torah
-- Greek NT: no Hebrew or Aramaic
-- Monolingual: samples like Maccabees,  Prayer of Manasseh and 
-:::
-
 ## Four texts
 
 
-The Torah (published in volume 1) ilustrates 
+To illustrate how the Complutensian Bible supports multilingual reading, we can consider the opening of *Genesis* 1. In Volume 1, that is page 1 *recto* of quire `a`.
 
-Texts in four languages.
+The texts of the Torah (published in volume 1) ilustrate the full range of the Complutensian's four languages.
 
 
 ```{julia}
@@ -133,8 +163,7 @@ Markdown.parse(tbl)
 
 ## Keeping text aligned
 
-Maybe see Pluto nbs + Ashley's graphics
-
+Illustrations by Ashley Terjanian:
 
 | Latin text | Hebrew text |
 | --- | --- |
@@ -148,7 +177,7 @@ Maybe see Pluto nbs + Ashley's graphics
 
 
 
-## Glossing commentary
+## Glossing commentary: interlinear
 
 Interlinear glosses on LXX
 
@@ -161,6 +190,8 @@ linkedMarkdownImage(ict, interlinear, service; w = 500, caption = "Glossing Sept
 ```
 
 
+
+## Glossing commentary: adjacent
 
 
 Adjacent glosses (Targum Onkelos)
@@ -178,9 +209,12 @@ linkedMarkdownImage(ict, adjacent, service; w = 800, caption = "Glossing Targum 
 
 
 
-## Glossing via indexing, with lemmatization
+## Glossing commentary via indexing, with lemmatization
 
 
+### Vulgate glossing Masoretic text
+
+Example from Genesis 1.
 Glossing by indexing Vulgate to Hebrew, plus link to lemma
 
 
@@ -237,7 +271,27 @@ initium = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6c_p96@0.1271,0.2043,0.4
 initiumlink = linkedMarkdownImage(ict, initium, service; w = 500, caption = "Concordance by sense: initium") |> Markdown.parse
 ```
 
+### Vulgate glossing Greek New Testament
 
+Greek side: vol 5, quire `A` 1 recto. Can't gloss Greek article!
+
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+
+greekkl = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5a_p9@0.2680,0.1125,0.1862,0.01784")
+latinkl = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5a_p9@0.6640,0.1113,0.1004,0.01784")
+
+greekklimg = linkedMarkdownImage(ict, greekkl, service; w = 500)
+latinklimg = linkedMarkdownImage(ict, latinkl, service; w = 350)
+
+greekklimg * "\n\n" * latinklimg |> Markdown.parse
+```
+
+
+## More
 
 See more info on [contents and organization of volume 6](../organization/), and [example of navigation](../navigation/) using the Biblical texts of volumes 1-4 with the reference material of volume 6.
 
