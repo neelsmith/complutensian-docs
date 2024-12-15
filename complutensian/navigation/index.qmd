@@ -1,9 +1,13 @@
 ---
 engine: julia
-title: Combining indexes and texts for philological research
+title: Combining indexes and texts for research
 ---
 
-The cross-referenced reference materials in the Complutensian Bible enable readers to follow sophisticated philological inquiries.  We'll illustrate how to use the reference material in volume 6 to follow a concept expressed in Latin through passages in the Hebrew text of volumes 1-4.
+The cross-referenced reference materials in the Complutensian Bible enable readers to follow sophisticated philological and literary critical inquiries.  
+
+## Philology
+
+We'll illustrate how to use the reference material in volume 6 to follow a concept expressed in Latin through passages in the Hebrew text of volumes 1-4.
 
 ```{julia}
 #| echo: false
@@ -122,6 +126,8 @@ page18img |> HTML
 
 At the top right of each recto, the number of the folio within the lexicon is listed (above, **Fo, xviii**). This is the hook that lets us get into the lexicon from the index we used in step 1. Scanning the marginal notes, we see *creare* near the bottom of the inner margin, annotating an article **בָּרָ֣א**/*Bara*. For the root sense *Creare*, *fingere*, etc., the first illusrtative passage is from *Genesis* 1, *In principio creabuit deus celum et terram*.
 
+
+
 illustrated with a passage
 
 
@@ -155,6 +161,7 @@ Volumes 1-4 of the Complutensian Bible cover the entire Christian Old Testament,
 ```{julia}
 #| echo: false
 #| warn: false
+#| output: asis
 gen1urn = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19@0.3418,0.04151,0.5604,0.07342")
 
 gen1link = linkedHtmlImage(
@@ -167,5 +174,32 @@ gen1img |> HTML
 
 
 
+## Exegesis: comparing passages
 
 
+
+The Greek New Testament is annotated with canonical references to other passages that should be consulted.
+
+On volume 5, quire `A` page 1 verso, for example:
+
+```{julia}
+#| echo: false
+#| warn: false
+#| output: asis
+
+greekpsg = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5a_p10@0.2000,0.1621,0.7720,0.05720")
+xrefwgreek = linkedMarkdownImage(ict,greekpsg, imgservice; w = 600) 
+
+
+latinpsg = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5a_p10@0.6156,0.1624,0.3489,0.04459")
+xrefwlatin = linkedMarkdownImage(ict,greekpsg, imgservice; w = 600) 
+
+
+xrefwgreek * "\n\n"  * xrefwlatin |> Markdown.parse
+
+```
+
+
+Vol. 4 quire `b` page 1 verso, *Isaiah* 7:
+
+urn:cite2:citebne:complutensian.v1:v4a_p14@0.4431,0.3222,0.5311,0.08328
