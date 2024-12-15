@@ -25,7 +25,15 @@ ict = "http://www.homermultitext.org/ict2/?"
 Images are linked to pannable/zoomable views.
 :::
 
-## An example page
+## Multilingual reading
+
+- 4 languages: Pentateuch (Torah)
+- 3 languages: remainder of OT (Prophets, Writings)
+- 2 languages: NT
+- 1 language with glossing
+- 1 language: Prayer of Manasseh
+
+
 
 To illustrate how the Complutensian Bible supports multilingual reading, we can consider the opening of *Genesis* 1. In Volume 1, that is page 1 *recto* of quire `a`.
 
@@ -35,8 +43,46 @@ To illustrate how the Complutensian Bible supports multilingual reading, we can 
 #| warning: false
 #| output: asis
 v1a1r = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19")
-pagelinked = linkedMarkdownImage(ict, v1a1r, service; w = 150, caption = "Septuagint")  |> Markdown.parse
+fourlangs = linkedMarkdownImage(ict, v1a1r, service; w = 150)  
+
+
+v2a1r = Cite2Urn("urn:cite2:citebne:complutensian.v1:v2a_p5")
+threelangs = linkedMarkdownImage(ict, v2a1r, service; w = 150)  
+
+
+v5A1r = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5a_p9")
+twolangs = linkedMarkdownImage(ict, v5A1r, service; w = 150)  
+
+
+
+vol4F6r = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4f_p27")
+oneglossed  = linkedMarkdownImage(ict, vol4F6r, service; w = 150)  
+
+
+tbllines = [
+    "| Four languages | Three languages | Two languages | One language (glossed) |",
+    "| --- | --- | --- | --- | ",
+
+    "| $(fourlangs) | $(threelangs) | $(twolangs) | $(oneglossed) |",
+]
+
+
+Markdown.parse(tlblines)
 ```
+
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+v2vv4r = Cite2Urn("urn:cite2:citebne:complutensian.v1:v2f_p20@0.1865,0.7045,0.6835,0.1373")
+oneunglossed = linkedMarkdownImage(ict, vol4F6r, service; w = 150)  
+
+manasseh = linkedMarkdownImage(ict, vol4F6r, service; w = 400) 
+
+manasseh |> Markdown.parse
+``` 
+
 
 :::{.callout-caution title="TBA"}
 - ADD note on no Targum after Torah
