@@ -64,7 +64,7 @@ Fill these out:
     - [prologs](./organization/prologs/)
     - [colophons](./organization/colophons/)
     - [quire registers](./organization/registers/)
-    - complete collation
+    - [complete collation](./organization/collation/)
 
 
 

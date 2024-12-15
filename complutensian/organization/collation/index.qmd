@@ -13,6 +13,21 @@ The first recto of each quire
 
 [^seq]: Sequences can be runs of lower case letters, upper case letters, doubled letters and even tripled letters.
 
+
+
+
+## Title pages
+
+1. Part of an irregular gather labelled `+`; 7 pages in length, with prefatory material.
+2. A single page, with address to to Pope Leo X on verso.[^MadridVol2] (Identifier for this quire in our digital data: `title`)
+3. A regular ternion with prefatory material and text of *Ezra* beginning on page 3 recto.
+4. A regular ternion with prefatory material and text of *Isaiah* beginning on page 3 recto.
+5. A binion labelled `a` (lower case) with prefatory material. This is clearly distinguished from the following sequence with the text of the New Testamaent, beginning from choir `A` (upper case).
+6. A single page, with address to to Pope Leo X on verso. (Identifier for this quire in our digital data: `title`)
+
+
+[^MadridVol2]: The Madrid copy has a second page with prefatory material between quires `a` and `b`. (Identifier fo this irregular quire in our digital data: `prolog`.) This is clearly an error in the binding of the Madrid copy: the title page and prolog page were certainly intended to go together perhaps as part of a single bifolio sheet.
+
 ## Collation of the Madrid copy of the Complutensian
 
 
@@ -32,12 +47,6 @@ Note relation of this page to script in repo generating model and link to delimi
 
 ## Volume 1
 
-
-1. initial quaternion. Title page followed by prologue with folios numbered from `+iii` through `+iiii`. Apparently a quaternion with a guard sheet before the title page included in numbering? But folios 7 - 8 are flipped from order in Madrid (and others)? These would be bifolios with a guard sheet and title page.  **Different content in Madrid**: verso to Prolog of Jerome has handwritten text in BNE copy!  Huntington has printed text. (This is folio 7 verso in the Huntington copy, 8 verson in BNE copy)
-2. binion: 2 bifolios of corrigenda identified as `a` and `a ii`. These cover the entire Torah.
-3. the entire Torah in sequential quires running from `a` - `z`, (no `j`, `u`), `aa` - `zz` and two final quires with special marks. The register on the final recto notes that `Omnes sunt terni excepto ultimo qui est quaternus`. Final verso is blank but has same red frame for planned spaces as pages with content.
-
-
 ```{julia}
 #| echo: false
 #| output: asis
@@ -50,17 +59,28 @@ v1doublealphaquires = filter(map(c -> repeat(c, 2), collect('a':'z'))) do s
 end
 nonalpha = ["et", "con"]
 
-v1quireids = map(vcat(["+"], v1singlealphaquires, v1doublealphaquires, nonalpha)) do s
+v1quireids = map(vcat(v1singlealphaquires, v1doublealphaquires, nonalpha)) do s
     "`$(s)`"
 end
 
 
 v1table = [
-    "| Quires | Contents | Notes |", 
+    "| Quire sequences | Contents | Notes |", 
     "|:--- |:--- |:--- |",
-    "| `+` | Title page and prologs | irregular gather of 7 pages (presumably a ternion with one tipped in single page) |",
-    """| $(join(v1quireids, ", ")) | Pentateuch (Torah) | (See errata) |"""
+    "| `+` | Title page and prologs | a single irregular gather of 7 pages (presumably a ternion with one tipped-in single page) |",
+    """| $(join(v1quireids, ", ")) | Pentateuch (Torah) | All ternions except for `ee` and `con`. `con` is a quaternion; ee` is an irregular gather with 7 pages: see errata. |"""
 ]
+
+
+join(v1table,"\n") |> Markdown.parse
+```
+
+
+
+
+1. initial quaternion. Title page followed by prologue with folios numbered from `+iii` through `+iiii`. Apparently a quaternion with a guard sheet before the title page included in numbering? But folios 7 - 8 are flipped from order in Madrid (and others)? These would be bifolios with a guard sheet and title page.  **Different content in Madrid**: verso to Prolog of Jerome has handwritten text in BNE copy!  Huntington has printed text. (This is folio 7 verso in the Huntington copy, 8 verson in BNE copy)
+2. binion: 2 bifolios of corrigenda identified as `a` and `a ii`. These cover the entire Torah.
+3. the entire Torah in sequential quires running from `a` - `z`, (no `j`, `u`), `aa` - `zz` and two final quires with special marks. The register on the final recto notes that `Omnes sunt terni excepto ultimo qui est quaternus`. Final verso is blank but has same red frame for planned spaces as pages with content.
 
 v1errata = """
 
@@ -70,10 +90,35 @@ v1errata = """
 - Mistaken quire number in quire `x`: folio 2 repeated on first and second folios; identified in our data set as quire `x`, page `2` and quire `x`, page `2 bis`.
 
 """
-join(v1table,"\n") *  "\n" * v1errata |> Markdown.parse
-```
 
 ## Volume 2
+
+
+```{julia}
+#| echo: false
+#| output: asis
+v2singlealphaquires = filter(map(c -> string(c), collect('a':'z'))) do ch
+    ch != "i" && ch != "u" && ch != "w"
+end
+v2doublealphaquires = filter(map(c -> repeat(c, 2), collect('a':'v'))) do s
+	s != "ii" && s != "uu" && s != "ww"
+end
+
+v2quireids = map(s -> "`$(s)`", vcat(v2singlealphaquires, v2doublealphaquires))
+v2table = [
+    "| Quires | Contents | Notes |", 
+    "|:--- |:--- |:--- |",
+    "| `title` | Title page and prolog | binion? |",
+    """| $(join(v2quireids, ", ")) | *Joshua* - *Paralipomenon* | (See errata) |"""
+]
+
+
+join(v2table,"\n") |> Markdown.parse
+```
+
+
+
+
 
 Yikes BNE digital copy has prolog stuff between Joshua 6 and Joshua 7
 
