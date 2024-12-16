@@ -20,7 +20,25 @@ service = IIIFservice(baseurl, root)
 ict = "http://www.homermultitext.org/ict2/?"
 ```
 
+
+In volumes 3 and 4, the title page begins the first quire listed in the register. It appears separately in an unlisted quire in volume 1 (quire `+`) and volume 5 (quire `a`), and as a single, separate sheet in volumes 2 and 6. In each volume, the title obviously must be the first page of the volume. 
+
+## Relation of title page to the rest of the volume
+
+1. First page of an irregular gather labelled `+`; 7 pages in length, with prefatory material.
+2. A single page, with address to to Pope Leo X on verso.[^MadridVol2] (Identifier for this quire in our digital data: `title`)
+3. First page of a regular ternion `aaa` that includes prefatory material, with the text of *Ezra* beginning on page 3 recto.
+4. First page of a regular ternion `a` that includes prefatory material, with the text of *Isaiah* beginning on page 3 recto.
+5. First page of a binion labelled `a` (lower case) with introductory material for the New Testament.
+6. A single page, with address to to Pope Leo X on verso. (Identifier for this quire in our digital data: `title`)
+
+
+[^MadridVol2]: The Madrid copy has a second page with prefatory material between quires `a` and `b`. (Identifier fo this irregular quire in our digital data: `prolog`.) This is clearly an error in the binding of the Madrid copy: the title page and prolog page were certainly intended to go together perhaps as part of a single bifolio sheet.
+
+
 ## Titling text of each volume
+
+
 
 ```{julia}
 #| echo: false
