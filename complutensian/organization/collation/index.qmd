@@ -271,17 +271,6 @@ Volumes 5 and 6 are different. They include reference materials (lexica, grammar
 #| output: asis
 #| warning: false
 
-
-
-#v4singles = filter(collect('a':'z')) do c
-#		c != 'i' && c != 'u' && c != 'w'
-#end
-
-#v4doubleids = map(c -> repeat(c,2), filter(collect('a':'o')) do c
-#		c != 'i'
-#end)
-
-#v4series1 = map(s -> "`$(s)`", vcat(v4singles, v4doubleids))
 gospels = filter(map(c -> "`$(c)`", collect('A':'Q'))) do ch
         ch != "`I`" 
 end
@@ -315,19 +304,62 @@ join(v5table,"\n") |> Markdown.parse
 ```
 
 
-
-- the travels of Paul in a single ternion `α` with all rectos labelled
-- the continuation of the NT from 'R` - `MM` presumably all ternions
-- explanations of names in a single gather of 10 bifolios, rectos `a` - `a vi` identified as normal
-- intro to Greek with vocabulary, in quires `a` - `g`. The final quire `g` has only three folios, all three rectos explicitly identified.
-
-
-Question: can we hypothesize that ternion `P` was planned for "journeys of Paul" but that it didn't happen and was later (or earlier???) done as a separate ternion `α` (lc alpha) ?
-
-
-
-
-
 #### Volume 6
 
 
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+
+
+
+#=
+gospels = filter(map(c -> "`$(c)`", collect('A':'Q'))) do ch
+        ch != "`I`" 
+end
+ntsingles =  filter(map(c -> string(c), collect('R':'Z'))) do ch
+        ch != "I"  && ch != "U" && ch != "W"
+end
+ntdoubles =  filter(map(c -> repeat(c, 2), collect('A':'M'))) do c
+		c != "II"
+end
+remainingNT = map(s -> "`$(s)`", vcat(ntsingles, ntdoubles))
+
+vocabquires = map(c -> "`$(c)`", collect('a':'f'))
+=#
+
+v6ucquires = filter(map(c -> string(c), collect('A':'Z'))) do ch
+        ch != "I" && ch != "U" && ch != "W"
+    end
+v6doublealphaquires = map(c -> repeat(c, 2), collect('A':'F'))
+
+lexicon = map(s -> "`$(s)`", vcat(v6ucquires, v6doublealphaquires))
+
+names = map(c -> "`$(c)`", collect('B':'E'))
+
+
+
+grammar = map(c -> "`$(c)`", collect('A':'C'))
+
+v6table = [
+    "| Quires | Contents | Notes |", 
+    "|:--- |:--- |:--- |",
+    "| title | Title page and prolog | A single page |",
+    "| $(join(lexicon, ", ")) | Hebrew lexicon | Ternions except for `FF`, a binion |",
+
+    "| `A` | First quire of series with explanations of proper names | Ternion |",
+    "| `A` | Thesaurus of Latin -> Hebrew concepts | Quaternion |",
+
+    "| $(join(names, ", ")) | Remaining quires with explanations of proper names | Ternions except for `E`, a single bifolio sheet |",
+
+    "| $(join(grammar, ", ")) | Hebrew grammar | Three folios of content |",
+   
+]
+
+join(v6table,"\n") |> Markdown.parse
+```
+
+**Notes**
+
+- The prolog on the verso of the title page is the same introducing to using the Hebrew and Aramaic dictionaries that is printed in volume 1 beginning on quire `+`,page 4 recto.
