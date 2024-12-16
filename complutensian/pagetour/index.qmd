@@ -27,15 +27,14 @@ ict = "http://www.homermultitext.org/ict2/?"
 Images are linked to pannable/zoomable views.
 :::
 
-## Multilingual reading
 
+
+## Multilingual reading
 - 4 languages: Pentateuch (Torah)
 - 3 languages: remainder of OT (Prophets, Writings)
 - 2 languages: NT
 - 1 language with glossing
 - 1 language: Prayer of Manasseh
-
-
 
 
 

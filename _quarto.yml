@@ -1,5 +1,6 @@
 project:
   type: website
+bibliography: references.bib  
 theme: pulse
 execute:
   freeze: auto

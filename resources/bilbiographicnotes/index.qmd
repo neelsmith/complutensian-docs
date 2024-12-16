@@ -1,0 +1,13 @@
+---
+engine: julia
+title: Bibliographic notes
+---
+
+Highly selective
+
+A general introduction: @marcos2017
+
+- layout of the volumes [@marcos2017 7-11]
+
+
+
