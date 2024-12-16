@@ -5,9 +5,12 @@ title: Bibliographic notes
 
 Highly selective
 
-A general introduction: @marcos2017
+-   near-primary source @gomez_de_castro_rebus_1569
 
-- layout of the volumes [@marcos2017 7-11]
+<!-- -->
 
+-   a recent general introduction: @marcos2017
 
+-   still useful: @lyell1917
 
+-   layout of the volumes [@marcos2017 7-11]

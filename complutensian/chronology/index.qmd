@@ -17,4 +17,4 @@ Some copies include a second note from Pope Leo X referring to the death of Cisn
 
 
 
-[^deathdate]: Lyell, p 28
+[^deathdate]: Death date: [@lyell1917 28]. Lyell states (p. 35) that the authorized volumes were not "put into circulation" until 1522, but does not cite evidence for this date.
