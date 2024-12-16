@@ -63,7 +63,8 @@ website:
         - complutensian/navigation/index.qmd        
         - text: "---"   
         - text: "The textual canon"        
-        - text: "Chronology"
+        - text: "---"
+        - complutensian/chronology/index.qmd
 
 
  

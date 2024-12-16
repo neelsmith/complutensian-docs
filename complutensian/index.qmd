@@ -80,7 +80,7 @@ Reference materials for cutting-edge cross-lingual philology:
 
 ## When was it created?
 
-- Dating the individual parts of the Complutensian
+- [Dating the individual parts](./chronology/) of the Complutensian
 
 
 

@@ -3,26 +3,19 @@ title: Chronology
 engine: julia
 ---
 
+## Important fixed points
+
+The colophons to the three main sections of the project give explicit dates for their printing. In chronological order, they are:
+
+- New Testament (volume 5): January 10, 1514
+- Hebrew lexicon and other reference materials (volume 6): March 17, 1515
+- The multilingual Old Testament (volumes 1-4): July 10, 1517
+
+The papal authorization to publish the work is dated March 22, 1520.
+
+Some copies include a second note from Pope Leo X referring to the death of Cisneros, which occurred on November 8 1520.[^deathdate]
 
 
 
-Printing Timeline:
-- ??? Does Lyell say that the printing began in 1502 in honor of the future Emperor Charles V ???
 
-It was printed in Alcalá (Complutum) and completed between 1514 and 1517.
-
- Details of the Volumes:
-
-- New Testament: The colophon (final page) is dated 10th January 1514 , making this the first volume completed.
-- Hebrew and Chaldaic Vocabulary: (Part of the Old Testament supplementary materials) The Hebrew portion is dated 17th March 1514 and the Chaldean portion 31st May 1514.
-- Four Volumes of the Old Testament: These followed, with the colophon of the last Old Testament volume dated 10th July 1517.
-
-
-
-Publication Timeline:
-Despite completion in 1517, the official Papal sanction needed for circulation was only granted on 22nd March 1520.
-
-The Complutensian Polyglot was not published or distributed until 1522. What is the evidence for this???
-
-This delay in publication may have been due to doubts by the Church authorities about the dissemination of a new Bible translation, as well as competition with Erasmus's New Testament, which was published earlier, in 1516.
-
+[^deathdate]: Lyell, p 28
