@@ -42,6 +42,7 @@ Links are to illustrations in the Madrid copy of the Complutensian Bible.
     - volume 5: quire 'a-preface' (initial quire), [page 2 verso](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v5a_p6) (Latin)
 5. Prolog to Hebrew and Aramaic dictionary.
     - volume 1 quire `+` (initialquire), pages [4 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p11)-[4 verso](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p12)
+    - volume 6 maybe 1 verso
 
 [^placement]: In volume 2, the title page and the prolog to the reader are each single sheets that have been tipped in. In the Madrid copy, the address to the reader is mistakenly placed between the first and second quires of the book of *Joshua* (quires `a` and `b`).
 

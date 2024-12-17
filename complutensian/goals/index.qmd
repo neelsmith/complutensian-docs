@@ -3,20 +3,51 @@ engine: julia
 title: Editorial goals
 ---
 
-The editors 
+
+We don't have to guess: they tell us in 5 prefatory essays.
+
+pope leo: motivation, big design, overall plan
+reading OT. Concrete things
+(finding HEbrew roots) digging down
+reading NT (1 and 5). But now apologies for NT
+using dictionary. and again
 
 - accessible to those *qui non integram linguae cognitionem adepti sunt*
 - useful for innovative research: *studiosis vtillisimum fore credimus*
 
 
-Things they talk about:
+Things they talk about in addition to philological drive to original meaning:
 
-- historical situation (Eusebius, Jerome)
+- historical situation (Eusebius, Jerome) (cite others)
 - design of 6 volumes
 - expectations of reader
 
 
+**TO POPE**
 
+- studiosus again in prolog to pope
+- did Greek NT first and at same time lexicon!
+- then the Hebrew dictionary *before* doing OT
+Note form of dictionary. *multiplex significatio* and the index of passags for scholars!
+- also need the proper names thing! (Cf text with vol 5 - identical?) Ordered alphabetically (so in Latin transcription whatever the language)
+Kind of subtle idea here: proper names don't have the denotative ambiguity of common nouns so can be expressed equivalently in different scripts
+- "Added to/joined to" dictionary - literally in same quire??
+- Hebrew alphabet and grammar. Grammar based on Hebrew work, only the best sources.
+- Best sources for texts in all 3 langg.
+
+
+**TO READER**
+
+***NT**
+
+**OT**
+
+
+**LEXICON AND ROOTS**
+
+
+
+We see them at work 
 
 :::{.callout-note title="In progress"}
 Coming soon: an overview of all the prefatory material with explicit editorial statements in each of the six volumes.

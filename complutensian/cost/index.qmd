@@ -1,0 +1,9 @@
+---
+engine: julia
+---
+
+# How much did the Complutensian cost?
+
+[@lyell1917 34] says
+
+@miller_antiquarianization_2001 compares space program
