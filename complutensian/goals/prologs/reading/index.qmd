@@ -4,7 +4,13 @@ engine: julia
 
 # Reading the prologs
 
-
+- first time in multiple languages!
+- Ut intelligas studiose Lector modum et ordinem:quem in hac veteris testamenti impressione feruauimus: ac inde possis oc libro facile uti
+- 3 parts to OT, different no. of langg
+- in Torah, 3 langg: must have latin for each!
+- indexing system
+- canonicity
+- details page layout in coll etc
 
 ## Intro to Pope
 
@@ -18,6 +24,7 @@ Kind of subtle idea here: proper names don't have the denotative ambiguity of co
 - Hebrew alphabet and grammar. Grammar based on Hebrew work, only the best sources.
 - Best sources for texts in all 3 langg.
 
+## To reader, on reading OT
 
 
 
