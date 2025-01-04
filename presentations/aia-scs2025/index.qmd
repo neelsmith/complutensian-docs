@@ -5,20 +5,13 @@ title: "AIA/SCS 2025"
 
 ## Ancient MakerSpaces
 
-
-:::{.callout-tip title="Session: TBA"}
-Details of time and place TBA
-:::
-
+SCS-75: January 5, 2025, 8:00am–1:30pm. Ancient MakerSpaces (Workshop, Joint session)  (Salon A)
 
 Presenters: Neel Smith, Ashley Terjanian
 
 Title: A digital Complutensian polyglot Bible
 
-
-:::{.callout-tip title="Slides: TBA"}
-A slide stack from our presentation will be added here during the convention.
-:::
+[Slides](http://shot.holycross.edu/scs2025/smith-terjanian.pdf)
 
 Abstract:
 
