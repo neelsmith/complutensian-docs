@@ -1,0 +1,99 @@
+---
+engine: julia
+title: Contents and organization
+---
+
+
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+using Pkg
+Pkg.add("CitableImage")
+using CitableImage
+Pkg.add("CitableObject")
+using CitableObject
+using Markdown
+
+baseurl = "http://www.homermultitext.org/iipsrv"
+root = "/project/homer/pyramidal/deepzoom"
+service = IIIFservice(baseurl, root)
+ict = "http://www.homermultitext.org/ict2/?"
+```
+
+
+The Complutensian Bible is an extraordinarily creative design, mixing many conventions family from manuscript copying with highly innovative experiments exploiting the potential of the still new technology of printing.
+
+
+Although the Complutensian Bible was organized in six volumes, it is clear from [the colophons](./colophons/) recording the completion of each major section, as well as from the language of [each volume's title page](./titlepages/) that Cisneros conceived of the project in three sections: 
+
+1. the multilingual Old Testament[^1]
+2. the multilingual New Testament[^2]
+3. reference works, especially the Hebrew lexicon[^3]
+
+[^1]: Part 1!
+
+[^2]: NT
+
+[^3]: yes, it's really the lexicon
+
+
+## Volumes 1-4
+
+
+- Volume 1: Torah (including Targum Onkelos)
+- Volumes 2-4: remainder of Hebrew Bible (following order of books in Vulgate)
+
+
+## Volume 5: contents
+
+
+- Text of New Testament (with Pauline prefaces)
+- Greek grammar
+- Greek vocabulary
+- etymologies of proper names
+- journeys of Paul
+
+## Volume 6: contents
+
+- Hebrew lexicon
+- Hebrew grammar
+- Reverse index of Latin words to the Hebrew lexicon
+- Alternate forms of names
+- Etymologies of names
+
+
+[Volume 6: quire analysis](./imgs/quire-analysis.png)
+
+
+
+- The quire registers:
+    - vol 1
+    - vol 2
+    - vol 3
+- The colophons:
+    - vol 4
+    - vol 5: `MM` 7 verso
+    - vol 6
+
+
+## Respect for Greek and Hebrew texts
+
+Note that **Third Maccabees** is not in the Vulgate
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+macc3 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4f_p27@0.1187,0.05708,0.3182,0.06020")
+macc3linked = linkedMarkdownImage(ict, macc3, service; w = 600, caption = "Volume 1 title page") |> Markdown.parse
+```
+
+
+## Collation
+
+
+The [registers](./registers/)
+
+
+[See it](./collation/)

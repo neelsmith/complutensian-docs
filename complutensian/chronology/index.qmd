@@ -1,0 +1,20 @@
+---
+title: Chronology
+engine: julia
+---
+
+## Important fixed points
+
+The colophons to the three main sections of the project give explicit dates for their printing. In chronological order, they are:
+
+- New Testament (volume 5): January 10, 1514
+- Hebrew lexicon and other reference materials (volume 6): March 17, 1515
+- The multilingual Old Testament (volumes 1-4): July 10, 1517
+
+The papal authorization to publish the work is dated March 22, 1520.
+
+Some copies include a second note from Pope Leo X referring to the death of Cisneros, which occurred on November 8 1520.[^deathdate]
+
+
+
+[^deathdate]: Death date: [@lyell1917 28]. Lyell states (p. 35) that the authorized volumes were not "put into circulation" until 1522, but does not cite evidence for this date.

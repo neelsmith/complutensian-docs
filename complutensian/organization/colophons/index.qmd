@@ -1,0 +1,63 @@
+---
+engine: julia
+title: Colophons
+---
+
+Dated colophons mark the ends of the three major sections of the work: the end of the multilingual Old Testament in volume 4, the New Testament in volume 5, and the Hebrew dictionary in volume 6.
+
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+using Pkg
+Pkg.add("CitableImage")
+using CitableImage
+Pkg.add("CitableObject")
+using CitableObject
+using Markdown
+
+baseurl = "http://www.homermultitext.org/iipsrv"
+root = "/project/homer/pyramidal/deepzoom"
+service = IIIFservice(baseurl, root)
+ict = "http://www.homermultitext.org/ict2/?"
+
+imgwidth = 400
+
+v4 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4f_p35@0.1036,0.07985,0.6440,0.1712")
+v4linked = linkedMarkdownImage(ict, v4, service; w = imgwidth)
+
+v5 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5e_p46@0.2738,0.3004,0.5920,0.5381")
+v5linked = linkedMarkdownImage(ict, v5, service; w = imgwidth)
+
+v6 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6d_p49@0.1253,0.3908,0.6702,0.4665")
+v6linked = linkedMarkdownImage(ict, v6, service; w = imgwidth)
+```
+
+
+
+## The colophons in the Madrid copy
+
+
+```{julia}
+#| echo: false
+#| warning: false
+
+v4text = "Explicit quarta et vltima pars totius veteris testamenti hebraico grecoque et latino idiomate nunc primum impressa in hac preclarissima Complutensi vniuersitate. De mandato ac sumptibus Reuernendissimi in christo patris et domini: domini. F. Francisci Ximenez de Cisneros tituli Sancte Balbine sacro sancte Romane ecclesie presbyteri Cardinalis Hispanie Archiepiscopi Toletani et hispaniarum primatis : ac regnorum castelle Archicancellarii. Industria et solertia honorabilis vivi Arnaldi Guillelmi de Brocario artis impressorie Magistri. Anno Domni Millessimo quingentesimo decimo septimo. mensis Iulii die decimo."
+
+
+v5text = "Ad perpetuam laudem et gloriam dei et domini nostri iesu christi hoc sacro sanctum opus noui testamenti et libri vite grecis latinisque characteribus nouiter impressum atque studiosissime emendatum: felici fine absolutum est in hac preclarissima Complutensi vniuersitate: de mandato et sumptibus Reuerendissimi in christo patris et illustrissimi domini domini fratris Francisci Ximenez de Cisneros tituli sancte Balbine sancte Romane eccl'ie presbyteri Cardinalis hispanie Archiepi. toletani et Hispaniarum primatis ac regnorum castelle archiecancellarii: industria et solertia honorabilis viri Arnaldi guilielmi de Brocario artis impressorie magistri. Anno domini Millesimo quingentesimo decimo quarto. Mensis ianuarii die decimo."
+
+v6text = "Explicit vocabularium hebraicum totius veteris testamenti cum omnibus dictionibus chaldaicis in eodem veteri testamento contentis: nouiter impressum in hac preclarissima Complutensi vniuersitate. De mandato ac sumptibus Reuerendissimi in christo patris et domini: domini F. Francisci Ximenes de Cisneros tituli Sancte Balbine sacro sancte Romane ecclesie presbyteri Cardinalis Hispanie Archiepiscopi Toletani et hispaniarum primatis: ac regnorum castelle Archicancellarii. Industria et solertia honorabilis vivi Arnaldi Guilielmi de Brocario artis impressorie Magistri. Anno Domini Millesimo quingentesimo decmo quinto. mensis Marcii die decima septima."
+
+
+tbl = """| Volume | Page | Colophon | Text | Date |
+| --- | --- | --- | --- | --- |
+| 4: conclusion of Old Testament | quire `G`, page 4 recto | $(v4linked) | $(v4text)|  July 10, 1517|
+| 5: New Testament | quire `MM`, page 7 verso | $(v5linked) | $(v5text)| January 10, 1514 |
+| 6: reference works | quire `FF`, page 4 recto | $(v6linked) | $(v6text)|  March 17, 1515 |
+"""
+
+Markdown.parse(tbl)
+```
+
+

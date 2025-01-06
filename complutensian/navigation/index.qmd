@@ -1,0 +1,271 @@
+---
+engine: julia
+title: Combining indexes and texts for research
+---
+
+The cross-referenced reference materials in the Complutensian Bible enable readers to follow sophisticated philological and literary critical inquiries.  
+
+## Philology
+
+We'll illustrate how to use the reference material in volume 6 to follow a concept expressed in Latin through passages in the Hebrew text of volumes 1-4.
+
+```{julia}
+#| echo: false
+#| warn: false
+#| output: false
+
+using Markdown
+using Pkg
+Pkg.add("CitableBase")
+Pkg.add("CitablePhysicalText")
+Pkg.add("CitableObject")
+Pkg.add("CitableImage")
+using CitableBase, CitablePhysicalText
+using CitableObject, CitableImage
+codexurlbase = 
+    "https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/codex/bne_v"
+v6codexurl =  codexurlbase * "6.cex"    
+v6codex = fromcex(v6codexurl, Codex, UrlReader)[1]
+
+
+imgserveurl = "http://www.homermultitext.org/iipsrv"
+imgserveroot = "/project/homer/pyramidal/deepzoom"
+imgservice = IIIFservice(imgserveurl, imgserveroot)
+ict = "http://www.homermultitext.org/ict2/?"
+```
+
+
+### Step 1: look up a Latin term
+
+
+
+
+
+
+
+Volume 6 includes a 16-page index of Latin terms, with six dense columns per page. Each column lists aproximately 60 terms: there are approximately 950 entries in the index.
+
+
+
+::: {.callout-note}
+These pages are grouped in a single quaternion labeled `A` -- one of three quires in volume 6 called `A`! To refer to it unambiguously, we call this quire `A-index`. Its sequence within the different sections of volume 6 varies: see the discussion of the [organization of the contents](../organization/).
+:::
+
+
+Latin terms are listed in alphabetical order on the left side of the column, and one or more numbers is listed on the right. Numbers are separated by a dot if there is more than one. The heading `Fo.` (*folio*) on the right side of each column makes it clear that these refer to the numbered folios in the Hebrew-Latin lexicon. This illustration shows the fourth page of the index (page 2 verso of the quire), running alphabetically from *Consecratio* to *Descriptio*. Verbs are listed in the infinitive form.
+
+```{julia}
+#| echo: false
+#| warn: false
+#| output: false
+indexpage1urn = Cite2Urn("urn:cite2:complut:pages.bne:vol6_A-index_2v")
+indexpage1 = filter(pg -> urn(pg) == indexpage1urn, collect(v6codex))[1]
+label(indexpage1)
+```
+
+
+```{julia}
+#| echo: false
+#| warn: false
+imglink = linkedHtmlImage(
+ict,image(indexpage1), imgservice; w = 400) 
+pageimg = """<p class="centerimg">$(imglink)<br/>
+Volume 6, quire A-index, page 2 verso.
+</p>"""
+
+pageimg |> HTML
+
+```
+
+We'll explore the term *creare*, which appears in the third column of the page. It is indexed to three folios (18, 44 and 141).
+
+```{julia}
+#| echo: false
+#| warn: false
+creareurn = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6d_p66@0.4262,0.6690,0.1276,0.01886")
+
+
+imgdetaillink = linkedHtmlImage(
+ict,creareurn, imgservice; w = 300) 
+detailimg = """<p class="centerimg">$(imgdetaillink)<br/>
+Index entry for <b>creare</b>: it is indexed to three folios.
+</p>"""
+detailimg |> HTML
+```
+
+
+
+
+::: {.callout-tip title="Tip: see images in context"}
+Images are linked to pannable/zoomable views
+:::
+
+
+### Step 2: look up the indexed folio
+
+The bulk of volume 6 is made up of the Hebrew-Latin lexicon. Articles for each Hebrew root are arranged alphabetically in two large columns per page. The headword is first given both in fully pointed Hebrew and in Latin transcription, followed by definitions of differing senses and derivative words, supported by citation of illustrative passages. In the interior and exterior margins, Hebrew terms identify specific derivative formations from the root; Latin terms highlight specific senses.
+
+To assist navigating the possibly unfamiliar Hebrew alphabet, the Latin transcriptions of headwords are prominently listed above each column, flanking the Hebrew head letter for this page. The following illustration shows volume 6, quire C, page 6 recto: within **ב**, the articles running from *Bar* to *bara*.
+
+
+
+```{julia}
+#| echo: false
+#| warn: false
+page18urn = Cite2Urn("urn:cite2:complut:pages.bne:vol6_C_6r")
+page18 = filter(pg -> urn(pg) == page18urn, collect(v6codex))[1]
+
+
+page18link = linkedHtmlImage(
+ict,image(page18), imgservice; w = 300) 
+page18img = """<p class="centerimg">$(page18link)<br/>Volume 6, quire C, page 6 recto: articles running from <b>Bar</b> to <b>bara</b> with the letter <b>ב</b>.
+</p>"""
+page18img |> HTML
+
+```
+
+At the top right of each recto, the number of the folio within the lexicon is listed (above, **Fo, xviii**). This is the hook that lets us get into the lexicon from the index we used in step 1. Scanning the marginal notes, we see *creare* near the bottom of the inner margin, annotating an article **בָּרָ֣א**/*Bara*. For the root sense *Creare*, *fingere*, etc., the first illusrtative passage is from *Genesis* 1, *In principio creabuit deus celum et terram*.
+
+
+
+```{julia}
+#| echo: false
+#| warn: false
+creobaraurn = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6p37@0.03644,0.7479,0.4204,0.04370")
+
+
+
+creobaralink = linkedHtmlImage(
+ict,creobaraurn, imgservice; w = 500) 
+creobaraimg = """<p class="centerimg">$(creobaralink)<br/>Beginning of article <b>בָּרָ֣א</b>.
+</p>"""
+creobaraimg |> HTML
+```
+
+
+
+
+
+
+
+
+
+### Step 3: read indexed passages in context
+
+Volumes 1-4 of the Complutensian Bible cover the entire Christian Old Testament, "now for the first time published in multiple languages," as the [title page to each volume](../organization/titlepages/) reminds us. Page numbers are unnecessary, since the reader knows the order of Biblical books; chapter numbers within books are clearly set out. Opening *Genesis* to chapter, we can see the cited passage in its full context.  The detail here shows how the Hebrew and Latin texts are kept aligned and glossed with indexing letters, so that the reader can continue explore the relation between the different versions of the text.
+
+```{julia}
+#| echo: false
+#| warn: false
+#| output: asis
+gen1urn = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p19@0.3418,0.04151,0.5604,0.07342")
+
+gen1link = linkedHtmlImage(
+ict,gen1urn, imgservice; w = 500) 
+gen1img = """<p class="centerimg">$(gen1link)<br/>Aligned Latin and Hebrew text of Genesis 1.1.
+</p>"""
+
+gen1img |> HTML
+```
+
+
+
+## Exegesis: comparing passages
+
+The Greek New Testament is annotated with canonical references to other passages that should be consulted. Chapter 1 of *Matthew*, for example, concludes with an explicit quotation of "the prophet, who says, 'Behold a virgin shall conceive...'" The Vulgate text on volume 5, quire `A` page 1 verso reads
+
+> Hoc autem totum factum est: vt adimpleret quod dictum est a domino per prophetam dicentem. Ecce virgo in vtero habebit: et pariet filium: et vocabitur nomen eius Emanuel:
+
+
+An annotation in the exterior margin points us to the prophetic passage with a canonical reference to *Isaiah* 7, augmented with a further pointer to section `C` of the Complutensian's physical page.
+
+
+```{julia}
+#| echo: false
+#| warn: false
+#| output: asis
+latinpsg = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5a_p10@0.6147,0.1624,0.2876,0.04367")
+latinsrc = linkedHtmlImage(ict,latinpsg, imgservice; w = 800)
+
+
+greekpsg = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5a_p10@0.2022,0.1608,0.3987,0.05812")
+greeksrc = linkedHtmlImage(ict,greekpsg, imgservice; w = 800)
+
+xref = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5a_p10@0.9022,0.1624,0.05467,0.01814")
+xreftxt = linkedHtmlImage(ict,xref, imgservice; w = 120) 
+
+
+
+xreflines = [
+    "<table>",
+   
+
+    "<tr class=\"centerimg\"><td>$(greeksrc)<br/>Greek conclusion of Matthew 1</td><td>$(latinsrc)<br/>Latin conclusion of Matthew 1</td><td>$(xreftxt)<br/>Cross reference to Isaiah 7</td></tr>",
+    "</table>"
+]
+join(xreflines, "\n") |> HTML
+```
+
+This assumes that the reader knows how to find *Isaiah* in volume 4 of the Complutensian Bible. Turning to chapter 7, we next scan the page for section `C`. We can easily recognize the corresponding text in both the Vulgate and the Latin glosses on the Septuagint.
+
+
+```{julia}
+#| echo: false
+#| warn: false
+#| output: false
+
+isaiah = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4a_p14@0.6169,0.3129,0.3507,0.05365")
+
+isaiahlink = linkedHtmlImage(ict,isaiah, imgservice; w = 600)
+
+
+isaiahimg = """<p class="centerimg">$(isaiahlink)<br/>Isaiah 7: Septuagint text with glossing and marginal cross reference.
+</p>"""
+
+```
+
+```{julia}
+#| echo: false
+#| warn: false
+#| output: asis
+
+vulgateisaiah = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4a_p14@0.4467,0.3553,0.1547,0.04554")
+
+vulgateisaiahlink = linkedHtmlImage(ict,vulgateisaiah, imgservice; w = 400)
+
+
+vulgateisaiahimg = """<p class="centerimg">$(vulgateisaiahlink)<br/>Isaiah 7: Vulgate text.
+</p>"""
+
+
+isaiahtbl = [
+    "<table>",
+    "<tr class=\"centerimg\">",
+    "<td>$(vulgateisaiahimg)</td>",
+    "<td>$(isaiahimg)</td>",
+    "</tr>",
+    "</table>"
+]
+
+HTML(join(isaiahtbl))
+```
+
+
+Glosses on the *Septuagint*:
+
+> ecce virgo in vtero accipiet et pariet filium. et vocabis nomen eius emmanuel.
+
+
+Vulgate text: 
+
+> Ecce virgo concipiet et pariet filium et vocabitur nomen eius emanuel.
+
+
+A reverse link points the reader of *Isaiah* 7 back to *Matthew*, chapter 1. 
+
+## Research cycles
+
+The cross referencing of passages illustrated in *Matthew* 1 and *Isaiah* 7 establish a two-way relationship between those texts: readers approaching either text will be directed to compare the other one.
+
+The philological indexing in Volume 6 establishes a cyclical relationship between Latin and Hebrew vocabulary.  Indexes allow readers to move  from Latin concepts to Hebrew terms in the lexicon to passages cited in the lexicon; following citations to read a passage in context, the [basic reading tools](../pagetour/) of glossing and lemmatization on each page let readers reverse direction, and find Latin glosses on Hebrew, or go from a Hebrew term in a passage to the lexicon. 
+

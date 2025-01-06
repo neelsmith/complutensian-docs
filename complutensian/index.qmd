@@ -1,0 +1,52 @@
+---
+title: The printed Complutensian Bible
+engine: julia
+---
+
+
+:::{.callout-tip title="Tip: see images in context"}
+Learn more about [how images are displayed](./images/) in this guide to the Complutensian Bible.
+:::
+
+
+## What was the purpose of the Complutensian polyglot Bible?
+
+- The editors' goals
+
+## What texts are included?
+
+- The textual canon
+
+## How are the six volumes organized?
+
+- Contents and organization
+- References:
+    - [title pages](./organization/titlepages/)
+    - [prologs](./organization/prologs/)
+    - [colophons](./organization/colophons/)
+    - [quire registers](./organization/registers/)
+    - [complete collation](./organization/collation/)
+
+
+
+## How does a reader use it?
+
+Multilingual reading regardless of experience with the languages:
+
+- [Tour of a page](./pagetour/) (*in progress*)
+
+Reference materials for cutting-edge cross-lingual philology:
+
+- [Combining indexes and texts for philological research](./navigation/)
+
+## Historical contexts
+
+- When was it created? [Dating the individual parts](./chronology/) of the Complutensian
+- How much did it cost?
+- How many surviving copies can we identify?
+
+
+
+
+
+
