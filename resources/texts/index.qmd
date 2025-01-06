@@ -24,6 +24,13 @@ Pkg.add("CitableCorpus")
 ```
 
 ```{julia}
+#| echo: false
+using Pkg
+Pkg.add("CitableBase")
+Pkg.add("CitableCorpus")
+```
+
+```{julia}
 using CitableBase, CitableCorpus
 corpusurl = "https://github.com/neelsmith/compnov/raw/refs/heads/main/corpus/compnov.cex"
 corpus = fromcex(corpusurl, CitableTextCorpus, UrlReader)

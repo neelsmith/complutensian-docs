@@ -29,5 +29,6 @@ We are implementing the same kinds of functionality digitally, to explore ways w
 
 ## Presentations
 
--   [Society of Biblical Literature](./presentations/sbl2024/) (San Diego, November, 2024)
--   [AIA/SCS](./presentations/aia-scs2025/) (Philadelphia, January, 2025)
+- [AIA/SCS](./presentations/aia-scs2025/) (Philadelphia, January, 2025)
+- [Society of Biblical Literature](./presentations/sbl2024/) (San Diego, November, 2024)
+
