@@ -29,7 +29,7 @@ We are implementing the same functionality digitally, to explore ways we can sup
 
 
 
-[^2]: Again, the editors' explicit aim: *studiosis vtillisimum fore credimus*
+[^2]: Again, this is the editors' explicit aim: *studiosis vtillisimum fore credimus*
 
 
 ## Presentations
