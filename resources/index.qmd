@@ -4,6 +4,7 @@ title: Resources for a digital Complutensian
 ---
 
 
+## Digital data sets
 - [images](./images/)
 - canonically citable [texts](./texts/)
 - [morphological data](./morphology/)
@@ -11,7 +12,10 @@ title: Resources for a digital Complutensian
 
 
 
+## Other resources
 
+- facsimiles
+- some bibliographic notes
 
 
 

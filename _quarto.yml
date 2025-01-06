@@ -1,5 +1,6 @@
 project:
   type: website
+bibliography: references.bib  
 theme: pulse
 execute:
   freeze: auto
@@ -7,6 +8,7 @@ date: last-modified
 format:
   html: 
     toc: true
+    css: tweaks.css
 
 
 website:
@@ -17,6 +19,8 @@ website:
     left:
       - text: "Home"
         file: index.qmd
+      - text: "The Original"
+        file: complutensian/index.qmd        
       - text: "Applications"
         file: examples/index.qmd
       - text: "Resources"
@@ -36,6 +40,33 @@ website:
   sidebar:
     - title: "Home"
       contents:
-        - index.qmd               
+        - index.qmd  
+    - title: "The Complutensian"
+      contents:        
+        - examples/index.qmd
+        - examples/pluto/index.qmd
+        - examples/quarto/index.qmd
+    - title: "The Complutensian"
+      contents:
+        - complutensian/index.qmd
+        - complutensian/images/index.qmd              
+        - text: "---"        
+        - text: "Organization"     
+
+        - text: "---"   
+        - complutensian/organization/titlepages/index.qmd
+        - complutensian/organization/colophons/index.qmd
+        - complutensian/organization/registers/index.qmd  
+        - complutensian/organization/collation/index.qmd
+        - complutensian/organization/prologs/index.qmd   
+        - text: "---"                  
+        - complutensian/pagetour/index.qmd
+        - complutensian/navigation/index.qmd        
+        - text: "---"   
+        - text: "The textual canon"        
+        - text: "---"
+        - complutensian/chronology/index.qmd
+
+
  
 

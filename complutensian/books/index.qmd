@@ -1,0 +1,76 @@
+---
+engine: julia
+---
+
+# The text corpus
+
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+using Pkg
+Pkg.add("CitableImage")
+using CitableImage
+Pkg.add("CitableObject")
+using CitableObject
+using Markdown
+
+baseurl = "http://www.homermultitext.org/iipsrv"
+root = "/project/homer/pyramidal/deepzoom"
+service = IIIFservice(baseurl, root)
+ict = "http://www.homermultitext.org/ict2/?"
+```
+
+
+
+- respect for other traditions?
+
+
+## Canonicity and sequence
+
+## Names of books
+
+
+- 1 Kings `k ii` verso.  Note titles: urn:cite2:citebne:complutensian.v1:v2b_p20@0.4649,0.07268,0.4622,0.03005
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+v2k2v = Cite2Urn("urn:cite2:citebne:complutensian.v1:v2b_p20@0.4649,0.07268,0.4622,0.03005")
+linkedMarkdownImage(ict, v2k2v, service; w = 400)  |> Markdown.parse
+```
+
+
+- 3 Kings `x iii` recto Note titles: urn:cite2:citebne:complutensian.v1:v2c_p53@0.1729,0.3490,0.3849,0.02852
+
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+v2x3 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v2c_p53@0.1729,0.3490,0.3849,0.02852")
+linkedMarkdownImage(ict, v2x3, service; w = 400)  |> Markdown.parse
+```
+
+
+- 1 Paralipomenon `ii` (6) recto Note title: urn:cite2:citebne:complutensian.v1:v2d_p91@0.1302,0.08218,0.4458,0.03895
+
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+paralip = Cite2Urn("urn:cite2:citebne:complutensian.v1:v2d_p91@0.1302,0.08218,0.4458,0.03895")
+linkedMarkdownImage(ict, paralip, service; w = 400)  |> Markdown.parse
+```
+
+- Ecclesiasticus `B iii` verso Note title urn:cite2:citebne:complutensian.v1:v3d_p74@0.2093,0.06930,0.4680,0.02545
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+eccles = Cite2Urn("urn:cite2:citebne:complutensian.v1:v3d_p74@0.2093,0.06930,0.4680,0.02545")
+linkedMarkdownImage(ict, eccles, service; w = 400)  |> Markdown.parse
+```

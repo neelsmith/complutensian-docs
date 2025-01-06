@@ -1,0 +1,97 @@
+---
+engine: julia
+title: Title pages
+---
+
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+using Pkg
+Pkg.add("CitableImage")
+using CitableImage
+Pkg.add("CitableObject")
+using CitableObject
+using Markdown
+
+baseurl = "http://www.homermultitext.org/iipsrv"
+root = "/project/homer/pyramidal/deepzoom"
+service = IIIFservice(baseurl, root)
+ict = "http://www.homermultitext.org/ict2/?"
+```
+
+
+
+## Titling text of each volume
+
+
+
+```{julia}
+#| echo: false
+#| warning: false
+#| output: asis
+v1text = "Vetus testamentum multiplici lingua nunc primo impressum. Et imprimis Pentateuchus Hebraico Greco atque Chaldaico idiomate. Adiuncta unicuique sua latina interpretatione."
+v1 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1p5@0.1751,0.5511,0.5360,0.1933")
+v1linked = linkedMarkdownImage(ict, v1, service; w = 800, caption = "Volume 1 title page")
+
+
+v2 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v2a_p3@0.2071,0.5704,0.5053,0.1638")
+v2linked = linkedMarkdownImage(ict, v2, service; w = 800, caption = "Volume 2 title page")
+v2text = "Secunda pars Veteris testamenti Hebraico Grecoque idiomate nunc primum impressa: adiuncta utrique sua latina interpretatione"
+
+v3 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v3a_p21@0.2333,0.5710,0.4724,0.1604")
+v3linked = linkedMarkdownImage(ict, v3, service; w = 800, caption = "Volume 3 title page")
+v3text = "Tertia pars Veteris testamenti Hebraico Grecoque idiomate nunc primum impressa:adiuncta utrique sua latina interpretatione"
+
+v4 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v4a_p1@0.2182,0.5555,0.4716,0.1606")
+v4linked = linkedMarkdownImage(ict, v4, service; w = 800, caption = "Volume 4 title page")
+v4text = "Quarta pars Veteris testamenti Hebraico Grecoque idiomate nunc primum impressa:adiuncta utrique sua latina interpretatione"
+
+v5 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v5a_p1@0.2809,0.6264,0.2964,0.08087")
+v5linked = linkedMarkdownImage(ict, v5, service; w = 800, caption = "Volume 5 title page")
+v5text = "Nouum testamentum grece et latine in academia complutensi nouiter impressum."
+
+
+v6 = Cite2Urn("urn:cite2:citebne:complutensian.v1:v6p1@0.1933,0.5898,0.5231,0.1575")
+v6linked = linkedMarkdownImage(ict, v6, service; w = 800, caption = "Volume 6 title page")
+
+v6text = "Vocabularium hebraicum atque chaldaicum totius veteris testamenti cum aliis tractatibus prout infra in prefatione continetur in academia complutensi nouiter impressum."
+
+tbl = """| Volume | Title page | text |
+| --- | --- | --- |
+| 1 | $(v1linked) | $(v1text) |
+| 2 | $(v2linked) | $(v2text) |
+| 3 | $(v3linked) | $(v3text)|
+| 4 | $(v4linked) | $(v4text)|
+| 5 | $(v5linked) | $(v5text)|
+| 6 | $(v6linked) | $(v6text)|
+"""
+
+Markdown.parse(tbl)
+
+```
+
+
+:::{.callout-tip title="Tip: see images in context"}
+Images are linked to full-page views.
+:::
+
+
+
+
+
+## Relation of title page to the rest of the volume
+
+
+In volumes 3 and 4, the title page begins the first quire listed in [the quire register](../registers/). In volumes 1 and 5, it appears in a separate, unlisted quire (`+` in volume 1, `a` in volume 5). In volumes 2 and 6, the title page is printed as a single, separate sheet. 
+
+1. First page of an irregular gather labelled `+`; 7 pages in length, with prefatory material.
+2. A single page, with address to to Pope Leo X on verso.[^MadridVol2] (Identifier for this quire in our digital data: `title`)
+3. First page of a regular ternion `aaa` that includes prefatory material, with the text of *Ezra* beginning on page 3 recto.
+4. First page of a regular ternion `a` that includes prefatory material, with the text of *Isaiah* beginning on page 3 recto.
+5. First page of a binion labelled `a` (lower case) with introductory material for the New Testament.
+6. A single page, with address to to Pope Leo X on verso. (Identifier for this quire in our digital data: `title`)
+
+:::{.callout-tip title="See full collation"}
+See the [complete collation](../collation/) of the Madrid copy for more information about the relation of the title page to the rest of the volume.
+:::

@@ -1,0 +1,20 @@
+---
+engine: julia
+---
+
+# Editorial goals
+
+We don't need to guess what the editors of the Complutensian Bible intended: they include no fewer than five introductory essays where discussing their goals, and how they designed the Complutensian Bible to achieve those goals.
+
+
+
+> Summary: five essays from the editors
+>
+> - 2 appear only in volume 1: overview of entire program
+> - on reading OT appears in all 4 OT volumes 1-4
+> - dedication to Pope appears only in first 4
+> - on reading NT appears in 1 and 5.
+>
+> 2 historical surveys
+>
+> 3 historical documents from key editors in history of Bible

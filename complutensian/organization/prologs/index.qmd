@@ -1,0 +1,68 @@
+---
+engine: julia
+---
+
+# Prefatory material
+
+```{julia}
+#| echo: false
+# ADD THIS WHEN PAGE IS IN PLALCE
+#=
+See [discussion](../../goals/prologs/)
+=#
+```
+
+
+:::{.callout-note}
+The contents of this prefatory material are discussed on a forthcoming page of this web site.
+:::
+
+
+Links are to illustrations in the Madrid copy of the Complutensian Bible.
+
+
+
+## The five editorial prefaces
+
+1. *Dedication to Pope Leo X*
+    - volume 1: quire `+` (initialquire), [page 2 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p7)
+    - volume 2: quire `title`  (initialquire), [page 1 verso](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v2a_p4) 
+    - volume 3: quire `aaa` (initialquire), [page 1 verso](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v3a_p22)
+    - volume 4: quire `a` (initial quire), [page 1 verso](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v4a_p2)  
+2.  *To the reader, on reading the Old Testament*.
+    - volume 1:  quire `+` (initialquire), [page 2 verso](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p8)
+    - volume 2:  quire `prolog`, [page 1 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v2a_p17)[^placement]
+    - volume 3: quire `aaa` (initialquire), [page 2 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v3a_p22)  
+    - volume 4: quire `a` (initial quire), [page 2 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v4a_p3)
+3. *Finding roots of Hebrew words*.
+    - volume 1:  quire `+` (initialquire), [page 3 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p9)
+4.  *Prolog to the Greek New Testament*.
+    - volume 1:  quire `+` (initialquire), [page 4 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p11)
+    - volume 5: quire 'a-preface' (initial quire), [page 2 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v5a_p3) (Greek)
+    - volume 5: quire 'a-preface' (initial quire), [page 2 verso](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v5a_p6) (Latin)
+5. Prolog to Hebrew and Aramaic dictionary.
+    - volume 1 quire `+` (initialquire), pages [4 recto](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p11)-[4 verso](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p12)
+    - volume 6 maybe 1 verso
+
+[^placement]: In volume 2, the title page and the prolog to the reader are each single sheets that have been tipped in. In the Madrid copy, the address to the reader is mistakenly placed between the first and second quires of the book of *Joshua* (quires `a` and `b`).
+
+## Papal authorization
+
+1. Papal authorization
+    - volume 1, page 7 verso of the initial folio. In [the Madrid copy](https://www.homermultitext.org/ict2/?urn=urn:cite2:citebne:complutensian.v1:v1p18), this page was initially blank; the first statement of authorization has been added by hand. A later printing seen in [the Huntington Library copy](https://www.homermultitext.org/ict2/?urn=urn:cite2:citehunt:complutensian.v1:v1_plus_7v) includes both the original statement of authorization and a second statement following Cisneros' death.
+    
+## Prefatory material reproduced from other *incunabula*
+
+1. Note on translations. Inicipit *Notandum: quod translatores et interpretes bibliae multi fuerunt*
+    - volume 1 vol1_+_4v-vol1_+_5r
+2. How to understand sacred scripture. Incipit: *Modi intelligendi sacram scripturam.  Notandum: quod omnis sacra scriptura quadriformi ratione distinguitur*
+    - volume 1 vol1_+_5r
+
+## Historical documents
+
+1. Letter of Jerome to Paulinus (letter 53)
+    - volume 1 vol1_+_5r-vol1_+_6v
+2. Letter of Eusebius to Carpianus
+    - volume 5  vol5_a-preface_3r 
+3.  Letter of Jerome to Pope Damasus
+    - volume 5 vol5_a-preface_3v : 

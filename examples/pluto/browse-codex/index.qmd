@@ -1,0 +1,21 @@
+---
+engine: julia
+---
+
+# Navigate by quire and page
+
+
+
+## Overview
+
+Select a volume, quire and page to see a page image linked to pannable/zoomable view. Optionally see a tabular summary of the quire's structure with thumbnail images linked to an image viewer.
+
+## Notebook
+
+- [HTML version](./codex-browser.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/physical-artifact/codex-browser.jl) (download and open in Pluto)
+
+
+## Screen capture
+
+![Screen capture](./browse-codex.png)

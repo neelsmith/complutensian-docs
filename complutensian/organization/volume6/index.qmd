@@ -1,0 +1,22 @@
+---
+title: Volume 6
+engine: julia
+---
+
+It's wild!
+
+
+## Volume 6
+
+
+1. title page with address to reader on verso
+2. hebrew vocab in quires `A` - `FF`, final quire `FF` containing 4 pages with rectos numbered (binion). Colophon to this quire dates it to 17 March, 1515.
+3. introduction to Hebrew grammar in quires `A` - `C`, final quire `C` with three pages of content, all rectos identified.
+4. A single blank page? 
+5. Index of Latin terms in a single quaternion with rectos labelled `A` or `a` 1 - 5.
+6. Interpretations of Latin names in quires `A` - `D` (all ternions)
+7. Same quire sequence continues with alternate forms of names, a sinqule binion with first recto labeled `E` .
+ 
+
+Notes: blank page after Hebrew grammar shows how guidelines were added? String?
+

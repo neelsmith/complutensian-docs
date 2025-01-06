@@ -1,0 +1,365 @@
+---
+title: Collation
+engine: julia
+---
+
+
+```{julia}
+#| echo: false
+#| output: false
+#| warning: false
+using Pkg
+Pkg.add("CitableImage")
+using CitableImage
+Pkg.add("CitableObject")
+using CitableObject
+using Markdown
+
+baseurl = "http://www.homermultitext.org/iipsrv"
+root = "/project/homer/pyramidal/deepzoom"
+service = IIIFservice(baseurl, root)
+ict = "http://www.homermultitext.org/ict2/?"
+```
+
+
+## Quire organization of the printed Complutensian Bible
+
+The standard quire of the Complutensian Bible was a ternion, or gather of three bifolios.  A series of quires is identified by sequential letters on the first folio of each quire.[^seq] Folios within each quire are then numbered: a regular ternion would have folios from `a 1` through `a 6`, for example.[^numbering] When a volume has more than one series of quires, the quire identifiers tell us nothing about the relative sequence of series, and we have to look to other evidence to determine the intended order of pages.  Each of the six volumes has a [lavish title page](../titlepages/). These are always bound as the first page of the volume, whether they are printed as part of a larger quire or as an individual page.
+
+[^seq]: Sequences can be runs of lower case letters, upper case letters, doubled letters and even tripled letters. 
+
+
+[^numbering]: The quire + folio number are regularly shown on the first recto of each bifolio, and on both rectos of the innermost sheet. This precludes the possibility of unintentionally adding sheets to a quire.  For a normal ternion `a`, then, the normal pattern is that the first page is identified as `a`, and the recto of the next three folios as `a ii`, `a iii` and `a iiii`.  For the rare quaterion, the first five pages are numbered through `a v`.
+
+We can apply this understanding of the Complutensian Bible to collate the Madrid copy from its digital photographs. Our project github repository includes a [Julia script that computes a model for each volume](https://github.com/neelsmith/complutensian-texts/blob/main/scripts/codexmodels.jl), and writes the results to delimited-text files. The summary tables embedded in this page below are generated from the same code.
+
+
+
+
+:::{.callout-tip title="Explore the quire structure interactively"}
+Use the [`browse-codex.jl`](../../../examples/pluto/browse-codex/) Pluto notebook to explore the Madrid copy
+of the Complutensian Bible by its quire organization.
+:::
+
+
+### Part 1 (volumes 1 - 4)
+
+Part 1 of the Complutensian Bible is the multilingual Old Testament, published in volumes 1 - 4. Volumes 1, 2 and 3  include a [register of quires](../registers/) at the end of the volume that explicitly identifies the sequencing of quires for the volume; in volume 4, the sequence of quires is implied instead by a list giving the sequence of Old Testament books contained in that volume. The collation we present here for the Madrid copy therefore should apply to all copies, apart from material added in later printings.[^printing]
+
+
+[^printing]: The printing history of the different individual copies is complex. The Madrid copy is clearly early: it lacks the printed Papal authorization and the *corrigenda* lists found in copies like the Huntington Library copy.
+
+
+#### Volume 1
+
+```{julia}
+#| echo: false
+#| output: asis
+using Markdown
+v1singlealphaquires = filter(map(c -> string(c), collect('a':'z'))) do ch
+    ch != "i" && ch != "u" && ch != "w"
+end
+v1doublealphaquires = filter(map(c -> repeat(c, 2), collect('a':'z'))) do s
+	s != "ii" && s != "uu" && s != "ww"
+end
+nonalpha = ["et", "con"]
+
+v1quireids = map(vcat(v1singlealphaquires, v1doublealphaquires, nonalpha)) do s
+    "`$(s)`"
+end
+
+
+v1table = [
+    "| Quire sequences | Contents | Notes |", 
+    "|:--- |:--- |:--- |",
+    "| `+` | Title page and prologs | 7 pages of content; title page implicitly numbered `+ ii` |",
+    """| $(join(v1quireids, ", ")) | Pentateuch (Torah) | All ternions except for `con`, a quaternion. |"""
+]
+
+
+join(v1table,"\n") |> Markdown.parse
+```
+
+**Notes**
+
+- The initial quire `+` appears to be a quaternion that included a blank bifolio functioning as guard sheets.[^weirdquat] 
+- Later printings include a binion with 2 bifolios of corrigenda, identified as a quire `a`. In the Huntington Library copy, this binion follows the title page and precedes the quire `a` with the first book of *Genesis*.
+- After reaching the end of the doubled alphabet at `zz`, two final quires are identified with typographic ligatures for *et* and *con*.
+
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+doubleet = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1e_p69@0.7302,0.8581,0.03067,0.01487")
+
+doubleethtml = linkedHtmlImage(ict, doubleet, service; w = 70)  
+doubleetlabel = "<br/>Quire identifier: doubled ligature for <b>et</b>"
+doulbeetcell = "$(doubleethtml)$(doubleetlabel)"
+
+doublecon = Cite2Urn("urn:cite2:citebne:complutensian.v1:v1e_p81@0.7351,0.8652,0.02756,0.01921")
+
+doubleconhtml = linkedHtmlImage(ict, doublecon, service; w = 70)  
+doubleconlabel = "<br/>Quire identifier: doubled ligature for <b>con</b>"
+doulbeconcell = "$(doubleconhtml)$(doubleconlabel)"
+
+
+
+tblrows = [
+    "<table>",
+    "<tr><th>Penultimate quire (ternion)</th><th>Final quire (quaternion)</th></tr>",
+    
+
+    "<tr class=\"centerimg\"><td>$(doulbeetcell)</td><td>$(doulbeconcell)</tr>",
+    "</table>",
+]
+
+join(tblrows) |> HTML
+```
+
+
+
+[^weirdquat]:  The title page is followed by a prolog with folios numbered from `+iii` through `+iiii`. 
+
+
+
+**Printing errors**
+
+- Quire `ee`: has only five folios. The first three are numbered 1, 3 , 4.
+- Quire `x`: both the first and second folios are labelled as folio 2.
+
+
+#### Volume 2
+
+
+```{julia}
+#| echo: false
+#| output: asis
+v2singlealphaquires = filter(map(c -> string(c), collect('a':'z'))) do ch
+    ch != "i" && ch != "u" && ch != "w"
+end
+v2doublealphaquires = filter(map(c -> repeat(c, 2), collect('a':'v'))) do s
+	s != "ii" && s != "uu" && s != "ww"
+end
+
+v2quireids = map(s -> "`$(s)`", vcat(v2singlealphaquires, v2doublealphaquires))
+v2table = [
+    "| Quires | Contents | Notes |", 
+    "|:--- |:--- |:--- |",
+    "| `title` | Title page and prolog | binion? |",
+    """| $(join(v2quireids, ", ")) | *Joshua* - *Paralipomenon* | All ternions except `vv`, a binion |"""
+]
+
+
+join(v2table,"\n") |> Markdown.parse
+```
+
+
+
+
+
+1. The title page followed by 3 pages of prefatory material; presumably this formed a binion.[^MadridV2hosed]
+2. As the quire register notes, all the quires of the main series are ternions except for `vv` which is a binion.
+3. Later printings include corrigenda in four pages, with the first recto labelled `a`.
+
+**Printing errors**
+
+- Quire `rr`: first and second folios both identified as folio 2.
+
+[^MadridV2hosed]: These pages are jumbled in the Madrid copy, with prolog pages inserted bewteen chapters 6 and 7 of *Joshua*.  We can't determine whether this is an error in the sequencing of the digital photography or in the bound copy. 
+
+
+
+
+
+#### Volume 3
+
+```{julia}
+#| echo: false
+#| output: asis
+
+v3triples = map(map(c -> repeat(c, 3), collect('a':'e'))) do s
+    "`$(s)`"
+end
+
+v3triplesUC =  map(map(collect('a':'i')) do c
+		uppercase(c) * repeat(c,2)
+end) do s
+    "`$(s)`"
+end
+
+
+v3singleids = map(s -> "`$(s)`", filter(collect('a':'p')) do c
+		c != 'i'
+end)
+
+
+
+v3UC = map(c -> "`$(c)`", collect('A':'F'))
+
+v3table = [
+    "| Quires | Contents | Notes |", 
+   "|:--- |:--- |:--- |",
+    """| $(join(v3triples, ", ")) | Prefatory material, *Ezra* - *Nehemiah* | Ternions except for `eee`, a binion. |""",
+
+      """| $(join(v3triplesUC, ", ")) |  *Tobias* - *Job* | Ternions except for `Ccc` and `Iii`, both binions. |""",
+
+    """| $(join(v3singleids, ", ")) | *Psalms* - *Songs* | Ternions except for `p`, a quaternion. |""",
+
+          """| $(join(v3UC, ", ")) | *Wisdom* - **Ecclesiasticus* | Ternions except for `F`, a binion |""",
+
+
+]
+
+
+join(v3table,"\n") |> Markdown.parse
+```
+
+**Notes**
+
+- *Job* ends on `Iii` 4 recto; significantly, Jerome's preface to the Psalms appears on `Iii` 4 verso.  It *must* therefore be followed by the text of the Psalms, even though they begin an independent quire series starting from `a`.
+- later printings have 2 pages of corrigenda with intial recto identified as `a`.
+
+
+#### Volume 4
+
+```{julia}
+#| echo: false
+#| output: asis
+
+v4singles = filter(collect('a':'z')) do c
+		c != 'i' && c != 'u' && c != 'w'
+end
+
+v4doubleids = map(c -> repeat(c,2), filter(collect('a':'o')) do c
+		c != 'i'
+end)
+
+v4series1 = map(s -> "`$(s)`", vcat(v4singles, v4doubleids))
+
+v4uc = map(c -> "`$(c)`", collect('A':'G'))
+
+v4table = [
+    "| Quires | Contents | Notes |", 
+   "|:--- |:--- |:--- |",
+    """| $(join(v4series1, ", ")) | Prefatory material, then *Isaiah* - *Malachi* | Ternions except for `pp`, a binion.|""",
+
+     """| $(join(v4uc, ", ")) | *1 Maccabees* - *3 Maccabees* | Ternions except for `G`, a binion. |""",
+]
+
+join(v4table,"\n") |> Markdown.parse
+```
+
+**Notes**
+
+- later printings have 2 folios of corrigenda with intial recto identified as `a`.
+
+
+**Printing errors**
+
+- quire `F`: second and third folios are both labelled 3.
+
+### Parts 2 and 3 (volumes 5 and 6)
+
+Volumes 5 and 6 are different. They include reference materials (lexica, grammars, indices...) that have no inherent sequential relationship. Each reference instrument (or *tractatus*, to use the prolog's term) has its own quire series, and we are free to arrange the various series in any order we choose.
+
+
+#### Volume 5
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+
+gospels = filter(map(c -> "`$(c)`", collect('A':'Q'))) do ch
+        ch != "`I`" 
+end
+ntsingles =  filter(map(c -> string(c), collect('R':'Z'))) do ch
+        ch != "I"  && ch != "U" && ch != "W"
+end
+ntdoubles =  filter(map(c -> repeat(c, 2), collect('A':'M'))) do c
+		c != "II"
+end
+remainingNT = map(s -> "`$(s)`", vcat(ntsingles, ntdoubles))
+
+vocabquires = map(c -> "`$(c)`", collect('a':'f'))
+
+
+v5table = [
+    "| Quires | Contents | Notes |", 
+    "|:--- |:--- |:--- |",
+    """| `a` | Prefatory material | Quaternion  |""",
+    """| $(join(gospels, ", ")) | Gospels |  Ternions |""",
+    """| `α` | Travels of Paul | Ternion  |""",
+    """| $(join(remainingNT, ", ")) | Remainder of New Testament | Ternions except `MM`, a  quaternion |)""",
+
+
+    """| `a` | Explanations of proper names | A single gather of 10 bifolios  |""",
+
+    """| $(join(vocabquires, ", ")) | Introdcution to Greek with vocabulary | Ternions except `g`, an irregular gather of three folios  |""",
+]
+
+join(v5table,"\n") |> Markdown.parse
+
+```
+
+
+#### Volume 6
+
+
+```{julia}
+#| echo: false
+#| output: asis
+#| warning: false
+
+
+
+#=
+gospels = filter(map(c -> "`$(c)`", collect('A':'Q'))) do ch
+        ch != "`I`" 
+end
+ntsingles =  filter(map(c -> string(c), collect('R':'Z'))) do ch
+        ch != "I"  && ch != "U" && ch != "W"
+end
+ntdoubles =  filter(map(c -> repeat(c, 2), collect('A':'M'))) do c
+		c != "II"
+end
+remainingNT = map(s -> "`$(s)`", vcat(ntsingles, ntdoubles))
+
+vocabquires = map(c -> "`$(c)`", collect('a':'f'))
+=#
+
+v6ucquires = filter(map(c -> string(c), collect('A':'Z'))) do ch
+        ch != "I" && ch != "U" && ch != "W"
+    end
+v6doublealphaquires = map(c -> repeat(c, 2), collect('A':'F'))
+
+lexicon = map(s -> "`$(s)`", vcat(v6ucquires, v6doublealphaquires))
+
+names = map(c -> "`$(c)`", collect('B':'E'))
+
+
+
+grammar = map(c -> "`$(c)`", collect('A':'C'))
+
+v6table = [
+    "| Quires | Contents | Notes |", 
+    "|:--- |:--- |:--- |",
+    "| title | Title page and prolog | A single page |",
+    "| $(join(lexicon, ", ")) | Hebrew lexicon | Ternions except for `FF`, a binion |",
+
+    "| `A` | First quire of series with explanations of proper names | Ternion |",
+    "| `A` | Thesaurus of Latin -> Hebrew concepts | Quaternion |",
+
+    "| $(join(names, ", ")) | Remaining quires with explanations of proper names | Ternions except for `E`, a single bifolio sheet |",
+
+    "| $(join(grammar, ", ")) | Hebrew grammar | Three folios of content |",
+   
+]
+
+join(v6table,"\n") |> Markdown.parse
+```
+
+**Notes**
+
+- The prolog on the verso of the title page is the same introducing to using the Hebrew and Aramaic dictionaries that is printed in volume 1 beginning on quire `+`,page 4 recto.

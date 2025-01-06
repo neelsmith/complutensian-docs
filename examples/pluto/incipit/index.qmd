@@ -1,0 +1,22 @@
+---
+engine: julia
+---
+
+# Navigate by *incipit*/*explicit* of Biblical books
+
+
+
+## Overview
+
+View table of contents of all six volumes as a tabular summary or numbered list of items. Each entry lists the page reference where each Biblical book begins and ends. Page references are linked to page images.
+
+
+## Notebook
+
+- [HTML version](./toc-codex.html) (readable in a web browser)
+- [Pluto notebook](https://raw.githubusercontent.com/neelsmith/complutensian-texts/refs/heads/main/pluto/physical-artifact/toc-codex.jl) (download and open in Pluto)
+
+
+## Screen capture
+
+![Screen capture](./incipt-browser.png)
