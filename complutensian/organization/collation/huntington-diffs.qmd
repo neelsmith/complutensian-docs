@@ -2,6 +2,7 @@
 engine: julia
 ---
 
+## Notes on Huntington copy
 
 In volume 1 quire `+`:
 
