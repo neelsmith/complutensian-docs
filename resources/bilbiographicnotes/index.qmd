@@ -1,0 +1,16 @@
+---
+engine: julia
+title: Bibliographic notes
+---
+
+Highly selective
+
+-   near-primary source @gomez_de_castro_rebus_1569
+
+<!-- -->
+
+-   a recent general introduction: @marcos2017
+
+-   still useful: @lyell1917
+
+-   layout of the volumes [@marcos2017 7-11]
