@@ -1,0 +1,11 @@
+---
+engine: julia
+---
+
+# News
+
+I'm posting news about the project to [my blog](https://neelsmith.quarto.pub/posts.html) with the tag `complutensian`.  
+
+- see a [list of tagged posts](https://neelsmith.quarto.pub/posts.html#category=complutensian).
+- track the [blog's RSS feed <i class="bi bi-rss"></i>](https://neelsmith.quarto.pub/updates.xml)
+

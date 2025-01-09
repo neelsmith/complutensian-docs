@@ -29,6 +29,8 @@ website:
         file: background/index.qmd  
       - text: "Who we are"
         file: who/index.qmd  
+      - text: "News"
+        file: news/index.qmd
 
     right:
       - icon: person-circle
