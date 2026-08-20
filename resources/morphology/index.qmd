@@ -14,6 +14,7 @@ Pkg.add("BrownDriverBriggs")
 Pkg.add("Kanones")
 Pkg.add("Tabulae")
 Pkg.add("CitableParserBuilder")
+Pkg.add("CitableBase")
 ```
 
 
